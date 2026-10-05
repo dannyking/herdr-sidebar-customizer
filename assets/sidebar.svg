@@ -1,0 +1,381 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="445" height="644" viewBox="0 0 445 644">
+<title>Herdr Sidebar Customizer settings with synthetic projects</title>
+<rect width="445" height="644" rx="12" fill="#1c1e2a"/>
+<g font-family="DejaVu Sans Mono,Menlo,monospace" font-size="14">
+<text x="20" y="22" fill="#6c7086" font-weight="bold">s</text>
+<text x="29" y="22" fill="#6c7086" font-weight="bold">p</text>
+<text x="38" y="22" fill="#6c7086" font-weight="bold">a</text>
+<text x="47" y="22" fill="#6c7086" font-weight="bold">c</text>
+<text x="56" y="22" fill="#6c7086" font-weight="bold">e</text>
+<text x="65" y="22" fill="#6c7086" font-weight="bold">s</text>
+<rect x="11" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="20" y="44" width="9" height="18" fill="#1e1e2e"/>
+<text x="20" y="58" fill="#5fafff" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">◎</text>
+<rect x="29" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="38" y="44" width="9" height="18" fill="#1e1e2e"/>
+<text x="38" y="58" fill="#5fafff" font-weight="bold">W</text>
+<rect x="47" y="44" width="9" height="18" fill="#1e1e2e"/>
+<text x="47" y="58" fill="#5fafff" font-weight="bold">e</text>
+<rect x="56" y="44" width="9" height="18" fill="#1e1e2e"/>
+<text x="56" y="58" fill="#5fafff" font-weight="bold">b</text>
+<rect x="65" y="44" width="9" height="18" fill="#1e1e2e"/>
+<text x="65" y="58" fill="#5fafff" font-weight="bold">s</text>
+<rect x="74" y="44" width="9" height="18" fill="#1e1e2e"/>
+<text x="74" y="58" fill="#5fafff" font-weight="bold">i</text>
+<rect x="83" y="44" width="9" height="18" fill="#1e1e2e"/>
+<text x="83" y="58" fill="#5fafff" font-weight="bold">t</text>
+<rect x="92" y="44" width="9" height="18" fill="#1e1e2e"/>
+<text x="92" y="58" fill="#5fafff" font-weight="bold">e</text>
+<rect x="101" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="110" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="119" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="128" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="137" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="146" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="155" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="164" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="173" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="182" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="191" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="200" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="209" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="218" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="227" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="236" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="245" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="254" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="263" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="272" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="281" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="290" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="299" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="308" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="317" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="326" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="335" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="344" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="353" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="362" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="371" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="380" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="389" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="398" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="407" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="416" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="425" y="44" width="9" height="18" fill="#1e1e2e"/>
+<rect x="11" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="20" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="29" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="38" y="62" width="9" height="18" fill="#1e1e2e"/>
+<text x="38" y="76" fill="#cba6f7">m</text>
+<rect x="47" y="62" width="9" height="18" fill="#1e1e2e"/>
+<text x="47" y="76" fill="#cba6f7">a</text>
+<rect x="56" y="62" width="9" height="18" fill="#1e1e2e"/>
+<text x="56" y="76" fill="#cba6f7">i</text>
+<rect x="65" y="62" width="9" height="18" fill="#1e1e2e"/>
+<text x="65" y="76" fill="#cba6f7">n</text>
+<rect x="74" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="83" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="92" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="101" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="110" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="119" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="128" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="137" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="146" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="155" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="164" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="173" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="182" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="191" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="200" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="209" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="218" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="227" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="236" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="245" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="254" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="263" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="272" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="281" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="290" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="299" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="308" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="317" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="326" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="335" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="344" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="353" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="362" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="371" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="380" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="389" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="398" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="407" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="416" y="62" width="9" height="18" fill="#1e1e2e"/>
+<rect x="425" y="62" width="9" height="18" fill="#1e1e2e"/>
+<text x="20" y="112" fill="#5fffd7" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">●</text>
+<text x="38" y="112" fill="#5fffd7" font-weight="bold">A</text>
+<text x="47" y="112" fill="#5fffd7" font-weight="bold">P</text>
+<text x="56" y="112" fill="#5fffd7" font-weight="bold">I</text>
+<text x="38" y="130" fill="#6c7086">m</text>
+<text x="47" y="130" fill="#6c7086">a</text>
+<text x="56" y="130" fill="#6c7086">i</text>
+<text x="65" y="130" fill="#6c7086">n</text>
+<text x="20" y="166" fill="#d787ff" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">○</text>
+<text x="38" y="166" fill="#d787ff" font-weight="bold">D</text>
+<text x="47" y="166" fill="#d787ff" font-weight="bold">o</text>
+<text x="56" y="166" fill="#d787ff" font-weight="bold">c</text>
+<text x="65" y="166" fill="#d787ff" font-weight="bold">s</text>
+<text x="38" y="184" fill="#6c7086">m</text>
+<text x="47" y="184" fill="#6c7086">a</text>
+<text x="56" y="184" fill="#6c7086">i</text>
+<text x="65" y="184" fill="#6c7086">n</text>
+<text x="20" y="346" fill="#6c7086">n</text>
+<text x="29" y="346" fill="#6c7086">e</text>
+<text x="38" y="346" fill="#6c7086">w</text>
+<text x="398" y="346" fill="#6c7086">m</text>
+<text x="407" y="346" fill="#6c7086">e</text>
+<text x="416" y="346" fill="#6c7086">n</text>
+<text x="425" y="346" fill="#6c7086">u</text>
+<text x="11" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="20" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="29" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="38" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="47" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="56" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="65" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="74" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="83" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="92" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="101" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="110" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="119" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="128" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="137" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="146" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="155" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="164" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="173" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="182" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="191" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="200" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="209" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="218" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="227" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="236" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="245" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="254" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="263" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="272" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="281" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="290" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="299" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="308" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="317" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="326" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="335" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="344" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="353" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="362" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="371" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="380" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="389" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="398" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="407" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="416" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="425" y="364" fill="#1e1e2e" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">─</text>
+<text x="20" y="382" fill="#6c7086" font-weight="bold">a</text>
+<text x="29" y="382" fill="#6c7086" font-weight="bold">g</text>
+<text x="38" y="382" fill="#6c7086" font-weight="bold">e</text>
+<text x="47" y="382" fill="#6c7086" font-weight="bold">n</text>
+<text x="56" y="382" fill="#6c7086" font-weight="bold">t</text>
+<text x="65" y="382" fill="#6c7086" font-weight="bold">s</text>
+<text x="371" y="382" fill="#6c7086" font-weight="bold">g</text>
+<text x="380" y="382" fill="#6c7086" font-weight="bold">r</text>
+<text x="389" y="382" fill="#6c7086" font-weight="bold">o</text>
+<text x="398" y="382" fill="#6c7086" font-weight="bold">u</text>
+<text x="407" y="382" fill="#6c7086" font-weight="bold">p</text>
+<text x="416" y="382" fill="#6c7086" font-weight="bold">e</text>
+<text x="425" y="382" fill="#6c7086" font-weight="bold">d</text>
+<rect x="11" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="20" y="404" width="9" height="18" fill="#1e1e2e"/>
+<text x="20" y="418" fill="#5fafff" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">◎</text>
+<rect x="29" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="38" y="404" width="9" height="18" fill="#1e1e2e"/>
+<text x="38" y="418" fill="#5fafff" font-weight="bold">W</text>
+<rect x="47" y="404" width="9" height="18" fill="#1e1e2e"/>
+<text x="47" y="418" fill="#5fafff" font-weight="bold">e</text>
+<rect x="56" y="404" width="9" height="18" fill="#1e1e2e"/>
+<text x="56" y="418" fill="#5fafff" font-weight="bold">b</text>
+<rect x="65" y="404" width="9" height="18" fill="#1e1e2e"/>
+<text x="65" y="418" fill="#5fafff" font-weight="bold">s</text>
+<rect x="74" y="404" width="9" height="18" fill="#1e1e2e"/>
+<text x="74" y="418" fill="#5fafff" font-weight="bold">i</text>
+<rect x="83" y="404" width="9" height="18" fill="#1e1e2e"/>
+<text x="83" y="418" fill="#5fafff" font-weight="bold">t</text>
+<rect x="92" y="404" width="9" height="18" fill="#1e1e2e"/>
+<text x="92" y="418" fill="#5fafff" font-weight="bold">e</text>
+<rect x="101" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="110" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="119" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="128" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="137" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="146" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="155" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="164" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="173" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="182" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="191" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="200" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="209" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="218" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="227" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="236" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="245" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="254" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="263" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="272" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="281" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="290" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="299" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="308" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="317" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="326" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="335" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="344" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="353" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="362" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="371" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="380" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="389" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="398" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="407" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="416" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="425" y="404" width="9" height="18" fill="#1e1e2e"/>
+<rect x="11" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="20" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="29" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="38" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="38" y="436" fill="#6c7086">C</text>
+<rect x="47" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="47" y="436" fill="#6c7086">l</text>
+<rect x="56" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="56" y="436" fill="#6c7086">a</text>
+<rect x="65" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="65" y="436" fill="#6c7086">u</text>
+<rect x="74" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="74" y="436" fill="#6c7086">d</text>
+<rect x="83" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="83" y="436" fill="#6c7086">e</text>
+<rect x="92" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="101" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="101" y="436" fill="#6c7086">S</text>
+<rect x="110" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="110" y="436" fill="#6c7086">o</text>
+<rect x="119" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="119" y="436" fill="#6c7086">n</text>
+<rect x="128" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="128" y="436" fill="#6c7086">n</text>
+<rect x="137" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="137" y="436" fill="#6c7086">e</text>
+<rect x="146" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="146" y="436" fill="#6c7086">t</text>
+<rect x="155" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="164" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="164" y="436" fill="#6c7086" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<rect x="173" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="182" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="182" y="436" fill="#6c7086">h</text>
+<rect x="191" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="191" y="436" fill="#6c7086">i</text>
+<rect x="200" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="200" y="436" fill="#6c7086">g</text>
+<rect x="209" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="209" y="436" fill="#6c7086">h</text>
+<rect x="218" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="227" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="227" y="436" fill="#6c7086" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<rect x="236" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="245" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="245" y="436" fill="#6c7086">2</text>
+<rect x="254" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="254" y="436" fill="#6c7086">5</text>
+<rect x="263" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="263" y="436" fill="#6c7086">%</text>
+<rect x="272" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="272" y="436" fill="#6c7086">/</text>
+<rect x="281" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="281" y="436" fill="#6c7086">2</text>
+<rect x="290" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="290" y="436" fill="#6c7086">0</text>
+<rect x="299" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="299" y="436" fill="#6c7086">0</text>
+<rect x="308" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="308" y="436" fill="#6c7086">k</text>
+<rect x="317" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="326" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="335" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="344" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="353" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="362" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="371" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="380" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="389" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="398" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="407" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="416" y="422" width="9" height="18" fill="#1e1e2e"/>
+<rect x="425" y="422" width="9" height="18" fill="#1e1e2e"/>
+<text x="20" y="472" fill="#5fffd7" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">●</text>
+<text x="38" y="472" fill="#5fffd7" font-weight="bold">A</text>
+<text x="47" y="472" fill="#5fffd7" font-weight="bold">P</text>
+<text x="56" y="472" fill="#5fffd7" font-weight="bold">I</text>
+<text x="38" y="490" fill="#6c7086">C</text>
+<text x="47" y="490" fill="#6c7086">o</text>
+<text x="56" y="490" fill="#6c7086">d</text>
+<text x="65" y="490" fill="#6c7086">e</text>
+<text x="74" y="490" fill="#6c7086">x</text>
+<text x="92" y="490" fill="#6c7086">G</text>
+<text x="101" y="490" fill="#6c7086">P</text>
+<text x="110" y="490" fill="#6c7086">T</text>
+<text x="128" y="490" fill="#6c7086" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="146" y="490" fill="#6c7086">m</text>
+<text x="155" y="490" fill="#6c7086">e</text>
+<text x="164" y="490" fill="#6c7086">d</text>
+<text x="173" y="490" fill="#6c7086">i</text>
+<text x="182" y="490" fill="#6c7086">u</text>
+<text x="191" y="490" fill="#6c7086">m</text>
+<text x="209" y="490" fill="#6c7086" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="227" y="490" fill="#6c7086">4</text>
+<text x="236" y="490" fill="#6c7086">2</text>
+<text x="245" y="490" fill="#6c7086">%</text>
+<text x="254" y="490" fill="#6c7086">/</text>
+<text x="263" y="490" fill="#6c7086">2</text>
+<text x="272" y="490" fill="#6c7086">5</text>
+<text x="281" y="490" fill="#6c7086">8</text>
+<text x="290" y="490" fill="#6c7086">k</text>
+<text x="20" y="526" fill="#d787ff" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">○</text>
+<text x="38" y="526" fill="#d787ff" font-weight="bold">D</text>
+<text x="47" y="526" fill="#d787ff" font-weight="bold">o</text>
+<text x="56" y="526" fill="#d787ff" font-weight="bold">c</text>
+<text x="65" y="526" fill="#d787ff" font-weight="bold">s</text>
+<text x="38" y="544" fill="#6c7086">C</text>
+<text x="47" y="544" fill="#6c7086">l</text>
+<text x="56" y="544" fill="#6c7086">a</text>
+<text x="65" y="544" fill="#6c7086">u</text>
+<text x="74" y="544" fill="#6c7086">d</text>
+<text x="83" y="544" fill="#6c7086">e</text>
+<text x="101" y="544" fill="#6c7086">H</text>
+<text x="110" y="544" fill="#6c7086">a</text>
+<text x="119" y="544" fill="#6c7086">i</text>
+<text x="128" y="544" fill="#6c7086">k</text>
+<text x="137" y="544" fill="#6c7086">u</text>
+<text x="155" y="544" fill="#6c7086" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="173" y="544" fill="#6c7086">8</text>
+<text x="182" y="544" fill="#6c7086">%</text>
+<text x="191" y="544" fill="#6c7086">/</text>
+<text x="200" y="544" fill="#6c7086">2</text>
+<text x="209" y="544" fill="#6c7086">0</text>
+<text x="218" y="544" fill="#6c7086">0</text>
+<text x="227" y="544" fill="#6c7086">k</text>
+</g></svg>

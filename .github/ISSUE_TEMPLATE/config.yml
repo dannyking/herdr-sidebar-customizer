@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/dannyking/herdr-sidebar-customizer/security/advisories/new
+    about: Please report security problems privately, as described in SECURITY.md, not in a public issue.
+  - name: Security policy
+    url: https://github.com/dannyking/herdr-sidebar-customizer/blob/main/SECURITY.md
+    about: What to include in a report and which problems are in scope.

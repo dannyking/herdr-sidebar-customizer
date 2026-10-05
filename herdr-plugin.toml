@@ -1,0 +1,153 @@
+id = "herdr-sidebar-customizer"
+name = "Herdr Sidebar Customizer"
+version = "0.1.0"
+min_herdr_version = "0.9.1"
+description = "Add colors, agent details and animations to the Herdr sidebar"
+platforms = ["linux", "macos", "windows"]
+
+[[startup]]
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/agent_info.py", "start"]
+
+[[actions]]
+id = "settings"
+title = "Herdr Sidebar Customizer settings"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/settings_ui.py", "open"]
+
+[[panes]]
+id = "settings"
+title = "Herdr Sidebar Customizer settings"
+placement = "popup"
+width = "90%"
+height = "90%"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/settings_ui.py", "edit"]
+
+[[actions]]
+id = "pin-tab"
+title = "Pin or unpin this tab's name"
+contexts = ["tab", "pane"]
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/tab_names.py", "pin"]
+
+[[actions]]
+id = "pinned-tabs"
+title = "List pinned tab names"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/tab_names.py", "pinned"]
+
+[[actions]]
+id = "refresh"
+title = "Refresh sidebar metadata"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/agent_info.py", "sync"]
+
+[[actions]]
+id = "space-color"
+title = "Choose space color"
+contexts = ["workspace"]
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/space_colors.py", "open"]
+
+[[panes]]
+id = "space-colors"
+title = "Space color"
+placement = "popup"
+width = 62
+height = 26
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/space_colors.py", "picker"]
+
+[[actions]]
+id = "toggle-spacing"
+title = "Toggle compact sidebar spacing"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/sidebar_layout.py"]
+
+[[actions]]
+id = "status"
+title = "Sidebar collector and animation status"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/agent_info.py", "status"]
+
+[[events]]
+on = "pane.agent_detected"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/agent_info.py", "start"]
+
+[[events]]
+on = "pane.agent_status_changed"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/agent_info.py", "start"]
+
+[[events]]
+on = "pane.focused"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/agent_info.py", "start"]
+
+[[actions]]
+id = "setup"
+title = "Set up Sidebar Customizer"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/manage.py", "setup"]
+
+[[panes]]
+id = "setup"
+title = "Set up Sidebar Customizer"
+placement = "popup"
+width = "90%"
+height = "90%"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/manage.py", "setup-ui"]
+
+[[actions]]
+id = "restore"
+title = "Restore previous sidebar"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/manage.py", "restore"]
+
+[[panes]]
+id = "restore"
+title = "Restore previous sidebar"
+placement = "popup"
+width = "90%"
+height = "90%"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/manage.py", "restore-ui"]
+
+[[actions]]
+id = "doctor"
+title = "Sidebar Customizer diagnostics"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/manage.py", "doctor"]
+
+[[panes]]
+id = "doctor"
+title = "Sidebar Customizer diagnostics"
+placement = "popup"
+width = "90%"
+height = "90%"
+platforms = ["linux", "macos"]
+command = ["/bin/sh", "./src/python.sh", "./src/manage.py", "doctor-ui"]
+
+# Windows runs only the worker for now; Herdr rejects duplicate action or pane
+# ids even on disjoint platforms, and hooks have none. Setup is command-line.
+[[startup]]
+platforms = ["windows"]
+command = ["cmd.exe", "/d", "/c", "src\\python.cmd", "src\\agent_info.py", "start"]
+
+[[events]]
+on = "pane.agent_detected"
+platforms = ["windows"]
+command = ["cmd.exe", "/d", "/c", "src\\python.cmd", "src\\agent_info.py", "start"]
+
+[[events]]
+on = "pane.agent_status_changed"
+platforms = ["windows"]
+command = ["cmd.exe", "/d", "/c", "src\\python.cmd", "src\\agent_info.py", "start"]
+
+[[events]]
+on = "pane.focused"
+platforms = ["windows"]
+command = ["cmd.exe", "/d", "/c", "src\\python.cmd", "src\\agent_info.py", "start"]

@@ -1,0 +1,106 @@
+name: Tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    name: ${{ matrix.os }}, Python ${{ matrix.python }}, Herdr ${{ matrix.herdr }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python: ['3.11', '3.14']
+        herdr: ['0.9.1', '0.9.3']
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: ${{ matrix.python }}
+      # Release assets are checked against SHA-256 digests pinned here. To add a
+      # Herdr version, copy each asset's digest from
+      #   gh api repos/herdrdev/herdr/releases/tags/vX.Y.Z --jq '.assets[] | [.name, .digest] | @tsv'
+      # and confirm one by downloading the asset and running `shasum -a 256` on it.
+      - name: Install pinned Herdr
+        shell: bash
+        env:
+          HERDR_VERSION: ${{ matrix.herdr }}
+        run: |
+          platform=linux
+          if [[ "$RUNNER_OS" == macOS ]]; then
+            platform=macos
+          fi
+          arch=$(uname -m)
+          if [[ "$arch" == arm64 ]]; then
+            arch=aarch64
+          fi
+          asset="herdr-${platform}-${arch}"
+          case "${HERDR_VERSION}/${asset}" in
+            0.9.1/herdr-linux-x86_64)   sha=2a02fed16beb651ef006e1d43f048f652ca4dc58ad053cd2d44450563d5c54b7 ;;
+            0.9.1/herdr-linux-aarch64)  sha=f4ccf4de745f2cb9a39a983e9ba3703dad50ec2a58dea83026ceab721bbd8d9e ;;
+            0.9.1/herdr-macos-x86_64)   sha=053be0639935fe54ab5efbdb46651054e4f6a753a5b43153c88bd6912bce1e94 ;;
+            0.9.1/herdr-macos-aarch64)  sha=5fc7a7e7adfaca56fa80aa89dcb025693357268dab8285b9ce2d08a2313c89de ;;
+            0.9.3/herdr-linux-x86_64)   sha=18a8dc65f1c2fa485884344356dea1cfd911c6f06cf46fa78e193f4087f4dba7 ;;
+            0.9.3/herdr-linux-aarch64)  sha=4de7aa3e25678812e92960de64f7c2aaa1bca1f0f80a3c5e559837e231e1f5c0 ;;
+            0.9.3/herdr-macos-x86_64)   sha=db62d548ff3e832b087a96b1894a08d26be3905f1830309cd556783f215d4054 ;;
+            0.9.3/herdr-macos-aarch64)  sha=5173a3e0ae42d5d1ab7ebfa5d5e6329f7c3d23f8e1a3677c7ce3231da2884157 ;;
+            *)
+              echo "No pinned SHA-256 for Herdr ${HERDR_VERSION} ${asset}" >&2
+              exit 1
+              ;;
+          esac
+          directory="$RUNNER_TEMP/herdr-bin"
+          mkdir -p "$directory"
+          curl --fail --location --silent --show-error --retry 3 \
+            "https://github.com/herdrdev/herdr/releases/download/v${HERDR_VERSION}/${asset}" \
+            --output "$directory/herdr"
+          echo "${sha}  $directory/herdr" | shasum -a 256 --check
+          chmod +x "$directory/herdr"
+          echo "$directory" >> "$GITHUB_PATH"
+      - name: Unit and isolated server tests
+        env:
+          PYTHONPATH: src
+          HERDR_SMOKE: '1'
+          TERM: xterm-256color
+        run: python -m unittest discover -s tests -v
+
+  # Windows servers run only the worker, so this job runs the worker's tests.
+  # The settings UI, curses and PTY tests, the launcher's sh tests and the
+  # real-server smoke test need Unix and are left out.
+  windows:
+    name: windows-latest, Python ${{ matrix.python }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.14']
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Launcher finds Python 3.11+
+        shell: cmd
+        run: src\python.cmd src\agent_info.py --help
+      - name: Worker unit tests
+        env:
+          PYTHONPATH: src
+          # python.cmd sets this for the real worker; settings files hold symbols.
+          PYTHONUTF8: '1'
+        run: >-
+          python -m unittest -v
+          tests.test_agent_info
+          tests.test_detail_hints
+          tests.test_installation
+          tests.test_machines
+          tests.test_opencode
+          tests.test_pi_sessions
+          tests.test_portable
+          tests.test_sidebar_state
+          tests.test_space_rows

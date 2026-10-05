@@ -1,0 +1,117 @@
+"""Render Git row details from Herdr while keeping its native status colors.
+
+Herdr 0.9 elides rows with no resolved tokens and has no minimum-row setting.
+Publish a blank or explanatory placeholder when neither enabled Git token has a value.
+Herdr's read-only worktree API resolves the workspace repository, including its
+identity pane; do not guess from whichever pane is focused. This runs on the slow
+collector tick, not on animation frames. It never fetches or changes Git state.
+"""
+import os
+from pathlib import Path
+import subprocess
+
+from agent_info import PLUGIN, RpcError, rpc
+from sidebar_settings import DEFAULTS, GIT_ICONS
+
+SOURCE = PLUGIN + '.space-rows'
+TOKEN = 'space_git_padding'
+ICON_TOKEN = 'space_git_icon'
+BRANCH_TOKEN = 'space_git_branch'
+EMPTY = dict.fromkeys((TOKEN, ICON_TOKEN, BRANCH_TOKEN))
+GIT_ICON = GIT_ICONS[DEFAULTS['git_icon']][1]
+PLACEHOLDER_COLOUR = '#585b70'
+# Whitespace is normalized away by the API. This zero-width format character
+# survives normalization, like the space color shade markers.
+BLANK = '\u2063'
+
+
+def upstream_differs(path):
+    env = {key: value for key, value in os.environ.items() if not key.startswith('GIT_')}
+    env.update(GIT_OPTIONAL_LOCKS='0', GIT_TERMINAL_PROMPT='0')
+    try:
+        result = subprocess.run(
+            ['git', '-C', path, 'rev-list', '--count', '--max-count=1', 'HEAD...@{upstream}'],
+            env=env, stdin=subprocess.DEVNULL, capture_output=True, text=True, timeout=2)
+    except subprocess.TimeoutExpired as error:
+        raise RuntimeError('Git row check timed out') from error
+    # A missing upstream/unborn HEAD has no native ahead/behind indicator.
+    return result.returncode == 0 and result.stdout.strip() == '1'
+
+
+def git_details(endpoint, workspace, workspaces, settings):
+    if not (settings['show_branch'] or settings['show_git']):
+        return 'Git details hidden', None
+    membership = workspace.get('worktree') or {}
+    # Native grouped worktrees suppress both Git tokens in their child rows.
+    if membership.get('is_linked_worktree') and any(
+        (parent := other.get('worktree')) and not parent.get('is_linked_worktree')
+        and parent.get('repo_key') == membership.get('repo_key') for other in workspaces
+    ):
+        return 'Git details in parent', None
+    try:
+        result = rpc(endpoint, 'worktree.list', {'workspace_id': workspace['workspace_id']})
+    except RpcError as error:
+        if error.code == 'not_git_worktree':
+            return 'no git repo', None
+        raise
+    entries = result['worktrees']
+    entry = next((item for item in entries if item.get('open_workspace_id') == workspace['workspace_id']), None)
+    if entry is None:
+        path = membership.get('checkout_path') or result['source']['source_checkout_path']
+        entry = next((item for item in entries if Path(item['path']).resolve() == Path(path).resolve()), None)
+    if entry is None:
+        raise RuntimeError('Workspace checkout was not returned by Herdr')
+    branch = entry.get('branch') if settings['show_branch'] else None
+    if branch or settings['show_git'] and upstream_differs(entry['path']):
+        return None, branch
+    return ('Detached HEAD' if entry.get('is_detached') else 'No Git details'), None
+
+
+def row_tokens(reason, settings, branch=None):
+    mode = settings['empty_git_row']
+    glyph = GIT_ICONS[settings['git_icon']][1]
+    if not reason or mode == 'hide':
+        padding = None
+    elif mode == 'placeholder':
+        padding = reason
+    else:
+        padding = BLANK
+    combined, icon = None, None
+    if settings['show_git_icon']:
+        # Herdr inserts dots between text tokens. Keep icon + text in one token
+        # for branch names and placeholders, as we already do for space names.
+        if reason and mode=='placeholder':
+            padding = glyph + ' ' + reason
+        elif not reason:
+            if branch and settings['show_branch']:
+                combined = glyph + ' ' + branch[:78]
+            else:
+                icon = glyph  # status-only: Herdr uses a space before git_status
+    return {TOKEN: padding, ICON_TOKEN: icon, BRANCH_TOKEN: combined}
+
+
+class SpaceRows:
+    def __init__(self, endpoint):
+        self.endpoint = endpoint
+
+    def sync(self, settings):
+        workspaces = rpc(self.endpoint, 'workspace.list')['workspaces']
+        failed = False
+        for workspace in workspaces:
+            try:
+                if settings['empty_git_row']=='hide' and not settings['show_git_icon']:
+                    values = dict(EMPTY)
+                else:
+                    reason, branch = git_details(self.endpoint, workspace, workspaces, settings)
+                    values = row_tokens(reason, settings, branch)
+            except (OSError, ValueError, RuntimeError, KeyError, TypeError):
+                # Uncertain lookups must not leave a stray separator beside real
+                # Git details. Other workspaces can still be refreshed.
+                values = dict(EMPTY)
+                failed = True
+            if any(workspace.get('tokens', {}).get(key) != value for key,value in values.items()):
+                rpc(self.endpoint, 'workspace.report_metadata', {
+                    'workspace_id': workspace['workspace_id'], 'source': SOURCE,
+                    'tokens': values})
+        if failed:
+            raise RuntimeError('Could not check one or more Git rows')

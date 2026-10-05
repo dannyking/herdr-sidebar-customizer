@@ -1,0 +1,106 @@
+name: Bug report
+description: Report a sidebar, setup or compatibility problem.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please report security problems privately, as described in SECURITY.md, not here.
+        Before posting, remove private project names, host names, paths and agent content.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+      placeholder: |
+        1. Ran setup with managed layout
+        2. Opened settings and changed ...
+        3. The sidebar showed ... instead of ...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Setup or Restore
+        - Settings panel
+        - Space colors or animation
+        - Agent details (model, effort, context)
+        - Git rows
+        - Saved SSH machine
+        - Diagnostics or worker
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: layout
+    attributes:
+      label: Layout mode
+      description: Chosen during setup. Diagnostics show it as "layout".
+      options:
+        - Managed
+        - Manual
+        - Not set up yet
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform of the Herdr server running the plugin
+      options:
+        - Linux
+        - macOS
+        - Windows (worker only)
+    validations:
+      required: true
+  - type: dropdown
+    id: agents
+    attributes:
+      label: Agents involved
+      multiple: true
+      options:
+        - Claude Code
+        - Codex
+        - OpenCode
+        - pi
+        - omp
+        - Other or none
+  - type: dropdown
+    id: remote
+    attributes:
+      label: Does the problem involve a saved SSH machine?
+      options:
+        - "No"
+        - Yes, the plugin runs on that machine
+        - Yes, the plugin does not run on that machine
+        - Not sure
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      description: The `version` line in the plugin's `herdr-plugin.toml`, or the commit you installed.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Herdr client and server versions (`herdr --version`), Python version, OS and terminal.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: |
+        Run `herdr plugin action invoke herdr-sidebar-customizer.doctor`, or from a Herdr pane in the plugin
+        directory run `python3 src/manage.py doctor --json` (`src\python.cmd src\manage.py doctor --json` on Windows).
+        The report has no config contents or session text. Do not paste transcripts, personal configuration or credentials.
+      render: json
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Hide private project names and agent content first.

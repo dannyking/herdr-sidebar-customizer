@@ -65,39 +65,42 @@ herdr plugin action invoke herdr-sidebar-customizer.settings
 
 | Page | Controls |
 |---|---|
-| Display | State indicators, space and tab names, agent tab naming, machine labels and their position, spacing, bold names |
-| Git | Branch, status, empty Git row, optional Nerd Font icon and its style |
-| Agent text | Details row, collection opt-in, missing-detail hints, fields or a custom template, per-agent labels |
-| Animation | Braille dots, half circle, open arc, dot heartbeat, concentric rings, starburst, rising bar; speed and motion |
-| Colors | Space swatches, new-space defaults, neutral names, agent details, tab name, machine label and branch colors |
-| States | Idle, working, done, blocked and unknown symbols |
-| Shortcuts | Settings, space color picker and spacing bindings |
+| 1 Spaces | What the space row shows (symbol, name or both), bold names, row spacing, branch, ahead/behind, rows for spaces without Git, optional Nerd Font Git icon |
+| 2 Agents | Detail collection and its latest status, details row, missing-detail hints, picked fields (agent name, model, effort, context, window size, agent names) or a template, machine labels and their position, row spacing |
+| 3 Tabs | Tab name, renaming tabs from the agent's topic, tab name format |
+| 4 Colors | Space colors, new-space defaults, and text colors for names when colors are off, agent details, tab name, machine label and branch |
+| 5 Motion & symbols | Braille, half moon, arc, heartbeat, rings, starburst and bar animations, speed and motion; a symbol set and the five state symbols |
+| 6 Shortcuts | Settings, space color picker, spacing and pin tab name bindings |
 
 | Key | Action |
 |---|---|
-| **1–7**, **Tab** | Switch pages |
-| Arrows | Select a field or change its value |
+| **1–6**, **Tab** | Switch pages |
+| Arrows | Select a field (Up/Down) or change its value (Left/Right) |
 | **Enter** | Edit text, or move into a color palette |
 | **Page Up / Page Down** | Scroll |
 | **A** | Apply |
-| **U** | Reload saved settings |
+| **U** | Undo all unsaved changes |
 | **D** | Preview the defaults |
 | **Q**, **Escape** | Close |
 
-The mouse works too. Reload and Close ask for a second press when there are
-unsaved edits. Inactive controls are dimmed, say which setting turns them on,
-and keep their values.
+The mouse works too, including the key hints at the bottom. The title line says
+**Saved** or how many changes are waiting for **A**. Undo all and Close ask for
+a second press when there are unsaved edits. The selected field's help appears
+under it. Inactive controls are dimmed, say which setting turns them on, and
+keep their values.
 
 The previews use sample spaces and agents, so they work in an empty session.
-Panes shorter than 32 rows show the form and help first; enlarge the pane to see
-the previews. **D** previews the plugin's default preferences but keeps your
-saved space colors. It is not the same as **Restore**, which returns to your
-previous sidebar.
+They show the Agents list under the Spaces list, as the sidebar does, on every
+page except Shortcuts. Panes shorter than 32 rows show the form and help first;
+enlarge the pane to see the previews. **D** previews the plugin's default
+preferences but keeps your saved space colors. It is not the same as
+**Restore**, which returns to your previous sidebar.
 
 ![Embedded color palette in the settings UI](assets/colours.svg)
 
 The suggested shortcuts are `prefix+shift+s` for settings and `prefix+shift+c`
-for the space color picker. Spacing has no shortcut by default.
+for the space color picker. Spacing and pinning a tab name have no shortcut by
+default.
 
 ### Actions
 

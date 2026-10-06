@@ -163,6 +163,28 @@ class SidebarSettingsTests(unittest.TestCase):
         managed = [c['command'] for c in commands if c['command'] in prefs.MANAGED_COMMANDS]
         self.assertEqual(len(managed), len(set(managed)))
 
+    def test_pin_tab_shortcut_is_a_new_optional_binding(self):
+        self.assertEqual(prefs.DEFAULTS['shortcut_pin_tab'], '')
+        self.assertEqual(prefs.SHORTCUTS['shortcut_pin_tab'][0], 'pin-tab')
+        # An older settings.json without the key still loads.
+        self.assertEqual(prefs.validate({'shortcut_spacing': ''})['shortcut_pin_tab'], '')
+        bound = prefs.render_config(CONFIG, prefs.DEFAULTS | {'shortcut_pin_tab': 'prefix+shift+p'})
+        commands = tomllib.loads(bound)['keys']['command']
+        pin = [c for c in commands if c['command'] == prefs.PLUGIN + '.pin-tab']
+        self.assertEqual([c['key'] for c in pin], ['prefix+shift+p'])
+        cleared = prefs.render_config(bound, prefs.DEFAULTS)
+        self.assertEqual(cleared, prefs.render_config(CONFIG, prefs.DEFAULTS))
+
+    def test_hand_written_pin_tab_binding_is_left_alone(self):
+        own = ('\n[[keys.command]]\nkey = "prefix+p"\ntype = "plugin_action"\n'
+               'command = "' + prefs.PLUGIN + '.pin-tab"\ndescription = "my pin"\n')
+        text = CONFIG + own
+        rendered = prefs.render_config(text, prefs.DEFAULTS)
+        self.assertIn(own.strip(), rendered)
+        with patch.object(prefs, 'default_keys', return_value={'prefix': 'ctrl+b'}):
+            with self.assertRaisesRegex(ValueError, 'my pin'):
+                prefs.check_shortcuts(rendered, prefs.DEFAULTS | {'shortcut_pin_tab': 'prefix+p'})
+
     def test_default_keys_rejects_unexpected_output(self):
         prefs.default_keys.cache_clear()
         self.addCleanup(prefs.default_keys.cache_clear)
@@ -205,7 +227,7 @@ class SidebarSettingsTests(unittest.TestCase):
              patch.object(settings_ui,'rpc',return_value={'workspaces':[{'workspace_id':'w1','label':'Example'}]}):
             path=Path(root)/'space-colors.json';path.write_text('{"w1":"red_light"}')
             session=settings_ui.Session('test',Path(root))
-            session.cycle(next(f for _,fields in settings_ui.SECTIONS for f in fields if f[0]=='animation'),1)
+            session.cycle(settings_ui.find_field('animation'),1)
             self.assertEqual(session.draft['animation'],'03')
             self.assertEqual(session.base['animation'],'01')
             session.set('@colour','teal_dark')

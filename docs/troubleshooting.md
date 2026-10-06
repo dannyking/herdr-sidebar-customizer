@@ -15,14 +15,14 @@ includes config contents, session paths or agent text.
 - **Stopped worker:** run `herdr plugin action invoke herdr-sidebar-customizer.refresh`.
   Space names stay readable, but their state and animation may be stale. Check
   Herdr's native state while the worker is unhealthy.
-- **Invalid settings:** fix the JSON, or use **U** (reload) or **D** (defaults)
+- **Invalid settings:** fix the JSON, or use **U** (undo all) or **D** (defaults)
   in the settings panel. A running worker keeps its last valid settings.
 - **Sidebar configuration was changed outside the plugin:** run Restore, review
   the edits it preserved, then run setup again, or switch to manual layout.
 
 ## Missing details
 
-**Collect agent details** and **Agent details row** on the Agent text page are
+**Collect agent details** and **Details row** on the Agents page are
 separate switches; details need both. They also need a session ID reported by
 Herdr and matching local data. Unknown fields stay blank.
 
@@ -32,8 +32,8 @@ Herdr and matching local data. Unknown fields stay blank.
   and omp show context only when the model's context window is known, from the
   app's own configuration or catalog.
 
-Diagnostics, and the help line under **Collect agent details**, name each gap
-and its fix:
+Diagnostics, and the status and help lines under **Collect agent details**,
+name each gap and its fix:
 
 - **No session ID:** if Herdr's integration for that agent is missing, run
   `herdr integration install claude` (or `codex`, `opencode`, `pi`, `omp`), then
@@ -68,7 +68,7 @@ agent kind) and `observe_errors` (an error type per agent kind).
 ## Missing branch or Git status
 
 Git branch and status come from Herdr's worktree data: Herdr's native tokens,
-or the plugin's `$space_git_branch` when **Show Git icon** is on. They describe
+or the plugin's `$space_git_branch` when a **Git icon** is chosen. They describe
 the repository that contains the pane's working directory; a directory above a
 repository does not count as inside it. Status uses Herdr's native ahead/behind
 information, not a changed-file count. See [Git rows](configuration.md#git-rows)
@@ -77,8 +77,8 @@ for the empty-row choices.
 ## Terminal and SSH
 
 The settings panel needs at least 48 columns and 24 rows; a larger popup shows
-more. Use Page Up and Page Down to scroll. Choose different state symbols if
-your font cannot show one. Your theme and terminal default colors affect the
+more. Use Page Up and Page Down to scroll. Choose another **Symbol set**, such
+as Plain ASCII, if your font cannot show one. Your theme and terminal default colors affect the
 text previews.
 
 When you run Herdr in a shell reached over SSH, install Python and the plugin on

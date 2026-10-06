@@ -50,7 +50,7 @@ def replace(path, before, after):
     # Write through symlinks, so a settings file kept in a dotfiles repo stays linked.
     path = Path(os.path.realpath(path))
     if read_text(path) != before:
-        raise RuntimeError('A file changed during saving. Reload and try again.')
+        raise RuntimeError('A file changed during saving. Try again.')
     if after is None:
         path.unlink(missing_ok=True)
         return
@@ -64,7 +64,7 @@ def replace(path, before, after):
         if before is not None:
             os.chmod(temporary, path.stat().st_mode & 0o777)
         if read_text(path) != before:
-            raise RuntimeError('A file changed during saving. Reload and try again.')
+            raise RuntimeError('A file changed during saving. Try again.')
         portable.replace(temporary, path)
     finally:
         if os.path.exists(temporary):
@@ -178,7 +178,7 @@ def palette_change(directory, endpoint, colour_changes, expected_colours):
         if workspace_id not in live or colour not in COLOR_KEYS:
             raise ValueError('Space or color no longer exists.')
         if palette.get(workspace_id) != (expected_colours or {}).get(workspace_id):
-            raise RuntimeError('Space color changed elsewhere. Reload before applying.')
+            raise RuntimeError('Space color changed elsewhere. Undo all (U) to load it, then apply again.')
         palette[workspace_id] = colour
     return path, raw, encoded(palette)
 
@@ -191,7 +191,7 @@ def save(endpoint, directory, settings, expected, colour_changes=None,
         check_no_other_installation()
         mode = layout_mode(old, setup_mode)
         if prefs.read_settings() != expected:
-            raise RuntimeError('Settings changed elsewhere. Reload before applying.')
+            raise RuntimeError('Settings changed elsewhere. Undo all (U) to load them, then apply again.')
         target = runtime.config_path()
         before = read_text(target)
         after = managed_config(before, settings, old) if mode == 'managed' else before

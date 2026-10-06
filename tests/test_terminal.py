@@ -17,13 +17,12 @@ TIMEOUT = 5
 # Curses only redraws changed cells, so a page's field labels may arrive in
 # fragments. Its tab label switches to reverse video and is always sent whole.
 PAGE_TABS = [
-    (b'2', b' 2 Git '),
-    (b'3', b' 3 Agent text '),
-    (b'4', b' 4 Animation '),
-    (b'5', b' 5 Colors '),
-    (b'6', b' 6 States '),
-    (b'7', b' 7 Shortcuts '),
-    (b'1', b' 1 Display '),
+    (b'2', b' 2 Agents '),
+    (b'3', b' 3 Tabs '),
+    (b'4', b' 4 Colors '),
+    (b'5', b' 5 Motion & symbols '),
+    (b'6', b' 6 Shortcuts '),
+    (b'1', b' 1 Spaces '),
 ]
 
 
@@ -88,7 +87,7 @@ class TerminalTest(unittest.TestCase):
             with self.subTest(page=key):
                 self.send(key, marker)
         self.resize_and_wait(20, 40, b'Enlarge this pane')
-        self.resize_and_wait(42, 110, b'SAMPLE PREVIEWS')
+        self.resize_and_wait(42, 110, b'AGENTS')
         os.write(self.master, b'q')
         self.assertEqual(self.wait_for_exit(), 0, self.output.decode(errors='replace')[-2000:])
         self.assertNotIn(b'Traceback', self.output)

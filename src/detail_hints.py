@@ -119,3 +119,30 @@ def issues(status):
         else:
             result.append(f'{shown} no context. The status-line hook that reports it is not available on Windows.')
     return result
+
+
+def summaries(status):
+    """Short forms of issues(), for the one-line status in settings."""
+    result = []
+    integrations = status.get('integrations') or {}
+    for kind, count in sorted((status.get('missing_session') or {}).items()):
+        if not count:
+            continue
+        verb = 'needs' if count == 1 else 'need'
+        if integrations.get(kind):
+            result.append(f'{count} {verb} a restart for details')
+        else:
+            result.append(f"{count} {verb} Herdr's {kind} integration")
+    for kind, count in sorted((status.get('unreadable_session') or {}).items()):
+        name = AGENT_NAMES.get(kind, kind.title())
+        result.append(f"{count} {name} session{'' if count == 1 else 's'} not readable")
+    for kind in sorted(status.get('observe_errors') or {}):
+        name = AGENT_NAMES.get(kind, kind.title())
+        result.append(f'reading {name} details failed')
+    if status.get('missing_context') and not status.get('claude_hook'):
+        count = status['missing_context']
+        if status.get('claude_hook_supported', True):
+            result.append(f"{count} Claude {'needs' if count == 1 else 'need'} the status-line hook")
+        else:
+            result.append(f'{count} Claude without context')
+    return result

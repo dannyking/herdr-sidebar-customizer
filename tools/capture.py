@@ -17,7 +17,7 @@ import time
 import pyte
 
 ROOT = Path(__file__).resolve().parents[1]
-COLUMNS, ROWS = 110, 48
+COLUMNS, ROWS = 110, 52
 SETTINGS_TITLE = 'Herdr Sidebar Customizer settings with synthetic projects'
 COLORS = {'black': '#171923', 'red': '#e06c75', 'green': '#98c379',
           'brown': '#e5c07b', 'blue': '#61afef', 'magenta': '#c678dd',
@@ -132,16 +132,16 @@ def main():
     terminal = Terminal(master, pyte.Screen(COLUMNS, ROWS))
     try:
         terminal.drain(.5)
-        # Animation page, with the animation strip selected.
-        terminal.resize(34, COLUMNS, proc)
-        terminal.send(b'4' + DOWN, .3)
+        # Motion & symbols page, with the animation gallery selected.
+        terminal.resize(36, COLUMNS, proc)
+        terminal.send(b'5' + DOWN, .3)
         (ROOT / 'assets/animations.svg').write_text(svg(terminal.screen))
         if '--gif' in sys.argv:
             save_gif(terminal, ROOT / 'assets/animations.gif')
         (ROOT / 'assets/animations-light.svg').write_text(svg(terminal.screen, light=True))
         # Colors page, with the selected space's palette focused.
         terminal.resize(ROWS, COLUMNS, proc)
-        terminal.send(b'5' + DOWN + DOWN + b'\n', .3)
+        terminal.send(b'4' + DOWN + DOWN + b'\n', .3)
         (ROOT / 'assets/colours.svg').write_text(svg(terminal.screen))
         terminal.send(b'\x1b', .1)
         terminal.send(b'q', .2)

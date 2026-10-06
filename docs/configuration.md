@@ -32,21 +32,25 @@ before uninstalling.
 
 ## Git rows
 
-**Git → Empty Git row** has three choices:
+**Spaces → Spaces without Git** has three choices:
 
-- **hide:** collapse the second row when it has no Git details.
-- **blank** (default): keep an empty second row so spaces have equal heights.
-- **placeholder:** keep the row with muted text such as `no git repo`.
+- **Shorter row:** collapse the second row when it has no Git details.
+- **Blank line** (default): keep an empty second row so spaces have equal heights.
+- **Explain why:** keep the row with muted text such as `no git repo`.
+
+Older settings files and the JSON keep the saved values `hide`, `blank` and
+`placeholder` for these.
 
 The placeholder tells apart a missing repository, a detached HEAD, hidden
 details and grouped worktrees. A repository is never labeled missing just
-because no Git details are visible. **Display → Spaces spacing** separately adds
+because no Git details are visible. **Spaces → Row spacing** separately adds
 a blank row between entries.
 
-**Show Git icon** adds a Nerd Font glyph to populated rows, including
-placeholder text. It is off by default and needs a Nerd Font in your terminal.
-**Git icon style** chooses one of eleven icons, with live previews. Hiding the
-icon keeps your choice, and blank rows stay blank. The icon and its text share
+**Spaces → Git icon** adds a Nerd Font glyph to populated rows, including
+placeholder text. It is **None** by default and needs a Nerd Font in your
+terminal. The other choices are the eleven icons below, with live previews.
+Choosing **None** keeps the last icon saved for next time, and blank rows stay
+blank. The icon and its text share
 one token, so no separator dot appears between them. Placeholder text is dark
 gray (`#585b70`).
 
@@ -83,9 +87,9 @@ manually with the icon on, replace the native branch token with
 
 ## Text templates
 
-Choose **Text layout → automatic** for individual field switches and custom
-agent names, or **custom** to control the whole label with
-**Custom text template**. Each mode keeps its own choices.
+On the Agents page, choose **Details text → Pick fields** for individual field
+switches and custom **Agent names**, or **Write a template** to control the
+whole label with **Template**. Each mode keeps its own choices.
 
 ```text
 {agent} {model} · {effort} · {context}
@@ -96,7 +100,7 @@ agent names, or **custom** to control the whole label with
 Fields: `{agent}`, `{model}`, `{effort}`, `{context}`, `{used}`, `{remaining}`,
 `{capacity}`, `{used_pct}`, `{remaining_pct}`. Separate optional groups with
 `·`; a group disappears when none of its fields has a value. Custom mode uses the
-standard agent names and ignores the automatic field switches. Labels are capped
+standard agent names and ignores the Pick fields switches. Labels are capped
 at Herdr's 80-character metadata limit.
 
 ## Manual tokens
@@ -130,11 +134,12 @@ PYTHONPATH=src python3 -c 'import sidebar_settings as s; print(s.render_config("
 
 ## Saved SSH machines
 
-**Display → Machine labels** (on by default) shows Herdr's label for the saved
-machine an agent runs on. **Display → Machine label position** puts it after the
-space name, for example `○ Website · build-box · review`, or at the start of the
-details row. Local agents are never labeled. The label uses the agent details
-color, in bold, unless you change **Colors → Machine label color**. It is
+**Agents → Machine labels** (on by default) shows Herdr's label for the saved
+machine an agent runs on. **Agents → Machine label position** puts it after the
+space name (**After space name**), for example `○ Website · build-box · review`, or at the start of the
+details row (**In details row**). Local agents are never labeled. The label
+uses the agent details color, in bold, unless you change
+**Colors → Machine label**. It is
 Herdr's native token, so it has one fixed color rather than the space's, and no
 surrounding text such as parentheses. To change its text, rename the saved
 machine with `herdr machine rename`.
@@ -206,7 +211,7 @@ state labels come back when it next reports.
 
 ## Tab names
 
-**Display → Name tabs after agents** (off by default) renames each agent's tab
+**Tabs → Rename tabs from agent topic** (off by default) renames each agent's tab
 from its agent's terminal title, which agents set to their task or session name,
 for example after `/rename` in Claude Code. The worker does this on its normal
 sync, every few seconds, so no extra process runs.
@@ -215,11 +220,12 @@ sync, every few seconds, so no extra process runs.
   until the agent next retitles; the first sight of a tab counts as a change.
 - **Pin** a tab to keep its name past a title change: run the `pin-tab` action
   from that tab, or `src/tab_names.py pin --tab <tab_id>` with ids from
-  `herdr tab list`. Run it again to unpin. `pinned-tabs` lists pins.
+  `herdr tab list`. Run it again to unpin. `pinned-tabs` lists pins. To give
+  the action a key, set **Shortcuts → Pin tab name** (not set by default).
 - Product titles such as `Claude Code`, titles shorter than three characters and
   status words are ignored; Codex's `[ ! ] Action Required | Task | repo` names the
   tab `Task`. Escape sequences and markup are removed.
-- **Tab name format** takes `{topic}` and `{n}` (the tab number), e.g.
+- **Tabs → Tab name format** takes `{topic}` and `{n}` (the tab number), e.g.
   `{n}· {topic}`. Labels are capped at 128 characters.
 - History and pins are kept per Herdr session in the plugin's state directory
   (`tab-names.json`). On a saved SSH machine, tabs are named by that machine's
@@ -229,14 +235,20 @@ sync, every few seconds, so no extra process runs.
 
 Text colors follow the terminal theme by default. Space colors use 36 distinct
 xterm-256 swatches; choose darker shades on a light background. Turning off
-**Use space colors** uses the **Neutral names** color and keeps the saved
+**Use space colors** uses the **Names when colors are off** color and keeps the saved
 assignments. Herdr draws the compact sidebar rail itself; custom animations
 apply to the expanded sidebar.
 
 The seven animations have stable saved IDs (`01`, `03`, `04`, `19`, `20`, `22`,
-`23`) while the UI shows their names. Concentric rings use `○◎●◎`. Speed ranges
-from 0.25× to 4×. Turning off **Animate working agents** uses the **Working
-symbol** from the States page.
+`23`) while the UI shows their names. Rings use `○◎●◎`. Speed ranges
+from 0.25× to 4×. Turning off **Animate working agents** uses the **Working**
+symbol from the same Motion & symbols page.
+
+**Symbol set** fills all five state symbols at once: **Circles** (the default,
+`○ ● ● ⊘ ·` for idle, working, done, blocked and unknown), **Dots**
+(`◦ • • × ·`) or **Plain ASCII** (`- * + ! ?`). Editing one symbol makes the
+set **Custom**. The symbols take the space's color, so the settings page shows
+each beside a sample space name.
 
 ## Local data
 

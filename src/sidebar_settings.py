@@ -26,14 +26,15 @@ def bounce(frames):
 
 
 # Stable saved identifiers; durations are milliseconds at 1x.
+# Names stay short enough for one line in the settings gallery.
 ANIMATIONS = {
-    '01': ('Braille dots', '⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏', 100),
-    '03': ('Half circle', '◐◓◑◒', 180),
-    '04': ('Open arc', '◜◝◞◟', 180),
-    '19': ('Dot heartbeat', '·∙●∙', 220),
-    '20': ('Concentric rings', bounce('○◎●'), 160),
+    '01': ('Braille', '⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏', 100),
+    '03': ('Half moon', '◐◓◑◒', 180),
+    '04': ('Arc', '◜◝◞◟', 180),
+    '19': ('Heartbeat', '·∙●∙', 220),
+    '20': ('Rings', bounce('○◎●'), 160),
     '22': ('Starburst', bounce('✶✸✹✺'), 150),
-    '23': ('Rising bar', bounce('▁▂▃▄▅▆▇█'), 90),
+    '23': ('Bar', bounce('▁▂▃▄▅▆▇█'), 90),
 }
 # Stable IDs from the reviewed Nerd Fonts gallery; labels stay human-readable.
 GIT_ICONS = {
@@ -69,17 +70,31 @@ DEFAULTS = {
     'idle_symbol': '○', 'working_symbol': '●', 'done_symbol': '●',
     'blocked_symbol': '⊘', 'unknown_symbol': '·',
     'shortcut_settings': 'prefix+shift+s',
-    'shortcut_colours': 'prefix+shift+c', 'shortcut_spacing': '',
+    'shortcut_colours': 'prefix+shift+c', 'shortcut_spacing': '', 'shortcut_pin_tab': '',
 }
 SHORTCUTS = {
     'shortcut_settings': ('settings', 'Herdr Sidebar Customizer settings'),
     'shortcut_colours': ('space-color', 'choose space color'),
     'shortcut_spacing': ('toggle-spacing', 'toggle compact sidebar spacing'),
+    'shortcut_pin_tab': ('pin-tab', "pin or unpin this tab's name"),
 }
+# Users could bind pin-tab by hand before it had a setting. Only a binding with
+# this plugin's own description is managed, so Apply leaves theirs alone.
+DESCRIBED_ONLY = {PLUGIN + '.pin-tab': SHORTCUTS['shortcut_pin_tab'][1]}
 FIELDS = {'agent', 'model', 'effort', 'context', 'used', 'remaining', 'capacity',
           'used_pct', 'remaining_pct'}
 DEFAULT_TEMPLATE = '{agent} {model} · {effort} · {context}'
 MANAGED_COMMANDS = frozenset(PLUGIN + '.' + action for action, _ in SHORTCUTS.values())
+
+
+def is_managed(command):
+    """Whether a parsed [[keys.command]] table is one this plugin writes and replaces."""
+    name = command.get('command')
+    if name not in MANAGED_COMMANDS:
+        return False
+    return name not in DESCRIBED_ONLY or command.get('description') == DESCRIBED_ONLY[name]
+
+
 CHOICES = {
     'machine_position': ('name', 'details'),
     'git_icon': GIT_ICONS,
@@ -389,7 +404,7 @@ def render_shortcuts(text, settings):
     """Replace only this plugin's shortcut tables; other command tables stay intact."""
     text = text.replace(OLD_SHORTCUT_COMMENT, '')
     for start, end, raw in reversed(list(command_chunks(text))):
-        if tomllib.loads(raw)['keys']['command'][0].get('command') in MANAGED_COMMANDS:
+        if is_managed(tomllib.loads(raw)['keys']['command'][0]):
             text = text[:start] + text[end:]
     text = text.rstrip() + '\n'
     for key, (action, description) in SHORTCUTS.items():
@@ -422,7 +437,7 @@ def unowned_settings(data):
         table.pop('rows', None)
         table.pop('row_gap', None)
     keymap = data.setdefault('keys', {})
-    keymap['command'] = [c for c in keymap.get('command', []) if c.get('command') not in MANAGED_COMMANDS]
+    keymap['command'] = [c for c in keymap.get('command', []) if not is_managed(c)]
     return compact_empty(data)
 
 
@@ -500,7 +515,7 @@ def occupied_chords(keys):
     for chord in chords(keys.get('prefix', native.get('prefix', 'ctrl+b'))):
         occupied[chord] = PREFIX_OWNER
     for command in keys.get('command', []):
-        if command.get('command') not in MANAGED_COMMANDS:
+        if not is_managed(command):
             for chord in chords(command['key']):
                 occupied[chord] = command.get('description', 'another command')
     return occupied
@@ -514,7 +529,7 @@ def may_keep_shadowing(owner):
 def check_shortcuts(text, settings):
     keys = tomllib.loads(text).get('keys', {})
     saved = {command['command']: chords(command['key']) for command in keys.get('command', [])
-             if command.get('command') in MANAGED_COMMANDS}
+             if is_managed(command)}
     occupied = occupied_chords(keys)
     for key, (action, description) in SHORTCUTS.items():
         kept = saved.get(PLUGIN + '.' + action, set())

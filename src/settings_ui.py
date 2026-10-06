@@ -18,112 +18,230 @@ from sidebar_state import symbol
 from space_rows import PLACEHOLDER_COLOUR
 
 
-# A field is (key, label, options, help). None options means free text;
-# a tuple is a cyclic choice (booleans included); an empty tuple is a swatch picker.
+# A field's options are None for free text, a tuple for a cyclic choice
+# (booleans included), or an empty tuple for a picker such as a swatch grid.
+# Keys starting with '@' are UI-only: they read and write saved settings
+# but are never saved themselves.
+Field = namedtuple('Field', 'key label options help')
+Heading = namedtuple('Heading', 'title')
+Section = namedtuple('Section', 'name items')
+
 ON_OFF = (False, True)
+GAPS = (0, 1)
 SPEEDS = (.25, .5, .75, 1.0, 1.25, 1.5, 2.0, 3.0, 4.0)
-STATE_SYMBOL_HELP = 'One single-width symbol. Working uses this when animation is off.'
-SHORTCUT_HELP = 'Use prefix+shift+s or ctrl+alt+s; empty disables. Conflicts are rejected.'
+STATES = ('idle', 'working', 'done', 'blocked', 'unknown')
+AGENT_LABELS = (('claude_label', 'Claude'), ('codex_label', 'Codex'),
+                ('opencode_label', 'OpenCode'), ('pi_label', 'pi'), ('omp_label', 'omp'))
+# Single-width presets in STATES order; Circles matches the defaults.
+SYMBOL_SETS = {
+    'circles': ('○', '●', '●', '⊘', '·'),
+    'dots': ('◦', '•', '•', '×', '·'),
+    'ascii': ('-', '*', '+', '!', '?'),
+}
+STATE_SYMBOL_HELP = 'One single-width symbol; it overrides the symbol set.'
+SHORTCUT_HELP = 'Type a binding such as prefix+shift+g; clear it to remove.'
+CHOICE_LABELS = {
+    '@row_shows': {'both': 'Symbol and name', 'name': 'Name only',
+                   'symbol': 'Symbol only', 'neither': 'Nothing'},
+    '@context': {'used': 'Used %', 'remaining': 'Remaining %', 'off': 'Off'},
+    '@symbol_set': {'circles': 'Circles', 'dots': 'Dots', 'ascii': 'Plain ASCII',
+                    'custom': 'Custom'},
+    'empty_git_row': {'hide': 'Shorter row', 'blank': 'Blank line', 'placeholder': 'Explain why'},
+    'machine_position': {'name': 'After space name', 'details': 'In details row'},
+    'text_mode': {'automatic': 'Pick fields', 'custom': 'Write a template'},
+    'default_shade': {'dark': 'Dark', 'medium': 'Medium', 'light': 'Light'},
+}
+
+
+# Merged controls. Each reads a value from the draft and writes it back
+# through the saved keys it stands for.
+ROW_SHOWS = {'both': (True, True), 'name': (False, True), 'symbol': (True, False)}
+
+
+def row_shows(draft):
+    shown = (draft['state_icons'], draft['space_names'])
+    return next((choice for choice, pair in ROW_SHOWS.items() if pair == shown), 'neither')
+
+
+def set_row_shows(draft, choice):
+    draft['state_icons'], draft['space_names'] = ROW_SHOWS[choice]
+
+
+def git_icon_choice(draft):
+    return draft['git_icon'] if draft['show_git_icon'] else 'none'
+
+
+def set_git_icon_choice(draft, choice):
+    draft['show_git_icon'] = choice != 'none'
+    # The last icon stays saved while hidden, ready for next time.
+    if choice != 'none':
+        draft['git_icon'] = choice
+
+
+def context_choice(draft):
+    return draft['context_mode'] if draft['show_context'] else 'off'
+
+
+def set_context_choice(draft, choice):
+    draft['show_context'] = choice != 'off'
+    if choice != 'off':
+        draft['context_mode'] = choice
+
+
+def symbol_set(draft):
+    current = tuple(draft[state + '_symbol'] for state in STATES)
+    return next((name for name, symbols in SYMBOL_SETS.items() if symbols == current), 'custom')
+
+
+def set_symbol_set(draft, name):
+    for state, glyph in zip(STATES, SYMBOL_SETS[name]):
+        draft[state + '_symbol'] = glyph
+
+
+MERGED = {
+    '@row_shows': (row_shows, set_row_shows),
+    '@git_icon': (git_icon_choice, set_git_icon_choice),
+    '@context': (context_choice, set_context_choice),
+    '@symbol_set': (symbol_set, set_symbol_set),
+}
+
 SECTIONS = [
-    ('Display', [
-        ('state_icons', 'State indicators', ON_OFF, 'Show working, idle, done and blocked symbols.'),
-        ('space_names', 'Space names', ON_OFF, 'Show the workspace name beside its indicator.'),
-        ('show_tab', 'Tab names', ON_OFF, 'Show tab names alongside the space in the Agents list.'),
-        ('tab_names', 'Name tabs after agents', ON_OFF, "Rename each agent's tab from its title, e.g. after /rename. A name you type stays until the title changes; pin a tab to keep it."),
-        ('tab_name_format', 'Tab name format', None, 'Use {topic} for the agent\'s topic and {n} for the tab number, e.g. "{n}· {topic}".'),
-        ('show_machine', 'Machine labels', ON_OFF, 'Show the saved SSH machine name on agents from other machines. Local agents are never labeled.'),
-        ('machine_position', 'Machine label position', ('name', 'details'), 'After the space name on the tab row, or leading the details row.'),
-        ('spaces_gap', 'Spaces spacing', (0, 1), 'Compact or one blank row between entries.'),
-        ('agents_gap', 'Agents spacing', (0, 1), 'Independent of the Spaces list spacing.'),
-        ('name_bold', 'Bold space names', ON_OFF, 'Applies to the combined name and state indicator.'),
+    Section('Spaces', [
+        Field('@row_shows', 'Space row shows', tuple(ROW_SHOWS),
+              'The state symbol shows what the space\'s agents are doing.'),
+        Field('name_bold', 'Bold space names', ON_OFF, 'Applies to the symbol and name together.'),
+        Field('spaces_gap', 'Row spacing', GAPS,
+              'Spaced adds a blank row between spaces. Agents has its own setting.'),
+        Field('show_branch', 'Show branch', ON_OFF, 'Show the current Git branch under the space.'),
+        Field('show_git', 'Show ahead/behind', ON_OFF,
+              "Show Herdr's Git status, such as ↑1 ↓2 ahead and behind."),
+        Field('empty_git_row', 'Spaces without Git', tuple(CHOICE_LABELS['empty_git_row']),
+              'Shorter row drops the Git line. Blank line keeps every space the same height. '
+              'Explain why says why no Git details show.'),
+        Field('@git_icon', 'Git icon', ('none', *settings.GIT_ICONS),
+              'Shown on Git rows. Needs a Nerd Font in your terminal; the preview shows your choice.'),
     ]),
-    ('Git', [
-        ('show_branch', 'Git branch', ON_OFF, 'Show the current branch in the Spaces list.'),
-        ('show_git', 'Git status', ON_OFF, 'Show the native Git status and ahead/behind indicators.'),
-        ('empty_git_row', 'Empty Git row', ('hide', 'blank', 'placeholder'), 'Hide collapses the row. Blank keeps its height. Placeholder explains why Git details are absent.'),
-        ('show_git_icon', 'Show Git icon', ON_OFF, 'Show the selected Nerd Font icon on populated Git rows. Requires a Nerd Font in your terminal.'),
-        ('git_icon', 'Git icon style', tuple(settings.GIT_ICONS), 'Left/Right selects a GitHub, repository or Git icon. The sample rows preview your choice; Apply saves it.'),
+    Section('Agents', [
+        Field('collect_details', 'Collect agent details', ON_OFF,
+              'Read model, effort and context from local Claude, Codex, OpenCode, pi and omp '
+              'session data. Nothing is sent anywhere.'),
+        Heading('DETAILS ROW'),
+        Field('agent_text', 'Details row', ON_OFF, 'Show a row of agent details under each agent.'),
+        Field('detail_hints', 'Missing-detail hints', ON_OFF,
+              'Say in the details row why model or context is missing, e.g. needs herdr integration.'),
+        Field('text_mode', 'Details text', tuple(CHOICE_LABELS['text_mode']),
+              'Pick fields uses the switches below; Write a template gives full control. '
+              'Each keeps its own settings.'),
+        Field('show_agent', 'Agent name', ON_OFF, 'Show the agent name, as set in Agent names.'),
+        Field('show_model', 'Model', ON_OFF, 'Show the model reported by the session.'),
+        Field('show_effort', 'Reasoning effort', ON_OFF, 'Unknown effort is left out.'),
+        Field('@context', 'Context', tuple(CHOICE_LABELS['@context']),
+              'Context used or left, from the session itself; never an assumed size.'),
+        Field('show_capacity', 'Show window size (/1M)', ON_OFF,
+              'Add the context window, for example 25%/1M.'),
+        Field('@agent_names', 'Agent names', None,
+              'Enter edits the name shown for each agent; this does not change agent identity.'),
+        Field('text_template', 'Template', None,
+              'Enter edits the template. The fields you can use are listed below it.'),
+        Heading('LABELS AND SPACING'),
+        Field('show_machine', 'Machine labels', ON_OFF,
+              'Show the saved SSH machine name on agents from other machines. '
+              'Local agents are never labeled.'),
+        Field('machine_position', 'Machine label position', tuple(CHOICE_LABELS['machine_position']),
+              'After the space name on the first row, or leading the details row.'),
+        Field('agents_gap', 'Row spacing', GAPS,
+              'Spaced adds a blank row between agents. Spaces has its own setting.'),
     ]),
-    ('Agent text', [
-        ('agent_text', 'Agent details row', ON_OFF, 'Show the configurable agent/model/effort/context row.'),
-        ('collect_details', 'Collect agent details', ON_OFF, 'Read model/context metadata from local Claude, Codex, OpenCode, pi and omp session data. Off stops collection, independently of visibility.'),
-        ('detail_hints', 'Missing-detail hints', ON_OFF, 'Say in the details row why model or context is missing, e.g. needs herdr integration.'),
-        ('text_mode', 'Text layout', ('automatic', 'custom'), 'Choose field controls or a custom template. Each mode keeps its own settings.'),
-        ('show_agent', 'Agent name', ON_OFF, 'Show the agent name, using the labels below.'),
-        ('show_model', 'Model', ON_OFF, 'Show the model reported by the session.'),
-        ('show_effort', 'Reasoning effort', ON_OFF, 'Unknown effort is omitted.'),
-        ('show_context', 'Context usage', ON_OFF, 'Use the current session usage, never an assumed capacity.'),
-        ('show_capacity', 'Context capacity', ON_OFF, 'Include the reported window, for example 25%/1M.'),
-        ('context_mode', 'Context display', ('used', 'remaining'), 'Remaining includes a "left" label to distinguish it from used.'),
-        ('claude_label', 'Claude label', None, 'Custom visible name; this does not change agent identity.'),
-        ('codex_label', 'Codex label', None, 'Custom visible name for Codex in automatic mode.'),
-        ('opencode_label', 'OpenCode label', None, 'Custom visible name for OpenCode in automatic mode.'),
-        ('pi_label', 'pi label', None, 'Custom visible name for pi in automatic mode.'),
-        ('omp_label', 'omp label', None, 'Custom visible name for omp (oh-my-pi) in automatic mode.'),
-        ('text_template', 'Custom text template', None, 'Enter edits the template. Available fields and examples are shown below.'),
+    Section('Tabs', [
+        Field('show_tab', 'Show tab name', ON_OFF, 'Show the tab name after the space in the Agents list.'),
+        Field('tab_names', 'Rename tabs from agent topic', ON_OFF,
+              "Rename each agent's tab from its title, e.g. after /rename. A name you type stays "
+              'until the title changes; pin a tab to keep it.'),
+        Field('tab_name_format', 'Tab name format', None,
+              'Use {topic} for the agent\'s topic and {n} for the tab number, e.g. "{n}· {topic}".'),
     ]),
-    ('Animation', [
-        ('animate', 'Animate working agents', ON_OFF, 'Off uses the static working symbol from States.'),
-        ('animation', 'Working animation', tuple(settings.ANIMATIONS), 'Left/Right selects an animation; click any preview to choose it.'),
-        ('speed', 'Animation speed', SPEEDS, 'A multiplier of each animation\'s natural speed; 1x preserves the preview cadence.'),
+    Section('Colors', [
+        Heading('SPACES'),
+        Field('space_colours', 'Use space colors', ON_OFF,
+              'Off uses the color below for every name; saved space colors are kept.'),
+        Field('@space', 'Space', (), 'Choose the space whose color to edit.'),
+        Field('@colour', 'Color', (),
+              'Choose from the swatches below. Enter focuses the palette; Escape returns to fields.'),
+        Field('default_hue', 'New-space hue', ('random', *(hue for hue, *_ in space_colors.HUES)),
+              'Applies only to new spaces; existing colors stay as they are.'),
+        Field('default_shade', 'New-space shade', tuple(CHOICE_LABELS['default_shade']),
+              'Applies only to new spaces.'),
+        Heading('TEXT'),
+        Field('neutral_colour', 'Names when colors are off', (),
+              'Used for space names while Use space colors is off.'),
+        Field('agent_colour', 'Agent details', (), 'Neutrals are included for text.'),
+        Field('tab_colour', 'Tab name', (), 'Choose a swatch below.'),
+        Field('machine_colour', 'Machine label', (),
+              'By default labels match the agent details color, in bold.'),
+        Field('branch_colour', 'Branch', (), 'Git status keeps its own colors.'),
     ]),
-    ('Colors', [
-        ('space_colours', 'Use space colors', ON_OFF, 'Off uses the neutral color; saved space assignments are retained.'),
-        ('@space', 'Selected space', (), 'Choose the space whose color to edit.'),
-        ('@colour', 'Selected space color', (), 'Choose from the swatches below. Enter focuses the palette; Escape returns to fields.'),
-        ('default_hue', 'New-space hue', ('random', *(hue for hue, *_ in space_colors.HUES)), 'Applies only to new spaces; existing assignments stay as they are.'),
-        ('default_shade', 'New-space shade', ('dark', 'medium', 'light'), 'Applies only to newly assigned spaces.'),
-        ('neutral_colour', 'Neutral names', (), 'Choose a swatch below. Used when space colors are off.'),
-        ('agent_colour', 'Agent details color', (), 'Choose a swatch below. Neutrals are included for text.'),
-        ('tab_colour', 'Tab name color', (), 'Choose a swatch below.'),
-        ('machine_colour', 'Machine label color', (), 'Choose a swatch below. By default labels match the agent details color, in bold.'),
-        ('branch_colour', 'Branch color', (), 'Choose a swatch below. Git status retains its native semantic colors.'),
+    Section('Motion & symbols', [
+        Heading('MOTION'),
+        Field('animate', 'Animate working agents', ON_OFF,
+              'Off shows the static Working symbol below.'),
+        Field('animation', 'Animation', tuple(settings.ANIMATIONS),
+              'Left/Right selects an animation; click any preview to choose it.'),
+        Field('speed', 'Animation speed', SPEEDS,
+              "A multiplier of each animation's natural speed; 1x matches the preview."),
+        Heading('SYMBOLS'),
+        Field('@symbol_set', 'Symbol set', tuple(SYMBOL_SETS),
+              'Sets all five symbols at once. Edit one below to make your own set.'),
+        Field('idle_symbol', 'Idle', None, STATE_SYMBOL_HELP),
+        Field('working_symbol', 'Working', None, STATE_SYMBOL_HELP),
+        Field('done_symbol', 'Done', None, STATE_SYMBOL_HELP),
+        Field('blocked_symbol', 'Blocked', None, STATE_SYMBOL_HELP),
+        Field('unknown_symbol', 'Unknown', None, STATE_SYMBOL_HELP),
     ]),
-    ('States', [
-        ('idle_symbol', 'Idle symbol', None, STATE_SYMBOL_HELP),
-        ('working_symbol', 'Working symbol', None, STATE_SYMBOL_HELP),
-        ('done_symbol', 'Done symbol', None, STATE_SYMBOL_HELP),
-        ('blocked_symbol', 'Blocked symbol', None, STATE_SYMBOL_HELP),
-        ('unknown_symbol', 'Unknown symbol', None, STATE_SYMBOL_HELP),
-    ]),
-    ('Shortcuts', [
-        ('shortcut_settings', 'Open settings', None, SHORTCUT_HELP),
-        ('shortcut_colours', 'Space color picker', None, SHORTCUT_HELP),
-        ('shortcut_spacing', 'Toggle spacing', None, SHORTCUT_HELP),
+    Section('Shortcuts', [
+        Field('shortcut_settings', 'Open settings', None, SHORTCUT_HELP),
+        Field('shortcut_colours', 'Space color picker', None, SHORTCUT_HELP),
+        Field('shortcut_spacing', 'Toggle spacing', None, SHORTCUT_HELP),
+        Field('shortcut_pin_tab', 'Pin tab name', None, SHORTCUT_HELP),
     ]),
 ]
+# Pages whose settings change the sample rows; the others hide the previews.
+PREVIEW_PAGES = ('Spaces', 'Agents', 'Tabs', 'Colors', 'Motion & symbols')
+AUTOMATIC_ONLY = {'show_agent', 'show_model', 'show_effort', '@context', 'show_capacity',
+                  '@agent_names'}
+# These only shape the details row, so they mean nothing while it is hidden.
+DETAILS_ROW_DEPENDENTS = AUTOMATIC_ONLY | {'detail_hints', 'text_mode', 'text_template'}
+SYMBOL_DEPENDENTS = {'animate', 'animation', 'speed', '@symbol_set',
+                     *(state + '_symbol' for state in STATES)}
 
-# Everything on Agent text except the row switch and collection itself is
-# meaningless while the row is hidden.
-AGENT_TEXT_DEPENDENTS = (
-    {key for name, fields in SECTIONS if name == 'Agent text' for key, *_ in fields}
-    - {'agent_text', 'collect_details'}
-)
+
+def find_field(key):
+    """The field for a key, wherever it appears."""
+    return next(item for section in SECTIONS for item in section.items
+                if isinstance(item, Field) and item.key == key)
 
 
 def inactive_reason(session, key):
     """Explain inactive fields while keeping their saved choices intact."""
     draft = session.draft
     if key == 'tab_name_format' and not draft['tab_names']:
-        return 'Inactive: turn on Name tabs after agents.'
-    if key in ('animate', 'animation', 'speed') or key.endswith('_symbol'):
-        if not draft['state_icons']:
-            return 'Inactive: turn on State indicators on Display.'
+        return 'Inactive: turn on Rename tabs from agent topic.'
+    if key in SYMBOL_DEPENDENTS and not draft['state_icons']:
+        return 'Inactive: choose a symbol in Space row shows on Spaces.'
     if key in ('animation', 'speed') and not draft['animate']:
         return 'Inactive: turn on Animate working agents.'
     if key == 'working_symbol' and draft['animate']:
-        return 'Inactive: turn off Animate working agents on Animation.'
+        return 'Inactive: turn off Animate working agents to use it.'
     if key == 'detail_hints' and not draft['collect_details']:
         return 'Inactive: turn on Collect agent details.'
-    if key in ('machine_colour', 'machine_position') and not draft['show_machine']:
-        return 'Inactive: turn on Machine labels on Display.'
-    if key == 'git_icon' and not draft['show_git_icon']:
-        return 'Inactive: turn on Show Git icon.'
-    if key in AGENT_TEXT_DEPENDENTS and not draft['agent_text']:
-        return 'Inactive: turn on Agent details row on Agent text.'
-    if key in ('show_capacity', 'context_mode') and not draft['show_context']:
-        return 'Inactive: turn on Context usage.'
-    if key.endswith('_label') and not draft['show_agent']:
+    if key == 'machine_position' and not draft['show_machine']:
+        return 'Inactive: turn on Machine labels.'
+    if key == 'machine_colour' and not draft['show_machine']:
+        return 'Inactive: turn on Machine labels on Agents.'
+    if key in DETAILS_ROW_DEPENDENTS and not draft['agent_text']:
+        return 'Inactive: turn on Details row.'
+    if key == 'show_capacity' and not draft['show_context']:
+        return 'Inactive: Context is Off.'
+    if key == '@agent_names' and not draft['show_agent']:
         return 'Inactive: turn on Agent name.'
     if key.startswith('shortcut_') and session.layout_mode == 'manual':
         return 'Inactive: manual layout leaves shortcuts to your own Herdr config.'
@@ -132,17 +250,44 @@ def inactive_reason(session, key):
 
 def field_help(session, field):
     """Static help, plus the worker's latest missing-detail findings for collection."""
-    if field[0] != 'collect_details' or not session.draft['collect_details']:
-        return field[3]
+    if field.key != 'collect_details' or not session.draft['collect_details']:
+        return field.help
     from detail_hints import issues
-    found = issues(read_json(session.directory / 'status.json'))
-    return ' '.join(found) if found else field[3]
+    found = issues(session.worker_status())
+    return ' '.join(found) if found else field.help
+
+
+def plural(count, noun):
+    return f"{count} {noun}{'' if count == 1 else 's'}"
+
+
+def collection_status(session):
+    """One line on what the worker last found; empty when there is nothing to say."""
+    if not session.draft['collect_details']:
+        return ''
+    if not session.base['collect_details']:
+        return 'Collection starts when you apply.'
+    status = session.worker_status()
+    if 'checked_at' not in status:
+        return ''
+    from detail_hints import summaries
+    unsessioned = sum((status.get('missing_session') or {}).values())
+    unreadable = sum((status.get('unreadable_session') or {}).values())
+    total = status.get('agents', 0) + unsessioned + unreadable
+    if not total:
+        return 'No supported agents are running.'
+    text = f"Reading details for {status.get('models', 0)} of {plural(total, 'agent')}"
+    found = summaries(status)
+    return text + (' · ' + found[0] if found else '')
 
 
 def default_space_color(draft, random_hue):
     """The color a new space would get; random_hue stands in when the hue is random."""
     hue = random_hue if draft['default_hue'] == 'random' else draft['default_hue']
     return f"{hue}_{draft['default_shade']}"
+
+
+STATUS_REFRESH_SECONDS = 1
 
 
 class Session:
@@ -152,6 +297,8 @@ class Session:
         self.layout_mode = layout_mode
         self.message = ''
         self.wid = os.environ.get('HERDR_WORKSPACE_ID')
+        self.status = {}
+        self.status_read_at = None
         self.reload()
 
     def reload(self):
@@ -172,9 +319,24 @@ class Session:
         self.colours = dict(base_colours)
         self.preview_colour = None
 
+    def worker_status(self):
+        """The worker's status.json, reread at most once a second while drawing."""
+        now = time.monotonic()
+        if self.status_read_at is None or now - self.status_read_at >= STATUS_REFRESH_SECONDS:
+            self.status = read_json(self.directory / 'status.json')
+            self.status_read_at = now
+        return self.status
+
     @property
     def dirty(self):
         return self.draft != self.base or self.colours != self.base_colours
+
+    @property
+    def change_count(self):
+        """Saved settings and space colors that differ from the draft."""
+        changed = sum(self.draft[key] != self.base.get(key) for key in self.draft)
+        recolored = sum(self.base_colours.get(wid) != colour for wid, colour in self.colours.items())
+        return changed + recolored
 
     def value(self, key):
         if key == '@space':
@@ -182,6 +344,10 @@ class Session:
         if key == '@colour':
             fallback = self.preview_colour or default_space_color(self.draft, 'blue')
             return self.colours.get(self.wid, fallback)
+        if key == '@agent_names':
+            return ', '.join(self.draft[label] for label, _ in AGENT_LABELS)
+        if key in MERGED:
+            return MERGED[key][0](self.draft)
         return self.draft[key]
 
     def set(self, key, value):
@@ -194,25 +360,38 @@ class Session:
         if key == '@space':
             self.wid = value
         elif key == '@colour':
-            if self.wid:
-                self.colours[self.wid] = value
-            else:
-                self.preview_colour = value
+            self.set_space_colour(value)
+        elif key in MERGED:
+            MERGED[key][1](self.draft, value)
         else:
             self.draft[key] = value
             if key == 'text_mode' and value == 'custom' and not self.draft['text_template']:
                 self.draft['text_template'] = settings.DEFAULT_TEMPLATE
 
+    def set_space_colour(self, value):
+        if self.wid:
+            self.colours[self.wid] = value
+        else:
+            self.preview_colour = value
+
+    def choices(self, field):
+        if field.key == '@space':
+            return tuple(space['workspace_id'] for space in self.spaces)
+        if is_color(field.key):
+            return tuple(value for value, _, _ in color_options(self, field.key))
+        return field.options or ()
+
     def cycle(self, field, step):
-        key, _, options, _ = field
-        if key == '@space':
-            options = tuple(space['workspace_id'] for space in self.spaces)
-        if is_color(key):
-            options = tuple(value for value, _, _ in color_options(self, key))
-        if options:
-            current = self.value(key)
-            index = options.index(current) if current in options else 0
-            self.set(key, options[(index + step) % len(options)])
+        options = self.choices(field)
+        if not options:
+            return
+        current = self.value(field.key)
+        if current in options:
+            index = options.index(current) + step
+        else:
+            # A value no choice names, such as custom symbols, steps onto the nearest end.
+            index = 0 if step > 0 else -1
+        self.set(field.key, options[index % len(options)])
 
     def apply(self):
         changes = {wid: color for wid, color in self.colours.items()
@@ -240,24 +419,30 @@ def display_value(session, key):
                     'Sample space (preview only)')
     if is_color(key):
         return next(label for choice, label, _ in color_options(session, key) if choice == value)
+    if key in CHOICE_LABELS:
+        return CHOICE_LABELS[key][value]
     if isinstance(value, bool):
         return 'On' if value else 'Off'
     if key == 'animation':
         return settings.ANIMATIONS[value][0]
-    if key == 'git_icon':
-        label, glyph = settings.GIT_ICONS[value]
-        return glyph + ' ' + label
-    if key == 'empty_git_row':
+    if key == '@git_icon':
+        return git_icon_label(value)
+    if key == 'default_hue':
         return value.title()
-    if key == 'text_mode':
-        return 'Automatic fields' if value == 'automatic' else 'Custom template'
     if key == 'speed':
         return f'{value:g}x'
     if key.endswith('_gap'):
         return 'Spaced' if value else 'Compact'
     if value == '':
-        return '(disabled)' if key.startswith('shortcut_') else '(empty)'
+        return 'Not set' if key.startswith('shortcut_') else 'Empty'
     return str(value)
+
+
+def git_icon_label(ident):
+    if ident == 'none':
+        return 'None'
+    label, glyph = settings.GIT_ICONS[ident]
+    return glyph + ' ' + label
 
 
 def put(screen, y, x, text, style=0):
@@ -299,7 +484,7 @@ def apply_edit_key(value, position, key):
 
 
 def edit_text(screen, title, value):
-    original = value
+    """A one-line editor on the bottom rows; return the new text, or None when cancelled."""
     position = len(value)
     screen.timeout(-1)
     curses.curs_set(1)
@@ -307,7 +492,7 @@ def edit_text(screen, title, value):
         while True:
             height, width = screen.getmaxyx()
             if height < 5 or width < 12:
-                return original
+                return None
             y = height - 4
             for row in range(y, height):
                 screen.move(row, 0)
@@ -322,11 +507,21 @@ def edit_text(screen, title, value):
             if key in ENTER_KEYS:
                 return value
             if key == ESCAPE:
-                return original
+                return None
             value, position = apply_edit_key(value, position, key)
     finally:
         curses.curs_set(0)
         screen.timeout(60)
+
+
+def edit_agent_names(screen, session):
+    """Edit each agent's visible name in turn; Escape stops at the current one."""
+    for number, (key, agent) in enumerate(AGENT_LABELS, 1):
+        title = f'name for {agent} ({number} of {len(AGENT_LABELS)})'
+        value = edit_text(screen, title, session.value(key))
+        if value is None:
+            return
+        session.set(key, value)
 
 
 # Text colors use the 36-swatch space palette plus neutrals, and a saved custom
@@ -342,9 +537,15 @@ def is_color(key):
     return key == '@colour' or key.endswith('_colour')
 
 
+def swatch_name(value):
+    """'teal_medium' -> 'Teal · Medium'."""
+    hue, shade = value.rsplit('_', 1)
+    return hue.title() + ' · ' + shade.title()
+
+
 def color_options(session, key):
     """Return (value, label, foreground) choices for a color field."""
-    palette = [(value, value.replace('_', ' ').title(), fg) for value, _, fg in space_colors.PALETTE]
+    palette = [(value, swatch_name(value), fg) for value, _, fg in space_colors.PALETTE]
     if key == '@colour':
         return palette
     options = [('theme', 'Follow theme', 'theme')]
@@ -364,14 +565,18 @@ def color_options(session, key):
     return options
 
 
+def active_items(session, section):
+    """The page's headings and fields, without those the current text mode hides."""
+    items = SECTIONS[section].items
+    if SECTIONS[section].name != 'Agents':
+        return items
+    template = session.draft['text_mode'] == 'custom'
+    hidden = {'text_template'} if not template else AUTOMATIC_ONLY
+    return [item for item in items if isinstance(item, Heading) or item.key not in hidden]
+
+
 def active_fields(session, section):
-    name, fields = SECTIONS[section]
-    if name != 'Agent text':
-        return fields
-    custom = session.draft['text_mode'] == 'custom'
-    always_shown = ('agent_text', 'collect_details', 'detail_hints', 'text_mode')
-    return [field for field in fields
-            if field[0] in always_shown or (field[0] == 'text_template') == custom]
+    return [item for item in active_items(session, section) if isinstance(item, Field)]
 
 
 def template_help(width):
@@ -389,7 +594,8 @@ def template_help(width):
         '',
         'Example: {agent} {model} · {effort} · {context}',
         'Remaining: {model} · {remaining_pct} left',
-        'Automatic-mode switches and labels do not apply here. Separate optional groups with ·; a group with no available fields disappears.',
+        'Pick-fields switches and agent names do not apply here. Separate optional groups '
+        'with ·; a group with no available fields disappears.',
     ]
     lines = []
     for paragraph in paragraphs:
@@ -436,12 +642,15 @@ def preview_rows(session, kind, now):
     return rows
 
 
+def name_color(draft, sample_color):
+    return PALETTE_FOREGROUNDS[sample_color] if draft['space_colours'] else draft['neutral_colour']
+
+
 def name_row(draft, sample, now):
-    fg = PALETTE_FOREGROUNDS[sample.color] if draft['space_colours'] else draft['neutral_colour']
     glyph = symbol(sample.status, now, draft) if draft['state_icons'] else ''
     name = sample.name if draft['space_names'] else ''
     label = ' '.join(part for part in (glyph, name) if part)
-    return [(label, fg, draft['name_bold'])] if label else []
+    return [(label, name_color(draft, sample.color), draft['name_bold'])] if label else []
 
 
 def space_sample_rows(draft, sample, now):
@@ -508,13 +717,17 @@ def sample_agent_info(draft, sample):
 
 
 # Curses color pair numbers, one per drawn cell so colors never clash:
-# previews use 1-48 (2 panels x 24: up to 6 rows of 4 segments),
+# previews use 1-48 (2 lists x 24: up to 6 rows of 4 segments),
 # form color fields 60-79 and palette swatches from 80 (at most 48 options).
 PREVIEW_PAIRS = 1
 PREVIEW_PAIRS_PER_PANEL = 24
 PREVIEW_PAIRS_PER_ROW = 4
 FIELD_PAIRS = 60
 SWATCH_PAIRS = 80
+# Each list has a heading and at most five rows (two samples, two rows each and
+# a gap), with a blank row between the lists. Reserving the full height keeps
+# the form still while settings change the sample rows.
+PREVIEW_HEIGHT = 13
 
 
 def color_attr(fg, pair):
@@ -526,17 +739,20 @@ def color_attr(fg, pair):
         return 0
 
 
-def preview(screen, session):
+def preview(screen, session, top):
+    """Draw the Spaces list with the Agents list under it, as Herdr's sidebar stacks them."""
     _, width = screen.getmaxyx()
-    column = (width - 5) // 2
-    put(screen, 2, 1, 'SAMPLE PREVIEWS  ·  first space has no Git repo', curses.A_DIM)
     now = time.monotonic()
+    y = top
     for panel, kind in enumerate(('spaces', 'agents')):
-        left = 2 + panel * (column + 2)
-        put(screen, 3, left, kind.upper(), curses.A_BOLD)
-        for row, segments in enumerate(preview_rows(session, kind, now)):
+        put(screen, y, 2, kind.upper(), curses.A_BOLD)
+        if kind == 'spaces':
+            put(screen, y, 10, 'samples · the first has no Git repo', curses.A_DIM)
+        rows = preview_rows(session, kind, now)
+        for row, segments in enumerate(rows):
             first_pair = PREVIEW_PAIRS + panel * PREVIEW_PAIRS_PER_PANEL + row * PREVIEW_PAIRS_PER_ROW
-            draw_segments(screen, 4 + row, left, column, segments, first_pair)
+            draw_segments(screen, y + 1 + row, 2, width - 4, segments, first_pair)
+        y += len(rows) + 2
 
 
 def draw_segments(screen, y, left, width, segments, first_pair):
@@ -550,9 +766,18 @@ def draw_segments(screen, y, left, width, segments, first_pair):
         x += len(text)
 
 
+GALLERY_LABEL_MIN = 10
+
+
 def animation_cells(width):
     size = max(1, (width - 4) // len(settings.ANIMATIONS))
     return [(ident, 2 + i * size, size) for i, ident in enumerate(settings.ANIMATIONS)]
+
+
+def gallery_height(width):
+    """A glyph row, plus a name row when the cells are wide enough for names."""
+    size = (width - 4) // len(settings.ANIMATIONS)
+    return 2 if size >= GALLERY_LABEL_MIN else 1
 
 
 def palette_cells(width, count):
@@ -566,26 +791,65 @@ def palette_cells(width, count):
     return cells
 
 
-def field_height(session, field, width):
-    key = field[0]
-    if key == 'animation':
-        return 5 if (width - 4) // 7 >= 10 else 3
-    if key == 'text_template':
-        template_lines = textwrap.wrap(session.value(key) or '(empty)', width - 4)
-        return 3 + len(template_lines) + len(template_help(width))
-    return 1
+HELP_INDENT = 5
 
 
-def form_layout(session, section, width):
-    """Return the section's fields, each field's (row, height), and the total rows."""
-    fields = active_fields(session, section)
-    positions = []
+def help_lines(session, field, width):
+    """The selected field's help, or why it is inactive, wrapped under it."""
+    text = inactive_reason(session, field.key) or field_help(session, field)
+    return textwrap.wrap(text, max(1, width - HELP_INDENT - 1))
+
+
+def status_lines(session, width):
+    return textwrap.wrap(collection_status(session), max(1, width - HELP_INDENT - 1))
+
+
+def template_lines(session, width):
+    return textwrap.wrap(session.value('text_template') or '(empty)', width - 4)
+
+
+def extra_height(session, field, width):
+    """Rows a field draws below its label row and help."""
+    if field.key == 'animation':
+        return gallery_height(width)
+    if field.key == 'text_template':
+        return len(template_lines(session, width)) + 1 + len(template_help(width))
+    if field.key == 'collect_details':
+        return len(status_lines(session, width))
+    return 0
+
+
+@dataclass
+class FormLayout:
+    fields: list
+    positions: list  # (row, height) per field; the selected one includes its help
+    headings: list  # (row, title)
+    total: int
+    value_column: int
+
+
+def form_layout(session, section, width, selected):
+    """Place the page's headings and fields; only the selected field shows help."""
+    fields, positions, headings = [], [], []
     row = 0
-    for field in fields:
-        height = field_height(session, field, width)
+    for item in active_items(session, section):
+        if isinstance(item, Heading):
+            row += 1 if row else 0
+            headings.append((row, item.title))
+            row += 1
+            continue
+        help_rows = len(help_lines(session, item, width)) if len(fields) == selected else 0
+        height = 1 + help_rows + extra_height(session, item, width)
+        fields.append(item)
         positions.append((row, height))
         row += height
-    return fields, positions, row
+    return FormLayout(fields, positions, headings, row, value_column(fields, width))
+
+
+def value_column(fields, width):
+    """Line values up just past the page's longest label, leaving room for the value."""
+    longest = max(len(field.label) for field in fields)
+    return min(longest + 5, width - 16)
 
 
 class FormCanvas:
@@ -614,48 +878,82 @@ class FormCanvas:
             self.hits.append((y, x, x + length, action))
 
 
-VALUE_COLUMN = 31
-
-
-def draw_form(screen, session, section, selected, scroll, top, bottom, color_target, palette_focus):
+def draw_form(screen, session, section, layout, view, top, bottom):
     """Draw a clipped, scrollable form; return its click targets and total height in rows."""
     _, width = screen.getmaxyx()
-    fields, positions, total = form_layout(session, section, width)
-    canvas = FormCanvas(screen, top, bottom, scroll)
-    for index, (field, (row, height)) in enumerate(zip(fields, positions)):
-        highlighted = index == selected and not palette_focus
-        draw_field(canvas, session, field, index, row, height, width, index == selected, highlighted)
-    if SECTIONS[section][0] == 'Colors':
-        total = draw_palette(canvas, session, fields, color_target, palette_focus, total + 1, width)
+    canvas = FormCanvas(screen, top, bottom, view.scroll)
+    for row, title in layout.headings:
+        canvas.draw(row, 1, title, curses.A_BOLD | curses.A_DIM)
+    for index, (field, (row, _)) in enumerate(zip(layout.fields, layout.positions)):
+        selected = index == view.selected
+        highlighted = selected and not view.palette_focus
+        draw_field(canvas, session, field, index, row, layout.value_column, width,
+                   selected, highlighted)
+    total = layout.total
+    if SECTIONS[section].name == 'Colors':
+        total = draw_palette(canvas, session, layout.fields, view.color_target,
+                             view.palette_focus, total + 1, width)
     return canvas.hits, total
 
 
-def draw_field(canvas, session, field, index, row, height, width, selected, highlighted):
-    key, label, _, _ = field
-    inactive = bool(inactive_reason(session, key))
+def draw_field(canvas, session, field, index, row, column, width, selected, highlighted):
+    inactive = bool(inactive_reason(session, field.key))
     attr = curses.A_REVERSE if highlighted else 0
     if inactive:
         attr |= curses.A_DIM
-    canvas.draw(row, 1, ('> ' if selected else '  ') + label, attr)
+    label = ('> ' if selected else '  ') + field.label
+    canvas.draw(row, 1, label[:column - 2], attr)
     canvas.hit(row, 1, width - 2, ('field', index))
-    if key == 'animation':
-        canvas.draw(row, VALUE_COLUMN, display_value(session, key), attr)
-        draw_animation_strip(canvas, session, index, row, height, width, inactive)
-    elif key == 'text_template':
-        draw_template_field(canvas, session, index, row, width, attr)
-    elif is_color(key):
+    draw_value(canvas, session, field, index, row, column, attr, inactive)
+    below = row + 1
+    if selected:
+        for line in help_lines(session, field, width):
+            canvas.draw(below, HELP_INDENT, line, curses.A_DIM)
+            below += 1
+    draw_extras(canvas, session, field, index, below, width, attr, inactive)
+
+
+def draw_value(canvas, session, field, index, row, column, attr, inactive):
+    key = field.key
+    if key == 'text_template':
+        return
+    if is_color(key):
         current = session.value(key)
         fg = next(fg for value, _, fg in color_options(session, key) if value == current)
         swatch_attr = curses.A_DIM if inactive else color_attr(fg, FIELD_PAIRS + index)
-        canvas.draw(row, VALUE_COLUMN, '██', swatch_attr)
-        canvas.draw(row, VALUE_COLUMN + 3, display_value(session, key), attr)
+        canvas.draw(row, column, '██', swatch_attr)
+        canvas.draw(row, column + 3, display_value(session, key), attr)
+    elif key.endswith('_symbol'):
+        draw_symbol_sample(canvas, session, key, index, row, column, inactive)
     else:
-        canvas.draw(row, VALUE_COLUMN, display_value(session, key), attr)
+        canvas.draw(row, column, display_value(session, key), attr)
 
 
-def draw_animation_strip(canvas, session, index, row, height, width, inactive):
-    """A clickable live preview of every animation below the field."""
+def draw_symbol_sample(canvas, session, key, index, row, column, inactive):
+    """The symbol beside a sample name, in the color and weight the sidebar uses."""
+    draft = session.draft
+    sample = preview_samples(session)[0]
+    style = curses.A_DIM
+    if not inactive:
+        style = color_attr(name_color(draft, sample.color), FIELD_PAIRS + index)
+        style |= curses.A_BOLD if draft['name_bold'] else 0
+    canvas.draw(row, column, draft[key] + ' ' + sample.name, style)
+
+
+def draw_extras(canvas, session, field, index, top, width, attr, inactive):
+    if field.key == 'animation':
+        draw_animation_gallery(canvas, session, index, top, width, inactive)
+    elif field.key == 'text_template':
+        draw_template_field(canvas, session, index, top, width, attr)
+    elif field.key == 'collect_details':
+        for dy, line in enumerate(status_lines(session, width)):
+            canvas.draw(top + dy, HELP_INDENT, line)
+
+
+def draw_animation_gallery(canvas, session, index, top, width, inactive):
+    """A clickable live preview of every animation, each named on one line."""
     now = 0 if inactive else time.monotonic()
+    height = gallery_height(width)
     for ident, x, size in animation_cells(width):
         glyph = symbol('working', now, session.draft | {'animation': ident, 'animate': True})
         chosen = ident == session.draft['animation']
@@ -664,21 +962,20 @@ def draw_animation_strip(canvas, session, index, row, height, width, inactive):
         else:
             glyph_attr = curses.A_REVERSE if chosen else 0
         cell = '[ ' + glyph + ' ]' if chosen else '  ' + glyph + '  '
-        canvas.draw(row + 1, x, cell, glyph_attr)
-        labels = textwrap.wrap(settings.ANIMATIONS[ident][0], size - 1) if size >= 10 else []
-        label_attr = curses.A_BOLD if chosen and not inactive else curses.A_DIM
-        for dy, line in enumerate(labels[:2]):
-            canvas.draw(row + 2 + dy, x, line, label_attr)
-        for dy in range(1, height - 1):
-            canvas.hit(row + dy, x, size, ('animation', ident, index))
+        canvas.draw(top, x, cell, glyph_attr)
+        if height > 1:
+            label_attr = curses.A_BOLD if chosen and not inactive else curses.A_DIM
+            canvas.draw(top + 1, x, settings.ANIMATIONS[ident][0][:size - 1], label_attr)
+        for dy in range(height):
+            canvas.hit(top + dy, x, size, ('animation', ident, index))
 
 
-def draw_template_field(canvas, session, index, row, width, attr):
-    lines = textwrap.wrap(session.value('text_template') or '(empty)', width - 4)
-    for dy, line in enumerate(lines, 1):
-        canvas.draw(row + dy, 3, line, attr)
-        canvas.hit(row + dy, 1, width - 2, ('field', index))
-    help_top = row + 3 + len(lines)
+def draw_template_field(canvas, session, index, top, width, attr):
+    lines = template_lines(session, width)
+    for dy, line in enumerate(lines):
+        canvas.draw(top + dy, 3, line, attr)
+        canvas.hit(top + dy, 1, width - 2, ('field', index))
+    help_top = top + len(lines) + 1
     for dy, line in enumerate(template_help(width)):
         canvas.draw(help_top + dy, 3, line, curses.A_DIM)
 
@@ -686,7 +983,7 @@ def draw_template_field(canvas, session, index, row, width, attr):
 def draw_palette(canvas, session, fields, target, palette_focus, start, width):
     """Draw the swatch grid for the target color field; return the form's new height."""
     options = color_options(session, target)
-    label = next(field[1] for field in fields if field[0] == target)
+    label = next(field.label for field in fields if field.key == target)
     canvas.draw(start, 1, label + ' — choose a swatch', curses.A_BOLD)
     if palette_focus:
         hint = 'Arrows: choose   Enter / Esc: back to fields'
@@ -712,10 +1009,13 @@ def draw_palette(canvas, session, fields, target, palette_focus, start, width):
     return end + 2
 
 
+TITLE = 'HERDR SIDEBAR CUSTOMIZER'
 MIN_HEIGHT, MIN_WIDTH = 24, 48
 PREVIEW_MIN_HEIGHT = 32
-NAVIGATION_HINT = 'Tab: page  Up/Down: select  Left/Right: change  Enter: edit  PgUp/PgDn: scroll'
-BUTTONS = (('A Apply', 'a'), ('U Reload', 'u'), ('D Defaults', 'd'), ('Q Close', 'q'))
+# Hints with a key are also clickable buttons.
+HINTS = (('←→ change', None), ('↵ edit', None), ('Tab page', None), ('A apply', 'a'),
+         ('U undo all', 'u'), ('D defaults', 'd'), ('Q close', 'q'))
+HINT_SEPARATOR = ' · '
 PAGE_KEYS = tuple(str(number) for number in range(1, len(SECTIONS) + 1))
 ACTIVATE_KEYS = (*ENTER_KEYS, ' ')
 ARROW_KEYS = (curses.KEY_LEFT, curses.KEY_RIGHT, curses.KEY_UP, curses.KEY_DOWN)
@@ -733,7 +1033,7 @@ class View:
     scroll: int = 0
     color_target: str = '@colour'
     palette_focus: bool = False
-    pending: str | None = None  # 'close' or 'reload' while awaiting confirmation
+    pending: str | None = None  # 'close' or 'undo' while awaiting confirmation
     reveal: bool = True  # scroll the selection into view on the next frame
 
     def open_page(self, section):
@@ -801,10 +1101,22 @@ def screen_main(screen, session):
             session.message = str(error)
 
 
+def save_state(session, width):
+    """'Saved', or how many changes await Apply, shortened to fit beside the title."""
+    count = session.change_count
+    if not count:
+        return 'Saved', curses.A_DIM
+    text = f"{count} unsaved {'change' if count == 1 else 'changes'} · A to apply"
+    if len(TITLE) + 3 + len(text) > width - 2:
+        text = f'{count} unsaved · A to apply'
+    return text, curses.A_REVERSE | curses.A_BOLD
+
+
 def draw_title(screen, session):
-    state = '  [unsaved]' if session.dirty else '  [saved]'
-    put(screen, 0, 1, 'HERDR SIDEBAR CUSTOMIZER' + state, curses.A_BOLD)
-    put(screen, 1, 1, 'Draft preview only. Apply saves changes.', curses.A_DIM)
+    _, width = screen.getmaxyx()
+    put(screen, 0, 1, TITLE, curses.A_BOLD)
+    text, attr = save_state(session, width)
+    put(screen, 0, len(TITLE) + 3, text, attr)
 
 
 def wait_in_small_pane(screen, session, view):
@@ -825,37 +1137,43 @@ def wait_in_small_pane(screen, session, view):
     return False
 
 
+def draw_preview_area(screen, session, section, height, top):
+    """Draw the previews on pages they affect; return the first free row."""
+    if SECTIONS[section].name not in PREVIEW_PAGES:
+        return top
+    if height < PREVIEW_MIN_HEIGHT:
+        put(screen, top, 1, 'Previews: enlarge the pane to see them.', curses.A_DIM)
+        return top + 2
+    preview(screen, session, top)
+    return top + PREVIEW_HEIGHT + 1
+
+
 def draw_settings(screen, session, view):
     """Draw a full frame. Return None when the scroll had to be clamped and the
     frame must be redrawn before reading input."""
     height, width = screen.getmaxyx()
-    if height >= PREVIEW_MIN_HEIGHT:
-        preview(screen, session)
-        tab_y = 11
-    else:
-        put(screen, 2, 1, 'Sample previews: enlarge pane to show.', curses.A_DIM)
-        tab_y = 4
-    tab_hits, tab_y = draw_tabs(screen, view.section, width, tab_y)
-    fields, positions, form_rows = form_layout(session, view.section, width)
-    view.selected = min(view.selected, len(fields) - 1)
-    field = fields[view.selected]
-    if is_color(field[0]):
-        view.color_target = field[0]
-    footer = footer_lines(session, field, width)
-    top = tab_y + 2
-    bottom = height - len(footer) - 2
+    tab_hits, tab_end = draw_tabs(screen, view.section, width, 1)
+    top = draw_preview_area(screen, session, view.section, height, tab_end + 2)
+    view.selected = min(view.selected, len(active_fields(session, view.section)) - 1)
+    layout = form_layout(session, view.section, width, view.selected)
+    field = layout.fields[view.selected]
+    if is_color(field.key):
+        view.color_target = field.key
+    status = textwrap.wrap(session.message, width - 2) or ['']
+    hints = hint_layout(width)
+    hint_rows = hints[-1][0] + 1
+    bottom = height - hint_rows - len(status) - 1
     visible = max(1, bottom - top)
     if view.reveal:
-        reveal_selection(session, view, positions, form_rows, width, visible)
-    hits, total = draw_form(screen, session, view.section, view.selected, view.scroll,
-                            top, bottom, view.color_target, view.palette_focus)
-    frame = Frame(height, width, fields, total, visible, hits, tab_hits)
+        reveal_selection(session, view, layout, width, visible)
+    hits, total = draw_form(screen, session, view.section, layout, view, top, bottom)
+    frame = Frame(height, width, layout.fields, total, visible, hits, tab_hits)
     if view.scroll > frame.max_scroll:
         view.scroll = frame.max_scroll
         return None
-    for y, (line, attr) in enumerate(footer, bottom + 1):
-        put(screen, y, 1, line, attr)
-    frame.button_hits = draw_buttons(screen, height)
+    for y, line in enumerate(status, bottom + 1):
+        put(screen, y, 1, line, curses.A_BOLD)
+    frame.button_hits = draw_hints(screen, hints, height - hint_rows)
     return frame
 
 
@@ -874,41 +1192,42 @@ def draw_tabs(screen, section, width, y):
     return hits, y
 
 
-def footer_lines(session, field, width):
-    """Wrapped (line, attr) pairs for field help, status and navigation hints."""
-    help_text = inactive_reason(session, field[0]) or field_help(session, field)
-    if session.message:
-        status = session.message
-    elif session.dirty:
-        status = 'Unsaved changes. Apply to save.'
-    else:
-        status = 'Saved settings. No pending changes.'
-    lines = []
-    for text, attr in ((help_text, curses.A_DIM), (status, curses.A_BOLD),
-                       (NAVIGATION_HINT, curses.A_DIM)):
-        lines.extend((line, attr) for line in textwrap.wrap(text, width - 2))
-    return lines
+def hint_layout(width):
+    """(line, x, text, key) for each key hint, wrapping the hint line to the pane."""
+    placed = []
+    line, x = 0, 1
+    for text, key in HINTS:
+        if placed:
+            if x + len(HINT_SEPARATOR) + len(text) > width - 1:
+                line, x = line + 1, 1
+            else:
+                x += len(HINT_SEPARATOR)
+        placed.append((line, x, text, key))
+        x += len(text)
+    return placed
 
 
-def draw_buttons(screen, height):
-    """Draw the action buttons on the last row; return (left, right, key) targets."""
+def draw_hints(screen, hints, top):
+    """Draw the key hints from row top; return (y, left, right, key) click targets."""
     hits = []
-    x = 1
-    for label, key in BUTTONS:
-        put(screen, height - 1, x, '[' + label + ']', curses.A_BOLD)
-        hits.append((x, x + len(label) + 2, key))
-        x += len(label) + 4
+    for line, x, text, key in hints:
+        y = top + line
+        if x > 1:
+            put(screen, y, x - len(HINT_SEPARATOR), HINT_SEPARATOR, curses.A_DIM)
+        put(screen, y, x, text, curses.A_BOLD if key else curses.A_DIM)
+        if key:
+            hits.append((y, x, x + len(text), key))
     return hits
 
 
-def reveal_selection(session, view, positions, form_rows, width, visible):
-    """Scroll so the selected field, or the focused swatch, is on screen."""
-    row, size = positions[view.selected]
+def reveal_selection(session, view, layout, width, visible):
+    """Scroll so the selected field and its help, or the focused swatch, are on screen."""
+    row, size = layout.positions[view.selected]
     if view.palette_focus:
         options = color_options(session, view.color_target)
         current = session.value(view.color_target)
         index = next(i for i, (value, _, _) in enumerate(options) if value == current)
-        row = form_rows + 1 + palette_cells(width, len(options))[index][1]
+        row = layout.total + 1 + palette_cells(width, len(options))[index][1]
         size = 2
     size = min(size, visible)
     if row < view.scroll:
@@ -950,19 +1269,23 @@ def handle_mouse(session, view, frame, x, y, buttons):
     return None
 
 
+def hit_at(hits, x, y):
+    # Later targets are drawn on top, so they win.
+    return next((action for row, left, right, action in reversed(hits)
+                 if y == row and left <= x < right), None)
+
+
 def handle_click(session, view, frame, x, y):
-    tab = next((index for row, left, right, index in frame.tab_hits
-                if y == row and left <= x < right), None)
+    tab = hit_at(frame.tab_hits, x, y)
     if tab is not None:
         view.open_page(tab)
         return None
-    # Later targets are drawn on top, so they win.
-    action = next((action for row, left, right, action in reversed(frame.hits)
-                   if y == row and left <= x < right), None)
+    button = hit_at(frame.button_hits, x, y)
+    if button is not None:
+        return button
+    action = hit_at(frame.hits, x, y)
     if action is None:
-        if y != frame.height - 1:
-            return None
-        return next((key for left, right, key in frame.button_hits if left <= x < right), None)
+        return None
     kind = action[0]
     if kind == 'animation':
         _, ident, index = action
@@ -972,7 +1295,7 @@ def handle_click(session, view, frame, x, y):
         session.set(view.color_target, action[1])
         view.palette_focus = True
         view.selected = next(i for i, field in enumerate(frame.fields)
-                             if field[0] == view.color_target)
+                             if field.key == view.color_target)
     else:
         view.selected = action[1]
         view.palette_focus = False
@@ -996,7 +1319,7 @@ def handle_key(screen, session, view, frame, key, previous_pending):
     if key in ('a', 'A'):
         session.apply()
     elif key in ('u', 'U'):
-        reload_session(session, view, previous_pending)
+        undo_all(session, view, previous_pending)
     elif key in ('d', 'D'):
         session.defaults()
         view.reset_page()
@@ -1009,10 +1332,7 @@ def handle_key(screen, session, view, frame, key, previous_pending):
         step = frame.visible if key == curses.KEY_NPAGE else -frame.visible
         view.scroll = max(0, min(frame.max_scroll, view.scroll + step))
     elif view.palette_focus and key in ARROW_KEYS:
-        columns = space_colors.columns_for(frame.width)
-        steps = {curses.KEY_LEFT: -1, curses.KEY_RIGHT: 1,
-                 curses.KEY_UP: -columns, curses.KEY_DOWN: columns}
-        session.cycle(field, steps[key])
+        move_in_palette(session, field, frame.width, key)
         view.reveal = True
     elif key in (curses.KEY_UP, curses.KEY_DOWN):
         step = -1 if key == curses.KEY_UP else 1
@@ -1026,30 +1346,40 @@ def handle_key(screen, session, view, frame, key, previous_pending):
     return False
 
 
-def reload_session(session, view, previous_pending):
-    """Reload saved settings, asking first when that would discard edits."""
-    if session.dirty and previous_pending != 'reload':
-        view.pending = 'reload'
-        session.message = 'Discard unsaved edits? U again reloads; any other key cancels.'
+def move_in_palette(session, field, width, key):
+    columns = space_colors.columns_for(width)
+    steps = {curses.KEY_LEFT: -1, curses.KEY_RIGHT: 1,
+             curses.KEY_UP: -columns, curses.KEY_DOWN: columns}
+    session.cycle(field, steps[key])
+
+
+def undo_all(session, view, previous_pending):
+    """Return to the saved settings, asking first when that would discard edits."""
+    if session.dirty and previous_pending != 'undo':
+        view.pending = 'undo'
+        session.message = 'Undo all unsaved changes? U again undoes them; any other key cancels.'
         return
     session.reload()
-    session.message = 'Reloaded saved settings.'
+    session.message = 'Back to your saved settings.'
     view.reset_page()
     view.reveal = True
 
 
 def activate_field(screen, session, view, field):
     """Enter or Space: open the palette, edit text, or step a choice."""
-    key, label, options, _ = field
-    reason = inactive_reason(session, key)
+    reason = inactive_reason(session, field.key)
     if reason:
         session.message = reason
         return
-    if is_color(key):
-        view.color_target = key
+    if is_color(field.key):
+        view.color_target = field.key
         view.palette_focus = True
-    elif options is None:
-        session.set(key, edit_text(screen, label, session.value(key)))
+    elif field.key == '@agent_names':
+        edit_agent_names(screen, session)
+    elif field.options is None:
+        value = edit_text(screen, field.label, session.value(field.key))
+        if value is not None:
+            session.set(field.key, value)
     else:
         session.cycle(field, 1)
     view.reveal = True

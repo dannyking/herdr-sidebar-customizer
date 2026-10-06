@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1012" height="878" viewBox="0 0 1012 878">
+<svg xmlns="http://www.w3.org/2000/svg" width="1012" height="950" viewBox="0 0 1012 950">
 <title>Herdr Sidebar Customizer settings with synthetic projects</title>
-<rect width="1012" height="878" rx="12" fill="#1c1e2a"/>
+<rect width="1012" height="950" rx="12" fill="#1c1e2a"/>
 <g font-family="DejaVu Sans Mono,Menlo,monospace" font-size="14">
 <text x="20" y="22" fill="#d7dae0" font-weight="bold">H</text>
 <text x="29" y="22" fill="#d7dae0" font-weight="bold">E</text>
@@ -24,98 +24,107 @@
 <text x="209" y="22" fill="#d7dae0" font-weight="bold">Z</text>
 <text x="218" y="22" fill="#d7dae0" font-weight="bold">E</text>
 <text x="227" y="22" fill="#d7dae0" font-weight="bold">R</text>
-<text x="254" y="22" fill="#d7dae0" font-weight="bold">[</text>
-<text x="263" y="22" fill="#d7dae0" font-weight="bold">s</text>
-<text x="272" y="22" fill="#d7dae0" font-weight="bold">a</text>
-<text x="281" y="22" fill="#d7dae0" font-weight="bold">v</text>
-<text x="290" y="22" fill="#d7dae0" font-weight="bold">e</text>
-<text x="299" y="22" fill="#d7dae0" font-weight="bold">d</text>
-<text x="308" y="22" fill="#d7dae0" font-weight="bold">]</text>
-<text x="20" y="40" fill="#d7dae0">D</text>
-<text x="29" y="40" fill="#d7dae0">r</text>
-<text x="38" y="40" fill="#d7dae0">a</text>
-<text x="47" y="40" fill="#d7dae0">f</text>
-<text x="56" y="40" fill="#d7dae0">t</text>
-<text x="74" y="40" fill="#d7dae0">p</text>
-<text x="83" y="40" fill="#d7dae0">r</text>
-<text x="92" y="40" fill="#d7dae0">e</text>
-<text x="101" y="40" fill="#d7dae0">v</text>
-<text x="110" y="40" fill="#d7dae0">i</text>
-<text x="119" y="40" fill="#d7dae0">e</text>
-<text x="128" y="40" fill="#d7dae0">w</text>
-<text x="146" y="40" fill="#d7dae0">o</text>
-<text x="155" y="40" fill="#d7dae0">n</text>
-<text x="164" y="40" fill="#d7dae0">l</text>
-<text x="173" y="40" fill="#d7dae0">y</text>
-<text x="182" y="40" fill="#d7dae0">.</text>
-<text x="200" y="40" fill="#d7dae0">A</text>
-<text x="209" y="40" fill="#d7dae0">p</text>
-<text x="218" y="40" fill="#d7dae0">p</text>
-<text x="227" y="40" fill="#d7dae0">l</text>
-<text x="236" y="40" fill="#d7dae0">y</text>
+<text x="254" y="22" fill="#d7dae0">S</text>
+<text x="263" y="22" fill="#d7dae0">a</text>
+<text x="272" y="22" fill="#d7dae0">v</text>
+<text x="281" y="22" fill="#d7dae0">e</text>
+<text x="290" y="22" fill="#d7dae0">d</text>
+<text x="29" y="40" fill="#d7dae0">1</text>
+<text x="47" y="40" fill="#d7dae0">S</text>
+<text x="56" y="40" fill="#d7dae0">p</text>
+<text x="65" y="40" fill="#d7dae0">a</text>
+<text x="74" y="40" fill="#d7dae0">c</text>
+<text x="83" y="40" fill="#d7dae0">e</text>
+<text x="92" y="40" fill="#d7dae0">s</text>
+<text x="119" y="40" fill="#d7dae0">2</text>
+<text x="137" y="40" fill="#d7dae0">A</text>
+<text x="146" y="40" fill="#d7dae0">g</text>
+<text x="155" y="40" fill="#d7dae0">e</text>
+<text x="164" y="40" fill="#d7dae0">n</text>
+<text x="173" y="40" fill="#d7dae0">t</text>
+<text x="182" y="40" fill="#d7dae0">s</text>
+<text x="209" y="40" fill="#d7dae0">3</text>
+<text x="227" y="40" fill="#d7dae0">T</text>
+<text x="236" y="40" fill="#d7dae0">a</text>
+<text x="245" y="40" fill="#d7dae0">b</text>
 <text x="254" y="40" fill="#d7dae0">s</text>
-<text x="263" y="40" fill="#d7dae0">a</text>
-<text x="272" y="40" fill="#d7dae0">v</text>
-<text x="281" y="40" fill="#d7dae0">e</text>
-<text x="290" y="40" fill="#d7dae0">s</text>
-<text x="308" y="40" fill="#d7dae0">c</text>
-<text x="317" y="40" fill="#d7dae0">h</text>
-<text x="326" y="40" fill="#d7dae0">a</text>
-<text x="335" y="40" fill="#d7dae0">n</text>
-<text x="344" y="40" fill="#d7dae0">g</text>
-<text x="353" y="40" fill="#d7dae0">e</text>
-<text x="362" y="40" fill="#d7dae0">s</text>
-<text x="371" y="40" fill="#d7dae0">.</text>
-<text x="20" y="58" fill="#d7dae0">S</text>
-<text x="29" y="58" fill="#d7dae0">A</text>
-<text x="38" y="58" fill="#d7dae0">M</text>
-<text x="47" y="58" fill="#d7dae0">P</text>
-<text x="56" y="58" fill="#d7dae0">L</text>
-<text x="65" y="58" fill="#d7dae0">E</text>
-<text x="83" y="58" fill="#d7dae0">P</text>
-<text x="92" y="58" fill="#d7dae0">R</text>
-<text x="101" y="58" fill="#d7dae0">E</text>
-<text x="110" y="58" fill="#d7dae0">V</text>
-<text x="119" y="58" fill="#d7dae0">I</text>
-<text x="128" y="58" fill="#d7dae0">E</text>
-<text x="137" y="58" fill="#d7dae0">W</text>
-<text x="146" y="58" fill="#d7dae0">S</text>
-<text x="173" y="58" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
-<text x="200" y="58" fill="#d7dae0">f</text>
-<text x="209" y="58" fill="#d7dae0">i</text>
-<text x="218" y="58" fill="#d7dae0">r</text>
-<text x="227" y="58" fill="#d7dae0">s</text>
-<text x="236" y="58" fill="#d7dae0">t</text>
-<text x="254" y="58" fill="#d7dae0">s</text>
-<text x="263" y="58" fill="#d7dae0">p</text>
-<text x="272" y="58" fill="#d7dae0">a</text>
-<text x="281" y="58" fill="#d7dae0">c</text>
-<text x="290" y="58" fill="#d7dae0">e</text>
-<text x="308" y="58" fill="#d7dae0">h</text>
-<text x="317" y="58" fill="#d7dae0">a</text>
-<text x="326" y="58" fill="#d7dae0">s</text>
-<text x="344" y="58" fill="#d7dae0">n</text>
-<text x="353" y="58" fill="#d7dae0">o</text>
-<text x="371" y="58" fill="#d7dae0">G</text>
-<text x="380" y="58" fill="#d7dae0">i</text>
-<text x="389" y="58" fill="#d7dae0">t</text>
-<text x="407" y="58" fill="#d7dae0">r</text>
-<text x="416" y="58" fill="#d7dae0">e</text>
-<text x="425" y="58" fill="#d7dae0">p</text>
-<text x="434" y="58" fill="#d7dae0">o</text>
+<rect x="272" y="26" width="9" height="18" fill="#d7dae0"/>
+<rect x="281" y="26" width="9" height="18" fill="#d7dae0"/>
+<text x="281" y="40" fill="#1c1e2a">4</text>
+<rect x="290" y="26" width="9" height="18" fill="#d7dae0"/>
+<rect x="299" y="26" width="9" height="18" fill="#d7dae0"/>
+<text x="299" y="40" fill="#1c1e2a">C</text>
+<rect x="308" y="26" width="9" height="18" fill="#d7dae0"/>
+<text x="308" y="40" fill="#1c1e2a">o</text>
+<rect x="317" y="26" width="9" height="18" fill="#d7dae0"/>
+<text x="317" y="40" fill="#1c1e2a">l</text>
+<rect x="326" y="26" width="9" height="18" fill="#d7dae0"/>
+<text x="326" y="40" fill="#1c1e2a">o</text>
+<rect x="335" y="26" width="9" height="18" fill="#d7dae0"/>
+<text x="335" y="40" fill="#1c1e2a">r</text>
+<rect x="344" y="26" width="9" height="18" fill="#d7dae0"/>
+<text x="344" y="40" fill="#1c1e2a">s</text>
+<rect x="353" y="26" width="9" height="18" fill="#d7dae0"/>
+<text x="371" y="40" fill="#d7dae0">5</text>
+<text x="389" y="40" fill="#d7dae0">M</text>
+<text x="398" y="40" fill="#d7dae0">o</text>
+<text x="407" y="40" fill="#d7dae0">t</text>
+<text x="416" y="40" fill="#d7dae0">i</text>
+<text x="425" y="40" fill="#d7dae0">o</text>
+<text x="434" y="40" fill="#d7dae0">n</text>
+<text x="452" y="40" fill="#d7dae0">&amp;</text>
+<text x="470" y="40" fill="#d7dae0">s</text>
+<text x="479" y="40" fill="#d7dae0">y</text>
+<text x="488" y="40" fill="#d7dae0">m</text>
+<text x="497" y="40" fill="#d7dae0">b</text>
+<text x="506" y="40" fill="#d7dae0">o</text>
+<text x="515" y="40" fill="#d7dae0">l</text>
+<text x="524" y="40" fill="#d7dae0">s</text>
+<text x="551" y="40" fill="#d7dae0">6</text>
+<text x="569" y="40" fill="#d7dae0">S</text>
+<text x="578" y="40" fill="#d7dae0">h</text>
+<text x="587" y="40" fill="#d7dae0">o</text>
+<text x="596" y="40" fill="#d7dae0">r</text>
+<text x="605" y="40" fill="#d7dae0">t</text>
+<text x="614" y="40" fill="#d7dae0">c</text>
+<text x="623" y="40" fill="#d7dae0">u</text>
+<text x="632" y="40" fill="#d7dae0">t</text>
+<text x="641" y="40" fill="#d7dae0">s</text>
 <text x="29" y="76" fill="#d7dae0" font-weight="bold">S</text>
 <text x="38" y="76" fill="#d7dae0" font-weight="bold">P</text>
 <text x="47" y="76" fill="#d7dae0" font-weight="bold">A</text>
 <text x="56" y="76" fill="#d7dae0" font-weight="bold">C</text>
 <text x="65" y="76" fill="#d7dae0" font-weight="bold">E</text>
 <text x="74" y="76" fill="#d7dae0" font-weight="bold">S</text>
-<text x="515" y="76" fill="#d7dae0" font-weight="bold">A</text>
-<text x="524" y="76" fill="#d7dae0" font-weight="bold">G</text>
-<text x="533" y="76" fill="#d7dae0" font-weight="bold">E</text>
-<text x="542" y="76" fill="#d7dae0" font-weight="bold">N</text>
-<text x="551" y="76" fill="#d7dae0" font-weight="bold">T</text>
-<text x="560" y="76" fill="#d7dae0" font-weight="bold">S</text>
-<text x="29" y="94" fill="#5fafff" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">⠇</text>
+<text x="101" y="76" fill="#d7dae0">s</text>
+<text x="110" y="76" fill="#d7dae0">a</text>
+<text x="119" y="76" fill="#d7dae0">m</text>
+<text x="128" y="76" fill="#d7dae0">p</text>
+<text x="137" y="76" fill="#d7dae0">l</text>
+<text x="146" y="76" fill="#d7dae0">e</text>
+<text x="155" y="76" fill="#d7dae0">s</text>
+<text x="173" y="76" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="191" y="76" fill="#d7dae0">t</text>
+<text x="200" y="76" fill="#d7dae0">h</text>
+<text x="209" y="76" fill="#d7dae0">e</text>
+<text x="227" y="76" fill="#d7dae0">f</text>
+<text x="236" y="76" fill="#d7dae0">i</text>
+<text x="245" y="76" fill="#d7dae0">r</text>
+<text x="254" y="76" fill="#d7dae0">s</text>
+<text x="263" y="76" fill="#d7dae0">t</text>
+<text x="281" y="76" fill="#d7dae0">h</text>
+<text x="290" y="76" fill="#d7dae0">a</text>
+<text x="299" y="76" fill="#d7dae0">s</text>
+<text x="317" y="76" fill="#d7dae0">n</text>
+<text x="326" y="76" fill="#d7dae0">o</text>
+<text x="344" y="76" fill="#d7dae0">G</text>
+<text x="353" y="76" fill="#d7dae0">i</text>
+<text x="362" y="76" fill="#d7dae0">t</text>
+<text x="380" y="76" fill="#d7dae0">r</text>
+<text x="389" y="76" fill="#d7dae0">e</text>
+<text x="398" y="76" fill="#d7dae0">p</text>
+<text x="407" y="76" fill="#d7dae0">o</text>
+<text x="29" y="94" fill="#5fafff" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">⠧</text>
 <text x="47" y="94" fill="#5fafff" font-weight="bold">W</text>
 <text x="56" y="94" fill="#5fafff" font-weight="bold">e</text>
 <text x="65" y="94" fill="#5fafff" font-weight="bold">b</text>
@@ -123,46 +132,6 @@
 <text x="83" y="94" fill="#5fafff" font-weight="bold">i</text>
 <text x="92" y="94" fill="#5fafff" font-weight="bold">t</text>
 <text x="101" y="94" fill="#5fafff" font-weight="bold">e</text>
-<text x="515" y="94" fill="#5fafff" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">⠇</text>
-<text x="533" y="94" fill="#5fafff" font-weight="bold">W</text>
-<text x="542" y="94" fill="#5fafff" font-weight="bold">e</text>
-<text x="551" y="94" fill="#5fafff" font-weight="bold">b</text>
-<text x="560" y="94" fill="#5fafff" font-weight="bold">s</text>
-<text x="569" y="94" fill="#5fafff" font-weight="bold">i</text>
-<text x="578" y="94" fill="#5fafff" font-weight="bold">t</text>
-<text x="587" y="94" fill="#5fafff" font-weight="bold">e</text>
-<text x="605" y="94" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
-<text x="623" y="94" fill="#d7dae0">e</text>
-<text x="632" y="94" fill="#d7dae0">d</text>
-<text x="641" y="94" fill="#d7dae0">i</text>
-<text x="650" y="94" fill="#d7dae0">t</text>
-<text x="659" y="94" fill="#d7dae0">o</text>
-<text x="668" y="94" fill="#d7dae0">r</text>
-<text x="515" y="112" fill="#d7dae0">C</text>
-<text x="524" y="112" fill="#d7dae0">l</text>
-<text x="533" y="112" fill="#d7dae0">a</text>
-<text x="542" y="112" fill="#d7dae0">u</text>
-<text x="551" y="112" fill="#d7dae0">d</text>
-<text x="560" y="112" fill="#d7dae0">e</text>
-<text x="578" y="112" fill="#d7dae0">O</text>
-<text x="587" y="112" fill="#d7dae0">p</text>
-<text x="596" y="112" fill="#d7dae0">u</text>
-<text x="605" y="112" fill="#d7dae0">s</text>
-<text x="623" y="112" fill="#d7dae0">5</text>
-<text x="641" y="112" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
-<text x="659" y="112" fill="#d7dae0">m</text>
-<text x="668" y="112" fill="#d7dae0">e</text>
-<text x="677" y="112" fill="#d7dae0">d</text>
-<text x="686" y="112" fill="#d7dae0">i</text>
-<text x="695" y="112" fill="#d7dae0">u</text>
-<text x="704" y="112" fill="#d7dae0">m</text>
-<text x="722" y="112" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
-<text x="740" y="112" fill="#d7dae0">2</text>
-<text x="749" y="112" fill="#d7dae0">5</text>
-<text x="758" y="112" fill="#d7dae0">%</text>
-<text x="767" y="112" fill="#d7dae0">/</text>
-<text x="776" y="112" fill="#d7dae0">1</text>
-<text x="785" y="112" fill="#d7dae0">M</text>
 <text x="29" y="130" fill="#5fffd7" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">●</text>
 <text x="47" y="130" fill="#5fffd7" font-weight="bold">S</text>
 <text x="56" y="130" fill="#5fffd7" font-weight="bold">a</text>
@@ -171,29 +140,6 @@
 <text x="83" y="130" fill="#5fffd7" font-weight="bold">b</text>
 <text x="92" y="130" fill="#5fffd7" font-weight="bold">o</text>
 <text x="101" y="130" fill="#5fffd7" font-weight="bold">x</text>
-<text x="515" y="130" fill="#5fffd7" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">●</text>
-<text x="533" y="130" fill="#5fffd7" font-weight="bold">S</text>
-<text x="542" y="130" fill="#5fffd7" font-weight="bold">a</text>
-<text x="551" y="130" fill="#5fffd7" font-weight="bold">n</text>
-<text x="560" y="130" fill="#5fffd7" font-weight="bold">d</text>
-<text x="569" y="130" fill="#5fffd7" font-weight="bold">b</text>
-<text x="578" y="130" fill="#5fffd7" font-weight="bold">o</text>
-<text x="587" y="130" fill="#5fffd7" font-weight="bold">x</text>
-<text x="605" y="130" fill="#d7dae0" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
-<text x="623" y="130" fill="#d7dae0" font-weight="bold">B</text>
-<text x="632" y="130" fill="#d7dae0" font-weight="bold">u</text>
-<text x="641" y="130" fill="#d7dae0" font-weight="bold">i</text>
-<text x="650" y="130" fill="#d7dae0" font-weight="bold">l</text>
-<text x="659" y="130" fill="#d7dae0" font-weight="bold">d</text>
-<text x="677" y="130" fill="#d7dae0" font-weight="bold">b</text>
-<text x="686" y="130" fill="#d7dae0" font-weight="bold">o</text>
-<text x="695" y="130" fill="#d7dae0" font-weight="bold">x</text>
-<text x="713" y="130" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
-<text x="731" y="130" fill="#d7dae0">t</text>
-<text x="740" y="130" fill="#d7dae0">e</text>
-<text x="749" y="130" fill="#d7dae0">s</text>
-<text x="758" y="130" fill="#d7dae0">t</text>
-<text x="767" y="130" fill="#d7dae0">s</text>
 <text x="29" y="148" fill="#afff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">↑</text>
 <text x="38" y="148" fill="#afff87">1</text>
 <text x="56" y="148" fill="#afff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">↓</text>
@@ -209,965 +155,858 @@
 <text x="164" y="148" fill="#d7dae0">/</text>
 <text x="173" y="148" fill="#d7dae0">u</text>
 <text x="182" y="148" fill="#d7dae0">i</text>
-<text x="515" y="148" fill="#d7dae0">C</text>
-<text x="524" y="148" fill="#d7dae0">o</text>
-<text x="533" y="148" fill="#d7dae0">d</text>
-<text x="542" y="148" fill="#d7dae0">e</text>
-<text x="551" y="148" fill="#d7dae0">x</text>
-<text x="569" y="148" fill="#d7dae0">G</text>
-<text x="578" y="148" fill="#d7dae0">P</text>
-<text x="587" y="148" fill="#d7dae0">T</text>
-<text x="596" y="148" fill="#d7dae0">-</text>
-<text x="605" y="148" fill="#d7dae0">6</text>
-<text x="623" y="148" fill="#d7dae0">A</text>
-<text x="632" y="148" fill="#d7dae0">s</text>
-<text x="641" y="148" fill="#d7dae0">t</text>
-<text x="650" y="148" fill="#d7dae0">r</text>
-<text x="659" y="148" fill="#d7dae0">a</text>
-<text x="677" y="148" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
-<text x="695" y="148" fill="#d7dae0">m</text>
-<text x="704" y="148" fill="#d7dae0">e</text>
-<text x="713" y="148" fill="#d7dae0">d</text>
-<text x="722" y="148" fill="#d7dae0">i</text>
-<text x="731" y="148" fill="#d7dae0">u</text>
-<text x="740" y="148" fill="#d7dae0">m</text>
-<text x="758" y="148" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
-<text x="776" y="148" fill="#d7dae0">2</text>
-<text x="785" y="148" fill="#d7dae0">5</text>
-<text x="794" y="148" fill="#d7dae0">%</text>
-<text x="803" y="148" fill="#d7dae0">/</text>
-<text x="812" y="148" fill="#d7dae0">1</text>
-<text x="821" y="148" fill="#d7dae0">M</text>
-<text x="29" y="220" fill="#d7dae0">1</text>
-<text x="47" y="220" fill="#d7dae0">D</text>
-<text x="56" y="220" fill="#d7dae0">i</text>
-<text x="65" y="220" fill="#d7dae0">s</text>
-<text x="74" y="220" fill="#d7dae0">p</text>
-<text x="83" y="220" fill="#d7dae0">l</text>
-<text x="92" y="220" fill="#d7dae0">a</text>
-<text x="101" y="220" fill="#d7dae0">y</text>
-<text x="128" y="220" fill="#d7dae0">2</text>
-<text x="146" y="220" fill="#d7dae0">G</text>
-<text x="155" y="220" fill="#d7dae0">i</text>
-<text x="164" y="220" fill="#d7dae0">t</text>
-<text x="191" y="220" fill="#d7dae0">3</text>
-<text x="209" y="220" fill="#d7dae0">A</text>
-<text x="218" y="220" fill="#d7dae0">g</text>
-<text x="227" y="220" fill="#d7dae0">e</text>
-<text x="236" y="220" fill="#d7dae0">n</text>
-<text x="245" y="220" fill="#d7dae0">t</text>
-<text x="263" y="220" fill="#d7dae0">t</text>
-<text x="272" y="220" fill="#d7dae0">e</text>
-<text x="281" y="220" fill="#d7dae0">x</text>
-<text x="290" y="220" fill="#d7dae0">t</text>
-<text x="317" y="220" fill="#d7dae0">4</text>
-<text x="335" y="220" fill="#d7dae0">A</text>
-<text x="344" y="220" fill="#d7dae0">n</text>
-<text x="353" y="220" fill="#d7dae0">i</text>
-<text x="362" y="220" fill="#d7dae0">m</text>
-<text x="371" y="220" fill="#d7dae0">a</text>
-<text x="380" y="220" fill="#d7dae0">t</text>
-<text x="389" y="220" fill="#d7dae0">i</text>
-<text x="398" y="220" fill="#d7dae0">o</text>
-<text x="407" y="220" fill="#d7dae0">n</text>
-<rect x="425" y="206" width="9" height="18" fill="#d7dae0"/>
-<rect x="434" y="206" width="9" height="18" fill="#d7dae0"/>
-<text x="434" y="220" fill="#1c1e2a">5</text>
-<rect x="443" y="206" width="9" height="18" fill="#d7dae0"/>
-<rect x="452" y="206" width="9" height="18" fill="#d7dae0"/>
-<text x="452" y="220" fill="#1c1e2a">C</text>
-<rect x="461" y="206" width="9" height="18" fill="#d7dae0"/>
-<text x="461" y="220" fill="#1c1e2a">o</text>
-<rect x="470" y="206" width="9" height="18" fill="#d7dae0"/>
-<text x="470" y="220" fill="#1c1e2a">l</text>
-<rect x="479" y="206" width="9" height="18" fill="#d7dae0"/>
-<text x="479" y="220" fill="#1c1e2a">o</text>
-<rect x="488" y="206" width="9" height="18" fill="#d7dae0"/>
-<text x="488" y="220" fill="#1c1e2a">r</text>
-<rect x="497" y="206" width="9" height="18" fill="#d7dae0"/>
-<text x="497" y="220" fill="#1c1e2a">s</text>
-<rect x="506" y="206" width="9" height="18" fill="#d7dae0"/>
-<text x="524" y="220" fill="#d7dae0">6</text>
-<text x="542" y="220" fill="#d7dae0">S</text>
-<text x="551" y="220" fill="#d7dae0">t</text>
-<text x="560" y="220" fill="#d7dae0">a</text>
-<text x="569" y="220" fill="#d7dae0">t</text>
-<text x="578" y="220" fill="#d7dae0">e</text>
-<text x="587" y="220" fill="#d7dae0">s</text>
-<text x="614" y="220" fill="#d7dae0">7</text>
-<text x="632" y="220" fill="#d7dae0">S</text>
-<text x="641" y="220" fill="#d7dae0">h</text>
-<text x="650" y="220" fill="#d7dae0">o</text>
-<text x="659" y="220" fill="#d7dae0">r</text>
-<text x="668" y="220" fill="#d7dae0">t</text>
-<text x="677" y="220" fill="#d7dae0">c</text>
-<text x="686" y="220" fill="#d7dae0">u</text>
-<text x="695" y="220" fill="#d7dae0">t</text>
-<text x="704" y="220" fill="#d7dae0">s</text>
-<text x="38" y="256" fill="#d7dae0">U</text>
-<text x="47" y="256" fill="#d7dae0">s</text>
+<text x="29" y="184" fill="#d7dae0" font-weight="bold">A</text>
+<text x="38" y="184" fill="#d7dae0" font-weight="bold">G</text>
+<text x="47" y="184" fill="#d7dae0" font-weight="bold">E</text>
+<text x="56" y="184" fill="#d7dae0" font-weight="bold">N</text>
+<text x="65" y="184" fill="#d7dae0" font-weight="bold">T</text>
+<text x="74" y="184" fill="#d7dae0" font-weight="bold">S</text>
+<text x="29" y="202" fill="#5fafff" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">⠧</text>
+<text x="47" y="202" fill="#5fafff" font-weight="bold">W</text>
+<text x="56" y="202" fill="#5fafff" font-weight="bold">e</text>
+<text x="65" y="202" fill="#5fafff" font-weight="bold">b</text>
+<text x="74" y="202" fill="#5fafff" font-weight="bold">s</text>
+<text x="83" y="202" fill="#5fafff" font-weight="bold">i</text>
+<text x="92" y="202" fill="#5fafff" font-weight="bold">t</text>
+<text x="101" y="202" fill="#5fafff" font-weight="bold">e</text>
+<text x="119" y="202" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="137" y="202" fill="#d7dae0">e</text>
+<text x="146" y="202" fill="#d7dae0">d</text>
+<text x="155" y="202" fill="#d7dae0">i</text>
+<text x="164" y="202" fill="#d7dae0">t</text>
+<text x="173" y="202" fill="#d7dae0">o</text>
+<text x="182" y="202" fill="#d7dae0">r</text>
+<text x="29" y="220" fill="#d7dae0">C</text>
+<text x="38" y="220" fill="#d7dae0">l</text>
+<text x="47" y="220" fill="#d7dae0">a</text>
+<text x="56" y="220" fill="#d7dae0">u</text>
+<text x="65" y="220" fill="#d7dae0">d</text>
+<text x="74" y="220" fill="#d7dae0">e</text>
+<text x="92" y="220" fill="#d7dae0">O</text>
+<text x="101" y="220" fill="#d7dae0">p</text>
+<text x="110" y="220" fill="#d7dae0">u</text>
+<text x="119" y="220" fill="#d7dae0">s</text>
+<text x="137" y="220" fill="#d7dae0">5</text>
+<text x="155" y="220" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="173" y="220" fill="#d7dae0">m</text>
+<text x="182" y="220" fill="#d7dae0">e</text>
+<text x="191" y="220" fill="#d7dae0">d</text>
+<text x="200" y="220" fill="#d7dae0">i</text>
+<text x="209" y="220" fill="#d7dae0">u</text>
+<text x="218" y="220" fill="#d7dae0">m</text>
+<text x="236" y="220" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="254" y="220" fill="#d7dae0">2</text>
+<text x="263" y="220" fill="#d7dae0">5</text>
+<text x="272" y="220" fill="#d7dae0">%</text>
+<text x="281" y="220" fill="#d7dae0">/</text>
+<text x="290" y="220" fill="#d7dae0">1</text>
+<text x="299" y="220" fill="#d7dae0">M</text>
+<text x="29" y="238" fill="#5fffd7" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">●</text>
+<text x="47" y="238" fill="#5fffd7" font-weight="bold">S</text>
+<text x="56" y="238" fill="#5fffd7" font-weight="bold">a</text>
+<text x="65" y="238" fill="#5fffd7" font-weight="bold">n</text>
+<text x="74" y="238" fill="#5fffd7" font-weight="bold">d</text>
+<text x="83" y="238" fill="#5fffd7" font-weight="bold">b</text>
+<text x="92" y="238" fill="#5fffd7" font-weight="bold">o</text>
+<text x="101" y="238" fill="#5fffd7" font-weight="bold">x</text>
+<text x="119" y="238" fill="#d7dae0" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="137" y="238" fill="#d7dae0" font-weight="bold">B</text>
+<text x="146" y="238" fill="#d7dae0" font-weight="bold">u</text>
+<text x="155" y="238" fill="#d7dae0" font-weight="bold">i</text>
+<text x="164" y="238" fill="#d7dae0" font-weight="bold">l</text>
+<text x="173" y="238" fill="#d7dae0" font-weight="bold">d</text>
+<text x="191" y="238" fill="#d7dae0" font-weight="bold">b</text>
+<text x="200" y="238" fill="#d7dae0" font-weight="bold">o</text>
+<text x="209" y="238" fill="#d7dae0" font-weight="bold">x</text>
+<text x="227" y="238" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="245" y="238" fill="#d7dae0">t</text>
+<text x="254" y="238" fill="#d7dae0">e</text>
+<text x="263" y="238" fill="#d7dae0">s</text>
+<text x="272" y="238" fill="#d7dae0">t</text>
+<text x="281" y="238" fill="#d7dae0">s</text>
+<text x="29" y="256" fill="#d7dae0">C</text>
+<text x="38" y="256" fill="#d7dae0">o</text>
+<text x="47" y="256" fill="#d7dae0">d</text>
 <text x="56" y="256" fill="#d7dae0">e</text>
-<text x="74" y="256" fill="#d7dae0">s</text>
-<text x="83" y="256" fill="#d7dae0">p</text>
-<text x="92" y="256" fill="#d7dae0">a</text>
-<text x="101" y="256" fill="#d7dae0">c</text>
-<text x="110" y="256" fill="#d7dae0">e</text>
-<text x="128" y="256" fill="#d7dae0">c</text>
-<text x="137" y="256" fill="#d7dae0">o</text>
-<text x="146" y="256" fill="#d7dae0">l</text>
-<text x="155" y="256" fill="#d7dae0">o</text>
+<text x="65" y="256" fill="#d7dae0">x</text>
+<text x="83" y="256" fill="#d7dae0">G</text>
+<text x="92" y="256" fill="#d7dae0">P</text>
+<text x="101" y="256" fill="#d7dae0">T</text>
+<text x="110" y="256" fill="#d7dae0">-</text>
+<text x="119" y="256" fill="#d7dae0">6</text>
+<text x="137" y="256" fill="#d7dae0">A</text>
+<text x="146" y="256" fill="#d7dae0">s</text>
+<text x="155" y="256" fill="#d7dae0">t</text>
 <text x="164" y="256" fill="#d7dae0">r</text>
-<text x="173" y="256" fill="#d7dae0">s</text>
-<text x="290" y="256" fill="#d7dae0">O</text>
-<text x="299" y="256" fill="#d7dae0">n</text>
-<text x="38" y="274" fill="#d7dae0">S</text>
-<text x="47" y="274" fill="#d7dae0">e</text>
-<text x="56" y="274" fill="#d7dae0">l</text>
-<text x="65" y="274" fill="#d7dae0">e</text>
-<text x="74" y="274" fill="#d7dae0">c</text>
-<text x="83" y="274" fill="#d7dae0">t</text>
-<text x="92" y="274" fill="#d7dae0">e</text>
-<text x="101" y="274" fill="#d7dae0">d</text>
-<text x="119" y="274" fill="#d7dae0">s</text>
-<text x="128" y="274" fill="#d7dae0">p</text>
-<text x="137" y="274" fill="#d7dae0">a</text>
-<text x="146" y="274" fill="#d7dae0">c</text>
-<text x="155" y="274" fill="#d7dae0">e</text>
-<text x="290" y="274" fill="#d7dae0">S</text>
-<text x="299" y="274" fill="#d7dae0">a</text>
-<text x="308" y="274" fill="#d7dae0">m</text>
-<text x="317" y="274" fill="#d7dae0">p</text>
-<text x="326" y="274" fill="#d7dae0">l</text>
-<text x="335" y="274" fill="#d7dae0">e</text>
-<text x="353" y="274" fill="#d7dae0">s</text>
-<text x="362" y="274" fill="#d7dae0">p</text>
-<text x="371" y="274" fill="#d7dae0">a</text>
-<text x="380" y="274" fill="#d7dae0">c</text>
-<text x="389" y="274" fill="#d7dae0">e</text>
-<text x="407" y="274" fill="#d7dae0">(</text>
-<text x="416" y="274" fill="#d7dae0">p</text>
-<text x="425" y="274" fill="#d7dae0">r</text>
-<text x="434" y="274" fill="#d7dae0">e</text>
-<text x="443" y="274" fill="#d7dae0">v</text>
-<text x="452" y="274" fill="#d7dae0">i</text>
-<text x="461" y="274" fill="#d7dae0">e</text>
-<text x="470" y="274" fill="#d7dae0">w</text>
-<text x="488" y="274" fill="#d7dae0">o</text>
-<text x="497" y="274" fill="#d7dae0">n</text>
-<text x="506" y="274" fill="#d7dae0">l</text>
-<text x="515" y="274" fill="#d7dae0">y</text>
-<text x="524" y="274" fill="#d7dae0">)</text>
-<text x="20" y="292" fill="#d7dae0">&gt;</text>
-<text x="38" y="292" fill="#d7dae0">S</text>
-<text x="47" y="292" fill="#d7dae0">e</text>
-<text x="56" y="292" fill="#d7dae0">l</text>
-<text x="65" y="292" fill="#d7dae0">e</text>
-<text x="74" y="292" fill="#d7dae0">c</text>
-<text x="83" y="292" fill="#d7dae0">t</text>
-<text x="92" y="292" fill="#d7dae0">e</text>
-<text x="101" y="292" fill="#d7dae0">d</text>
-<text x="119" y="292" fill="#d7dae0">s</text>
-<text x="128" y="292" fill="#d7dae0">p</text>
-<text x="137" y="292" fill="#d7dae0">a</text>
-<text x="146" y="292" fill="#d7dae0">c</text>
-<text x="155" y="292" fill="#d7dae0">e</text>
-<text x="173" y="292" fill="#d7dae0">c</text>
-<text x="182" y="292" fill="#d7dae0">o</text>
-<text x="191" y="292" fill="#d7dae0">l</text>
-<text x="200" y="292" fill="#d7dae0">o</text>
-<text x="209" y="292" fill="#d7dae0">r</text>
-<text x="290" y="292" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="292" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="317" y="292" fill="#d7dae0">B</text>
-<text x="326" y="292" fill="#d7dae0">l</text>
-<text x="335" y="292" fill="#d7dae0">u</text>
-<text x="344" y="292" fill="#d7dae0">e</text>
-<text x="362" y="292" fill="#d7dae0">M</text>
-<text x="371" y="292" fill="#d7dae0">e</text>
-<text x="380" y="292" fill="#d7dae0">d</text>
-<text x="389" y="292" fill="#d7dae0">i</text>
-<text x="398" y="292" fill="#d7dae0">u</text>
-<text x="407" y="292" fill="#d7dae0">m</text>
-<text x="38" y="310" fill="#d7dae0">N</text>
-<text x="47" y="310" fill="#d7dae0">e</text>
-<text x="56" y="310" fill="#d7dae0">w</text>
-<text x="65" y="310" fill="#d7dae0">-</text>
-<text x="74" y="310" fill="#d7dae0">s</text>
-<text x="83" y="310" fill="#d7dae0">p</text>
-<text x="92" y="310" fill="#d7dae0">a</text>
-<text x="101" y="310" fill="#d7dae0">c</text>
-<text x="110" y="310" fill="#d7dae0">e</text>
-<text x="128" y="310" fill="#d7dae0">h</text>
-<text x="137" y="310" fill="#d7dae0">u</text>
-<text x="146" y="310" fill="#d7dae0">e</text>
-<text x="290" y="310" fill="#d7dae0">r</text>
-<text x="299" y="310" fill="#d7dae0">a</text>
-<text x="308" y="310" fill="#d7dae0">n</text>
-<text x="317" y="310" fill="#d7dae0">d</text>
-<text x="326" y="310" fill="#d7dae0">o</text>
-<text x="335" y="310" fill="#d7dae0">m</text>
-<text x="38" y="328" fill="#d7dae0">N</text>
-<text x="47" y="328" fill="#d7dae0">e</text>
-<text x="56" y="328" fill="#d7dae0">w</text>
-<text x="65" y="328" fill="#d7dae0">-</text>
-<text x="74" y="328" fill="#d7dae0">s</text>
-<text x="83" y="328" fill="#d7dae0">p</text>
-<text x="92" y="328" fill="#d7dae0">a</text>
-<text x="101" y="328" fill="#d7dae0">c</text>
-<text x="110" y="328" fill="#d7dae0">e</text>
-<text x="128" y="328" fill="#d7dae0">s</text>
-<text x="137" y="328" fill="#d7dae0">h</text>
-<text x="146" y="328" fill="#d7dae0">a</text>
-<text x="155" y="328" fill="#d7dae0">d</text>
-<text x="164" y="328" fill="#d7dae0">e</text>
-<text x="290" y="328" fill="#d7dae0">m</text>
-<text x="299" y="328" fill="#d7dae0">e</text>
-<text x="308" y="328" fill="#d7dae0">d</text>
-<text x="317" y="328" fill="#d7dae0">i</text>
-<text x="326" y="328" fill="#d7dae0">u</text>
-<text x="335" y="328" fill="#d7dae0">m</text>
-<text x="38" y="346" fill="#d7dae0">N</text>
-<text x="47" y="346" fill="#d7dae0">e</text>
-<text x="56" y="346" fill="#d7dae0">u</text>
-<text x="65" y="346" fill="#d7dae0">t</text>
-<text x="74" y="346" fill="#d7dae0">r</text>
-<text x="83" y="346" fill="#d7dae0">a</text>
-<text x="92" y="346" fill="#d7dae0">l</text>
-<text x="110" y="346" fill="#d7dae0">n</text>
-<text x="119" y="346" fill="#d7dae0">a</text>
-<text x="128" y="346" fill="#d7dae0">m</text>
-<text x="137" y="346" fill="#d7dae0">e</text>
-<text x="146" y="346" fill="#d7dae0">s</text>
-<text x="290" y="346" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="346" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="317" y="346" fill="#d7dae0">F</text>
-<text x="326" y="346" fill="#d7dae0">o</text>
-<text x="335" y="346" fill="#d7dae0">l</text>
-<text x="344" y="346" fill="#d7dae0">l</text>
-<text x="353" y="346" fill="#d7dae0">o</text>
-<text x="362" y="346" fill="#d7dae0">w</text>
-<text x="380" y="346" fill="#d7dae0">t</text>
-<text x="389" y="346" fill="#d7dae0">h</text>
-<text x="398" y="346" fill="#d7dae0">e</text>
-<text x="407" y="346" fill="#d7dae0">m</text>
-<text x="416" y="346" fill="#d7dae0">e</text>
-<text x="38" y="364" fill="#d7dae0">A</text>
-<text x="47" y="364" fill="#d7dae0">g</text>
-<text x="56" y="364" fill="#d7dae0">e</text>
-<text x="65" y="364" fill="#d7dae0">n</text>
-<text x="74" y="364" fill="#d7dae0">t</text>
-<text x="92" y="364" fill="#d7dae0">d</text>
-<text x="101" y="364" fill="#d7dae0">e</text>
-<text x="110" y="364" fill="#d7dae0">t</text>
-<text x="119" y="364" fill="#d7dae0">a</text>
-<text x="128" y="364" fill="#d7dae0">i</text>
-<text x="137" y="364" fill="#d7dae0">l</text>
-<text x="146" y="364" fill="#d7dae0">s</text>
-<text x="164" y="364" fill="#d7dae0">c</text>
-<text x="173" y="364" fill="#d7dae0">o</text>
-<text x="182" y="364" fill="#d7dae0">l</text>
-<text x="191" y="364" fill="#d7dae0">o</text>
-<text x="200" y="364" fill="#d7dae0">r</text>
-<text x="290" y="364" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="364" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="317" y="364" fill="#d7dae0">F</text>
-<text x="326" y="364" fill="#d7dae0">o</text>
-<text x="335" y="364" fill="#d7dae0">l</text>
-<text x="344" y="364" fill="#d7dae0">l</text>
-<text x="353" y="364" fill="#d7dae0">o</text>
-<text x="362" y="364" fill="#d7dae0">w</text>
-<text x="380" y="364" fill="#d7dae0">t</text>
-<text x="389" y="364" fill="#d7dae0">h</text>
-<text x="398" y="364" fill="#d7dae0">e</text>
-<text x="407" y="364" fill="#d7dae0">m</text>
-<text x="416" y="364" fill="#d7dae0">e</text>
-<text x="38" y="382" fill="#d7dae0">T</text>
-<text x="47" y="382" fill="#d7dae0">a</text>
-<text x="56" y="382" fill="#d7dae0">b</text>
-<text x="74" y="382" fill="#d7dae0">n</text>
-<text x="83" y="382" fill="#d7dae0">a</text>
-<text x="92" y="382" fill="#d7dae0">m</text>
-<text x="101" y="382" fill="#d7dae0">e</text>
-<text x="119" y="382" fill="#d7dae0">c</text>
-<text x="128" y="382" fill="#d7dae0">o</text>
-<text x="137" y="382" fill="#d7dae0">l</text>
-<text x="146" y="382" fill="#d7dae0">o</text>
-<text x="155" y="382" fill="#d7dae0">r</text>
-<text x="290" y="382" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="382" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="317" y="382" fill="#d7dae0">F</text>
-<text x="326" y="382" fill="#d7dae0">o</text>
-<text x="335" y="382" fill="#d7dae0">l</text>
-<text x="344" y="382" fill="#d7dae0">l</text>
-<text x="353" y="382" fill="#d7dae0">o</text>
-<text x="362" y="382" fill="#d7dae0">w</text>
-<text x="380" y="382" fill="#d7dae0">t</text>
-<text x="389" y="382" fill="#d7dae0">h</text>
-<text x="398" y="382" fill="#d7dae0">e</text>
-<text x="407" y="382" fill="#d7dae0">m</text>
-<text x="416" y="382" fill="#d7dae0">e</text>
-<text x="38" y="400" fill="#d7dae0">M</text>
-<text x="47" y="400" fill="#d7dae0">a</text>
-<text x="56" y="400" fill="#d7dae0">c</text>
+<text x="173" y="256" fill="#d7dae0">a</text>
+<text x="191" y="256" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="209" y="256" fill="#d7dae0">m</text>
+<text x="218" y="256" fill="#d7dae0">e</text>
+<text x="227" y="256" fill="#d7dae0">d</text>
+<text x="236" y="256" fill="#d7dae0">i</text>
+<text x="245" y="256" fill="#d7dae0">u</text>
+<text x="254" y="256" fill="#d7dae0">m</text>
+<text x="272" y="256" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="290" y="256" fill="#d7dae0">2</text>
+<text x="299" y="256" fill="#d7dae0">5</text>
+<text x="308" y="256" fill="#d7dae0">%</text>
+<text x="317" y="256" fill="#d7dae0">/</text>
+<text x="326" y="256" fill="#d7dae0">1</text>
+<text x="335" y="256" fill="#d7dae0">M</text>
+<text x="20" y="328" fill="#d7dae0" font-weight="bold">S</text>
+<text x="29" y="328" fill="#d7dae0" font-weight="bold">P</text>
+<text x="38" y="328" fill="#d7dae0" font-weight="bold">A</text>
+<text x="47" y="328" fill="#d7dae0" font-weight="bold">C</text>
+<text x="56" y="328" fill="#d7dae0" font-weight="bold">E</text>
+<text x="65" y="328" fill="#d7dae0" font-weight="bold">S</text>
+<text x="38" y="346" fill="#d7dae0">U</text>
+<text x="47" y="346" fill="#d7dae0">s</text>
+<text x="56" y="346" fill="#d7dae0">e</text>
+<text x="74" y="346" fill="#d7dae0">s</text>
+<text x="83" y="346" fill="#d7dae0">p</text>
+<text x="92" y="346" fill="#d7dae0">a</text>
+<text x="101" y="346" fill="#d7dae0">c</text>
+<text x="110" y="346" fill="#d7dae0">e</text>
+<text x="128" y="346" fill="#d7dae0">c</text>
+<text x="137" y="346" fill="#d7dae0">o</text>
+<text x="146" y="346" fill="#d7dae0">l</text>
+<text x="155" y="346" fill="#d7dae0">o</text>
+<text x="164" y="346" fill="#d7dae0">r</text>
+<text x="173" y="346" fill="#d7dae0">s</text>
+<text x="281" y="346" fill="#d7dae0">O</text>
+<text x="290" y="346" fill="#d7dae0">n</text>
+<text x="38" y="364" fill="#d7dae0">S</text>
+<text x="47" y="364" fill="#d7dae0">p</text>
+<text x="56" y="364" fill="#d7dae0">a</text>
+<text x="65" y="364" fill="#d7dae0">c</text>
+<text x="74" y="364" fill="#d7dae0">e</text>
+<text x="281" y="364" fill="#d7dae0">S</text>
+<text x="290" y="364" fill="#d7dae0">a</text>
+<text x="299" y="364" fill="#d7dae0">m</text>
+<text x="308" y="364" fill="#d7dae0">p</text>
+<text x="317" y="364" fill="#d7dae0">l</text>
+<text x="326" y="364" fill="#d7dae0">e</text>
+<text x="344" y="364" fill="#d7dae0">s</text>
+<text x="353" y="364" fill="#d7dae0">p</text>
+<text x="362" y="364" fill="#d7dae0">a</text>
+<text x="371" y="364" fill="#d7dae0">c</text>
+<text x="380" y="364" fill="#d7dae0">e</text>
+<text x="398" y="364" fill="#d7dae0">(</text>
+<text x="407" y="364" fill="#d7dae0">p</text>
+<text x="416" y="364" fill="#d7dae0">r</text>
+<text x="425" y="364" fill="#d7dae0">e</text>
+<text x="434" y="364" fill="#d7dae0">v</text>
+<text x="443" y="364" fill="#d7dae0">i</text>
+<text x="452" y="364" fill="#d7dae0">e</text>
+<text x="461" y="364" fill="#d7dae0">w</text>
+<text x="479" y="364" fill="#d7dae0">o</text>
+<text x="488" y="364" fill="#d7dae0">n</text>
+<text x="497" y="364" fill="#d7dae0">l</text>
+<text x="506" y="364" fill="#d7dae0">y</text>
+<text x="515" y="364" fill="#d7dae0">)</text>
+<text x="20" y="382" fill="#d7dae0">&gt;</text>
+<text x="38" y="382" fill="#d7dae0">C</text>
+<text x="47" y="382" fill="#d7dae0">o</text>
+<text x="56" y="382" fill="#d7dae0">l</text>
+<text x="65" y="382" fill="#d7dae0">o</text>
+<text x="74" y="382" fill="#d7dae0">r</text>
+<text x="281" y="382" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="382" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="382" fill="#d7dae0">B</text>
+<text x="317" y="382" fill="#d7dae0">l</text>
+<text x="326" y="382" fill="#d7dae0">u</text>
+<text x="335" y="382" fill="#d7dae0">e</text>
+<text x="353" y="382" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="371" y="382" fill="#d7dae0">M</text>
+<text x="380" y="382" fill="#d7dae0">e</text>
+<text x="389" y="382" fill="#d7dae0">d</text>
+<text x="398" y="382" fill="#d7dae0">i</text>
+<text x="407" y="382" fill="#d7dae0">u</text>
+<text x="416" y="382" fill="#d7dae0">m</text>
+<text x="56" y="400" fill="#d7dae0">C</text>
 <text x="65" y="400" fill="#d7dae0">h</text>
-<text x="74" y="400" fill="#d7dae0">i</text>
-<text x="83" y="400" fill="#d7dae0">n</text>
-<text x="92" y="400" fill="#d7dae0">e</text>
-<text x="110" y="400" fill="#d7dae0">l</text>
-<text x="119" y="400" fill="#d7dae0">a</text>
-<text x="128" y="400" fill="#d7dae0">b</text>
-<text x="137" y="400" fill="#d7dae0">e</text>
-<text x="146" y="400" fill="#d7dae0">l</text>
-<text x="164" y="400" fill="#d7dae0">c</text>
-<text x="173" y="400" fill="#d7dae0">o</text>
-<text x="182" y="400" fill="#d7dae0">l</text>
-<text x="191" y="400" fill="#d7dae0">o</text>
-<text x="200" y="400" fill="#d7dae0">r</text>
-<text x="290" y="400" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="400" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="317" y="400" fill="#d7dae0">S</text>
-<text x="326" y="400" fill="#d7dae0">a</text>
-<text x="335" y="400" fill="#d7dae0">m</text>
-<text x="344" y="400" fill="#d7dae0">e</text>
-<text x="362" y="400" fill="#d7dae0">a</text>
-<text x="371" y="400" fill="#d7dae0">s</text>
-<text x="389" y="400" fill="#d7dae0">a</text>
-<text x="398" y="400" fill="#d7dae0">g</text>
-<text x="407" y="400" fill="#d7dae0">e</text>
-<text x="416" y="400" fill="#d7dae0">n</text>
-<text x="425" y="400" fill="#d7dae0">t</text>
-<text x="443" y="400" fill="#d7dae0">d</text>
-<text x="452" y="400" fill="#d7dae0">e</text>
-<text x="461" y="400" fill="#d7dae0">t</text>
-<text x="470" y="400" fill="#d7dae0">a</text>
-<text x="479" y="400" fill="#d7dae0">i</text>
-<text x="488" y="400" fill="#d7dae0">l</text>
-<text x="497" y="400" fill="#d7dae0">s</text>
-<text x="38" y="418" fill="#d7dae0">B</text>
-<text x="47" y="418" fill="#d7dae0">r</text>
-<text x="56" y="418" fill="#d7dae0">a</text>
-<text x="65" y="418" fill="#d7dae0">n</text>
-<text x="74" y="418" fill="#d7dae0">c</text>
-<text x="83" y="418" fill="#d7dae0">h</text>
+<text x="74" y="400" fill="#d7dae0">o</text>
+<text x="83" y="400" fill="#d7dae0">o</text>
+<text x="92" y="400" fill="#d7dae0">s</text>
+<text x="101" y="400" fill="#d7dae0">e</text>
+<text x="119" y="400" fill="#d7dae0">f</text>
+<text x="128" y="400" fill="#d7dae0">r</text>
+<text x="137" y="400" fill="#d7dae0">o</text>
+<text x="146" y="400" fill="#d7dae0">m</text>
+<text x="164" y="400" fill="#d7dae0">t</text>
+<text x="173" y="400" fill="#d7dae0">h</text>
+<text x="182" y="400" fill="#d7dae0">e</text>
+<text x="200" y="400" fill="#d7dae0">s</text>
+<text x="209" y="400" fill="#d7dae0">w</text>
+<text x="218" y="400" fill="#d7dae0">a</text>
+<text x="227" y="400" fill="#d7dae0">t</text>
+<text x="236" y="400" fill="#d7dae0">c</text>
+<text x="245" y="400" fill="#d7dae0">h</text>
+<text x="254" y="400" fill="#d7dae0">e</text>
+<text x="263" y="400" fill="#d7dae0">s</text>
+<text x="281" y="400" fill="#d7dae0">b</text>
+<text x="290" y="400" fill="#d7dae0">e</text>
+<text x="299" y="400" fill="#d7dae0">l</text>
+<text x="308" y="400" fill="#d7dae0">o</text>
+<text x="317" y="400" fill="#d7dae0">w</text>
+<text x="326" y="400" fill="#d7dae0">.</text>
+<text x="344" y="400" fill="#d7dae0">E</text>
+<text x="353" y="400" fill="#d7dae0">n</text>
+<text x="362" y="400" fill="#d7dae0">t</text>
+<text x="371" y="400" fill="#d7dae0">e</text>
+<text x="380" y="400" fill="#d7dae0">r</text>
+<text x="398" y="400" fill="#d7dae0">f</text>
+<text x="407" y="400" fill="#d7dae0">o</text>
+<text x="416" y="400" fill="#d7dae0">c</text>
+<text x="425" y="400" fill="#d7dae0">u</text>
+<text x="434" y="400" fill="#d7dae0">s</text>
+<text x="443" y="400" fill="#d7dae0">e</text>
+<text x="452" y="400" fill="#d7dae0">s</text>
+<text x="470" y="400" fill="#d7dae0">t</text>
+<text x="479" y="400" fill="#d7dae0">h</text>
+<text x="488" y="400" fill="#d7dae0">e</text>
+<text x="506" y="400" fill="#d7dae0">p</text>
+<text x="515" y="400" fill="#d7dae0">a</text>
+<text x="524" y="400" fill="#d7dae0">l</text>
+<text x="533" y="400" fill="#d7dae0">e</text>
+<text x="542" y="400" fill="#d7dae0">t</text>
+<text x="551" y="400" fill="#d7dae0">t</text>
+<text x="560" y="400" fill="#d7dae0">e</text>
+<text x="569" y="400" fill="#d7dae0">;</text>
+<text x="587" y="400" fill="#d7dae0">E</text>
+<text x="596" y="400" fill="#d7dae0">s</text>
+<text x="605" y="400" fill="#d7dae0">c</text>
+<text x="614" y="400" fill="#d7dae0">a</text>
+<text x="623" y="400" fill="#d7dae0">p</text>
+<text x="632" y="400" fill="#d7dae0">e</text>
+<text x="650" y="400" fill="#d7dae0">r</text>
+<text x="659" y="400" fill="#d7dae0">e</text>
+<text x="668" y="400" fill="#d7dae0">t</text>
+<text x="677" y="400" fill="#d7dae0">u</text>
+<text x="686" y="400" fill="#d7dae0">r</text>
+<text x="695" y="400" fill="#d7dae0">n</text>
+<text x="704" y="400" fill="#d7dae0">s</text>
+<text x="722" y="400" fill="#d7dae0">t</text>
+<text x="731" y="400" fill="#d7dae0">o</text>
+<text x="749" y="400" fill="#d7dae0">f</text>
+<text x="758" y="400" fill="#d7dae0">i</text>
+<text x="767" y="400" fill="#d7dae0">e</text>
+<text x="776" y="400" fill="#d7dae0">l</text>
+<text x="785" y="400" fill="#d7dae0">d</text>
+<text x="794" y="400" fill="#d7dae0">s</text>
+<text x="803" y="400" fill="#d7dae0">.</text>
+<text x="38" y="418" fill="#d7dae0">N</text>
+<text x="47" y="418" fill="#d7dae0">e</text>
+<text x="56" y="418" fill="#d7dae0">w</text>
+<text x="65" y="418" fill="#d7dae0">-</text>
+<text x="74" y="418" fill="#d7dae0">s</text>
+<text x="83" y="418" fill="#d7dae0">p</text>
+<text x="92" y="418" fill="#d7dae0">a</text>
 <text x="101" y="418" fill="#d7dae0">c</text>
-<text x="110" y="418" fill="#d7dae0">o</text>
-<text x="119" y="418" fill="#d7dae0">l</text>
-<text x="128" y="418" fill="#d7dae0">o</text>
-<text x="137" y="418" fill="#d7dae0">r</text>
-<text x="290" y="418" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="418" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="317" y="418" fill="#d7dae0">F</text>
-<text x="326" y="418" fill="#d7dae0">o</text>
-<text x="335" y="418" fill="#d7dae0">l</text>
-<text x="344" y="418" fill="#d7dae0">l</text>
-<text x="353" y="418" fill="#d7dae0">o</text>
-<text x="362" y="418" fill="#d7dae0">w</text>
-<text x="380" y="418" fill="#d7dae0">t</text>
-<text x="389" y="418" fill="#d7dae0">h</text>
-<text x="398" y="418" fill="#d7dae0">e</text>
-<text x="407" y="418" fill="#d7dae0">m</text>
-<text x="416" y="418" fill="#d7dae0">e</text>
-<text x="20" y="454" fill="#d7dae0" font-weight="bold">S</text>
-<text x="29" y="454" fill="#d7dae0" font-weight="bold">e</text>
-<text x="38" y="454" fill="#d7dae0" font-weight="bold">l</text>
-<text x="47" y="454" fill="#d7dae0" font-weight="bold">e</text>
-<text x="56" y="454" fill="#d7dae0" font-weight="bold">c</text>
-<text x="65" y="454" fill="#d7dae0" font-weight="bold">t</text>
-<text x="74" y="454" fill="#d7dae0" font-weight="bold">e</text>
-<text x="83" y="454" fill="#d7dae0" font-weight="bold">d</text>
-<text x="101" y="454" fill="#d7dae0" font-weight="bold">s</text>
-<text x="110" y="454" fill="#d7dae0" font-weight="bold">p</text>
-<text x="119" y="454" fill="#d7dae0" font-weight="bold">a</text>
-<text x="128" y="454" fill="#d7dae0" font-weight="bold">c</text>
-<text x="137" y="454" fill="#d7dae0" font-weight="bold">e</text>
-<text x="155" y="454" fill="#d7dae0" font-weight="bold">c</text>
-<text x="164" y="454" fill="#d7dae0" font-weight="bold">o</text>
-<text x="173" y="454" fill="#d7dae0" font-weight="bold">l</text>
-<text x="182" y="454" fill="#d7dae0" font-weight="bold">o</text>
-<text x="191" y="454" fill="#d7dae0" font-weight="bold">r</text>
-<text x="209" y="454" fill="#d7dae0" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">—</text>
-<text x="227" y="454" fill="#d7dae0" font-weight="bold">c</text>
-<text x="236" y="454" fill="#d7dae0" font-weight="bold">h</text>
-<text x="245" y="454" fill="#d7dae0" font-weight="bold">o</text>
-<text x="254" y="454" fill="#d7dae0" font-weight="bold">o</text>
-<text x="263" y="454" fill="#d7dae0" font-weight="bold">s</text>
-<text x="272" y="454" fill="#d7dae0" font-weight="bold">e</text>
-<text x="290" y="454" fill="#d7dae0" font-weight="bold">a</text>
-<text x="308" y="454" fill="#d7dae0" font-weight="bold">s</text>
-<text x="317" y="454" fill="#d7dae0" font-weight="bold">w</text>
-<text x="326" y="454" fill="#d7dae0" font-weight="bold">a</text>
-<text x="335" y="454" fill="#d7dae0" font-weight="bold">t</text>
-<text x="344" y="454" fill="#d7dae0" font-weight="bold">c</text>
-<text x="353" y="454" fill="#d7dae0" font-weight="bold">h</text>
-<text x="20" y="472" fill="#d7dae0">A</text>
-<text x="29" y="472" fill="#d7dae0">r</text>
-<text x="38" y="472" fill="#d7dae0">r</text>
-<text x="47" y="472" fill="#d7dae0">o</text>
-<text x="56" y="472" fill="#d7dae0">w</text>
-<text x="65" y="472" fill="#d7dae0">s</text>
-<text x="74" y="472" fill="#d7dae0">:</text>
-<text x="92" y="472" fill="#d7dae0">c</text>
-<text x="101" y="472" fill="#d7dae0">h</text>
-<text x="110" y="472" fill="#d7dae0">o</text>
-<text x="119" y="472" fill="#d7dae0">o</text>
-<text x="128" y="472" fill="#d7dae0">s</text>
-<text x="137" y="472" fill="#d7dae0">e</text>
-<text x="173" y="472" fill="#d7dae0">E</text>
-<text x="182" y="472" fill="#d7dae0">n</text>
-<text x="191" y="472" fill="#d7dae0">t</text>
-<text x="200" y="472" fill="#d7dae0">e</text>
-<text x="209" y="472" fill="#d7dae0">r</text>
-<text x="227" y="472" fill="#d7dae0">/</text>
-<text x="245" y="472" fill="#d7dae0">E</text>
-<text x="254" y="472" fill="#d7dae0">s</text>
-<text x="263" y="472" fill="#d7dae0">c</text>
-<text x="272" y="472" fill="#d7dae0">:</text>
-<text x="290" y="472" fill="#d7dae0">b</text>
-<text x="299" y="472" fill="#d7dae0">a</text>
-<text x="308" y="472" fill="#d7dae0">c</text>
-<text x="317" y="472" fill="#d7dae0">k</text>
-<text x="335" y="472" fill="#d7dae0">t</text>
-<text x="344" y="472" fill="#d7dae0">o</text>
-<text x="362" y="472" fill="#d7dae0">f</text>
-<text x="371" y="472" fill="#d7dae0">i</text>
-<text x="380" y="472" fill="#d7dae0">e</text>
-<text x="389" y="472" fill="#d7dae0">l</text>
-<text x="398" y="472" fill="#d7dae0">d</text>
-<text x="407" y="472" fill="#d7dae0">s</text>
-<text x="29" y="508" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="38" y="508" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="47" y="508" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="56" y="508" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="74" y="508" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="83" y="508" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="92" y="508" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="101" y="508" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="119" y="508" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="128" y="508" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="137" y="508" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="146" y="508" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="191" y="508" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="200" y="508" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="209" y="508" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="218" y="508" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="236" y="508" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="245" y="508" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="254" y="508" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="263" y="508" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="281" y="508" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="290" y="508" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="508" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="308" y="508" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="353" y="508" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="362" y="508" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="371" y="508" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="380" y="508" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="398" y="508" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="407" y="508" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="416" y="508" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="425" y="508" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="443" y="508" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="452" y="508" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="461" y="508" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="470" y="508" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="29" y="526" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="38" y="526" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="47" y="526" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="56" y="526" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="74" y="526" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="83" y="526" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="92" y="526" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="101" y="526" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="119" y="526" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="128" y="526" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="137" y="526" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="146" y="526" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="191" y="526" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="200" y="526" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="209" y="526" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="218" y="526" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="236" y="526" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="245" y="526" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="254" y="526" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="263" y="526" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="281" y="526" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="290" y="526" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="526" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="308" y="526" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="353" y="526" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="362" y="526" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="371" y="526" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="380" y="526" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="398" y="526" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="407" y="526" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="416" y="526" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="425" y="526" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="443" y="526" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="452" y="526" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="461" y="526" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="470" y="526" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="29" y="562" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="38" y="562" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="47" y="562" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="56" y="562" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="74" y="562" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="83" y="562" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="92" y="562" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="101" y="562" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="119" y="562" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="128" y="562" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="137" y="562" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="146" y="562" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="191" y="562" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="200" y="562" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="209" y="562" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="218" y="562" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="236" y="562" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="245" y="562" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="254" y="562" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="263" y="562" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="281" y="562" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="290" y="562" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="562" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="308" y="562" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="353" y="562" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="362" y="562" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="371" y="562" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="380" y="562" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="398" y="562" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="407" y="562" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="416" y="562" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="425" y="562" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="443" y="562" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="452" y="562" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="461" y="562" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="470" y="562" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="29" y="580" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="38" y="580" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="47" y="580" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="56" y="580" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="74" y="580" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="83" y="580" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="92" y="580" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="101" y="580" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="119" y="580" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="128" y="580" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="137" y="580" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="146" y="580" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="191" y="580" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="200" y="580" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="209" y="580" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="218" y="580" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="236" y="580" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="245" y="580" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="254" y="580" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="263" y="580" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="281" y="580" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="290" y="580" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="580" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="308" y="580" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="353" y="580" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="362" y="580" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="371" y="580" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="380" y="580" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="398" y="580" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="407" y="580" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="416" y="580" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="425" y="580" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="443" y="580" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="452" y="580" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="461" y="580" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="470" y="580" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="29" y="616" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="38" y="616" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="47" y="616" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="56" y="616" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="74" y="616" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="83" y="616" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="92" y="616" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="101" y="616" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="119" y="616" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="128" y="616" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="137" y="616" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="146" y="616" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="191" y="616" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="200" y="616" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="209" y="616" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="218" y="616" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="236" y="616" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="245" y="616" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="254" y="616" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="263" y="616" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="281" y="616" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="290" y="616" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="616" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="308" y="616" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="353" y="616" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="362" y="616" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="371" y="616" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="380" y="616" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="398" y="616" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="407" y="616" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="416" y="616" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="425" y="616" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="443" y="616" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="452" y="616" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="461" y="616" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="470" y="616" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="29" y="634" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="38" y="634" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="47" y="634" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="56" y="634" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="74" y="634" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="83" y="634" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="92" y="634" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="101" y="634" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="119" y="634" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="128" y="634" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="137" y="634" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="146" y="634" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="191" y="634" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="200" y="634" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="209" y="634" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="218" y="634" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="227" y="634" fill="#d7dae0" font-weight="bold">&gt;</text>
-<text x="236" y="634" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="245" y="634" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="254" y="634" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="263" y="634" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="272" y="634" fill="#d7dae0" font-weight="bold">&lt;</text>
-<text x="281" y="634" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="290" y="634" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="634" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="308" y="634" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="353" y="634" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="362" y="634" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="371" y="634" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="380" y="634" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="398" y="634" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="407" y="634" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="416" y="634" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="425" y="634" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="443" y="634" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="452" y="634" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="461" y="634" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="470" y="634" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="29" y="670" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="38" y="670" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="47" y="670" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="56" y="670" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="74" y="670" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="83" y="670" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="92" y="670" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="101" y="670" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="119" y="670" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="128" y="670" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="137" y="670" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="146" y="670" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="191" y="670" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="200" y="670" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="209" y="670" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="218" y="670" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="236" y="670" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="245" y="670" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="254" y="670" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="263" y="670" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="281" y="670" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="290" y="670" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="670" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="308" y="670" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="353" y="670" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="362" y="670" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="371" y="670" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="380" y="670" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="398" y="670" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="407" y="670" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="416" y="670" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="425" y="670" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="443" y="670" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="452" y="670" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="461" y="670" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="470" y="670" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="29" y="688" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="38" y="688" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="47" y="688" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="56" y="688" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="74" y="688" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="83" y="688" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="92" y="688" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="101" y="688" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="119" y="688" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="128" y="688" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="137" y="688" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="146" y="688" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="191" y="688" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="200" y="688" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="209" y="688" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="218" y="688" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="236" y="688" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="245" y="688" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="254" y="688" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="263" y="688" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="281" y="688" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="290" y="688" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="299" y="688" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="308" y="688" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="353" y="688" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="362" y="688" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="371" y="688" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="380" y="688" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="398" y="688" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="407" y="688" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="416" y="688" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="425" y="688" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="443" y="688" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="452" y="688" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="461" y="688" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="470" y="688" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
-<text x="20" y="724" fill="#d7dae0" font-weight="bold">B</text>
-<text x="29" y="724" fill="#d7dae0" font-weight="bold">l</text>
-<text x="38" y="724" fill="#d7dae0" font-weight="bold">u</text>
-<text x="47" y="724" fill="#d7dae0" font-weight="bold">e</text>
-<text x="65" y="724" fill="#d7dae0" font-weight="bold">M</text>
-<text x="74" y="724" fill="#d7dae0" font-weight="bold">e</text>
-<text x="83" y="724" fill="#d7dae0" font-weight="bold">d</text>
-<text x="92" y="724" fill="#d7dae0" font-weight="bold">i</text>
-<text x="101" y="724" fill="#d7dae0" font-weight="bold">u</text>
-<text x="110" y="724" fill="#d7dae0" font-weight="bold">m</text>
-<text x="20" y="742" fill="#d7dae0">S</text>
-<text x="29" y="742" fill="#d7dae0">a</text>
-<text x="38" y="742" fill="#d7dae0">m</text>
-<text x="47" y="742" fill="#d7dae0">p</text>
-<text x="56" y="742" fill="#d7dae0">l</text>
-<text x="65" y="742" fill="#d7dae0">e</text>
-<text x="83" y="742" fill="#d7dae0">o</text>
-<text x="92" y="742" fill="#d7dae0">n</text>
-<text x="101" y="742" fill="#d7dae0">l</text>
-<text x="110" y="742" fill="#d7dae0">y</text>
-<text x="119" y="742" fill="#d7dae0">;</text>
-<text x="137" y="742" fill="#d7dae0">n</text>
-<text x="146" y="742" fill="#d7dae0">o</text>
-<text x="164" y="742" fill="#d7dae0">r</text>
-<text x="173" y="742" fill="#d7dae0">e</text>
-<text x="182" y="742" fill="#d7dae0">a</text>
-<text x="191" y="742" fill="#d7dae0">l</text>
-<text x="209" y="742" fill="#d7dae0">s</text>
-<text x="218" y="742" fill="#d7dae0">p</text>
-<text x="227" y="742" fill="#d7dae0">a</text>
-<text x="236" y="742" fill="#d7dae0">c</text>
-<text x="245" y="742" fill="#d7dae0">e</text>
-<text x="263" y="742" fill="#d7dae0">i</text>
-<text x="272" y="742" fill="#d7dae0">s</text>
-<text x="290" y="742" fill="#d7dae0">c</text>
-<text x="299" y="742" fill="#d7dae0">h</text>
-<text x="308" y="742" fill="#d7dae0">a</text>
-<text x="317" y="742" fill="#d7dae0">n</text>
-<text x="326" y="742" fill="#d7dae0">g</text>
-<text x="335" y="742" fill="#d7dae0">e</text>
-<text x="344" y="742" fill="#d7dae0">d</text>
-<text x="353" y="742" fill="#d7dae0">.</text>
-<text x="20" y="814" fill="#d7dae0">C</text>
-<text x="29" y="814" fill="#d7dae0">h</text>
-<text x="38" y="814" fill="#d7dae0">o</text>
-<text x="47" y="814" fill="#d7dae0">o</text>
-<text x="56" y="814" fill="#d7dae0">s</text>
-<text x="65" y="814" fill="#d7dae0">e</text>
-<text x="83" y="814" fill="#d7dae0">f</text>
-<text x="92" y="814" fill="#d7dae0">r</text>
-<text x="101" y="814" fill="#d7dae0">o</text>
-<text x="110" y="814" fill="#d7dae0">m</text>
-<text x="128" y="814" fill="#d7dae0">t</text>
-<text x="137" y="814" fill="#d7dae0">h</text>
-<text x="146" y="814" fill="#d7dae0">e</text>
-<text x="164" y="814" fill="#d7dae0">s</text>
-<text x="173" y="814" fill="#d7dae0">w</text>
-<text x="182" y="814" fill="#d7dae0">a</text>
-<text x="191" y="814" fill="#d7dae0">t</text>
-<text x="200" y="814" fill="#d7dae0">c</text>
-<text x="209" y="814" fill="#d7dae0">h</text>
-<text x="218" y="814" fill="#d7dae0">e</text>
-<text x="227" y="814" fill="#d7dae0">s</text>
-<text x="245" y="814" fill="#d7dae0">b</text>
-<text x="254" y="814" fill="#d7dae0">e</text>
-<text x="263" y="814" fill="#d7dae0">l</text>
-<text x="272" y="814" fill="#d7dae0">o</text>
-<text x="281" y="814" fill="#d7dae0">w</text>
-<text x="290" y="814" fill="#d7dae0">.</text>
-<text x="308" y="814" fill="#d7dae0">E</text>
-<text x="317" y="814" fill="#d7dae0">n</text>
-<text x="326" y="814" fill="#d7dae0">t</text>
-<text x="335" y="814" fill="#d7dae0">e</text>
-<text x="344" y="814" fill="#d7dae0">r</text>
-<text x="362" y="814" fill="#d7dae0">f</text>
-<text x="371" y="814" fill="#d7dae0">o</text>
-<text x="380" y="814" fill="#d7dae0">c</text>
-<text x="389" y="814" fill="#d7dae0">u</text>
-<text x="398" y="814" fill="#d7dae0">s</text>
-<text x="407" y="814" fill="#d7dae0">e</text>
-<text x="416" y="814" fill="#d7dae0">s</text>
-<text x="434" y="814" fill="#d7dae0">t</text>
-<text x="443" y="814" fill="#d7dae0">h</text>
-<text x="452" y="814" fill="#d7dae0">e</text>
-<text x="470" y="814" fill="#d7dae0">p</text>
-<text x="479" y="814" fill="#d7dae0">a</text>
-<text x="488" y="814" fill="#d7dae0">l</text>
-<text x="497" y="814" fill="#d7dae0">e</text>
-<text x="506" y="814" fill="#d7dae0">t</text>
-<text x="515" y="814" fill="#d7dae0">t</text>
-<text x="524" y="814" fill="#d7dae0">e</text>
-<text x="533" y="814" fill="#d7dae0">;</text>
-<text x="551" y="814" fill="#d7dae0">E</text>
-<text x="560" y="814" fill="#d7dae0">s</text>
-<text x="569" y="814" fill="#d7dae0">c</text>
-<text x="578" y="814" fill="#d7dae0">a</text>
-<text x="587" y="814" fill="#d7dae0">p</text>
-<text x="596" y="814" fill="#d7dae0">e</text>
-<text x="614" y="814" fill="#d7dae0">r</text>
-<text x="623" y="814" fill="#d7dae0">e</text>
-<text x="632" y="814" fill="#d7dae0">t</text>
-<text x="641" y="814" fill="#d7dae0">u</text>
-<text x="650" y="814" fill="#d7dae0">r</text>
-<text x="659" y="814" fill="#d7dae0">n</text>
-<text x="668" y="814" fill="#d7dae0">s</text>
-<text x="686" y="814" fill="#d7dae0">t</text>
-<text x="695" y="814" fill="#d7dae0">o</text>
-<text x="713" y="814" fill="#d7dae0">f</text>
-<text x="722" y="814" fill="#d7dae0">i</text>
-<text x="731" y="814" fill="#d7dae0">e</text>
-<text x="740" y="814" fill="#d7dae0">l</text>
-<text x="749" y="814" fill="#d7dae0">d</text>
-<text x="758" y="814" fill="#d7dae0">s</text>
-<text x="767" y="814" fill="#d7dae0">.</text>
-<text x="20" y="832" fill="#d7dae0" font-weight="bold">S</text>
-<text x="29" y="832" fill="#d7dae0" font-weight="bold">a</text>
-<text x="38" y="832" fill="#d7dae0" font-weight="bold">v</text>
-<text x="47" y="832" fill="#d7dae0" font-weight="bold">e</text>
-<text x="56" y="832" fill="#d7dae0" font-weight="bold">d</text>
-<text x="74" y="832" fill="#d7dae0" font-weight="bold">s</text>
-<text x="83" y="832" fill="#d7dae0" font-weight="bold">e</text>
-<text x="92" y="832" fill="#d7dae0" font-weight="bold">t</text>
-<text x="101" y="832" fill="#d7dae0" font-weight="bold">t</text>
-<text x="110" y="832" fill="#d7dae0" font-weight="bold">i</text>
-<text x="119" y="832" fill="#d7dae0" font-weight="bold">n</text>
-<text x="128" y="832" fill="#d7dae0" font-weight="bold">g</text>
-<text x="137" y="832" fill="#d7dae0" font-weight="bold">s</text>
-<text x="146" y="832" fill="#d7dae0" font-weight="bold">.</text>
-<text x="164" y="832" fill="#d7dae0" font-weight="bold">N</text>
-<text x="173" y="832" fill="#d7dae0" font-weight="bold">o</text>
-<text x="191" y="832" fill="#d7dae0" font-weight="bold">p</text>
-<text x="200" y="832" fill="#d7dae0" font-weight="bold">e</text>
-<text x="209" y="832" fill="#d7dae0" font-weight="bold">n</text>
-<text x="218" y="832" fill="#d7dae0" font-weight="bold">d</text>
-<text x="227" y="832" fill="#d7dae0" font-weight="bold">i</text>
-<text x="236" y="832" fill="#d7dae0" font-weight="bold">n</text>
-<text x="245" y="832" fill="#d7dae0" font-weight="bold">g</text>
-<text x="263" y="832" fill="#d7dae0" font-weight="bold">c</text>
-<text x="272" y="832" fill="#d7dae0" font-weight="bold">h</text>
-<text x="281" y="832" fill="#d7dae0" font-weight="bold">a</text>
-<text x="290" y="832" fill="#d7dae0" font-weight="bold">n</text>
-<text x="299" y="832" fill="#d7dae0" font-weight="bold">g</text>
-<text x="308" y="832" fill="#d7dae0" font-weight="bold">e</text>
-<text x="317" y="832" fill="#d7dae0" font-weight="bold">s</text>
-<text x="326" y="832" fill="#d7dae0" font-weight="bold">.</text>
-<text x="20" y="850" fill="#d7dae0">T</text>
-<text x="29" y="850" fill="#d7dae0">a</text>
-<text x="38" y="850" fill="#d7dae0">b</text>
-<text x="47" y="850" fill="#d7dae0">:</text>
-<text x="65" y="850" fill="#d7dae0">p</text>
-<text x="74" y="850" fill="#d7dae0">a</text>
-<text x="83" y="850" fill="#d7dae0">g</text>
-<text x="92" y="850" fill="#d7dae0">e</text>
-<text x="119" y="850" fill="#d7dae0">U</text>
-<text x="128" y="850" fill="#d7dae0">p</text>
-<text x="137" y="850" fill="#d7dae0">/</text>
-<text x="146" y="850" fill="#d7dae0">D</text>
-<text x="155" y="850" fill="#d7dae0">o</text>
-<text x="164" y="850" fill="#d7dae0">w</text>
-<text x="173" y="850" fill="#d7dae0">n</text>
-<text x="182" y="850" fill="#d7dae0">:</text>
-<text x="200" y="850" fill="#d7dae0">s</text>
-<text x="209" y="850" fill="#d7dae0">e</text>
-<text x="218" y="850" fill="#d7dae0">l</text>
-<text x="227" y="850" fill="#d7dae0">e</text>
-<text x="236" y="850" fill="#d7dae0">c</text>
-<text x="245" y="850" fill="#d7dae0">t</text>
-<text x="272" y="850" fill="#d7dae0">L</text>
-<text x="281" y="850" fill="#d7dae0">e</text>
-<text x="290" y="850" fill="#d7dae0">f</text>
-<text x="299" y="850" fill="#d7dae0">t</text>
-<text x="308" y="850" fill="#d7dae0">/</text>
-<text x="317" y="850" fill="#d7dae0">R</text>
-<text x="326" y="850" fill="#d7dae0">i</text>
-<text x="335" y="850" fill="#d7dae0">g</text>
-<text x="344" y="850" fill="#d7dae0">h</text>
-<text x="353" y="850" fill="#d7dae0">t</text>
-<text x="362" y="850" fill="#d7dae0">:</text>
-<text x="380" y="850" fill="#d7dae0">c</text>
-<text x="389" y="850" fill="#d7dae0">h</text>
-<text x="398" y="850" fill="#d7dae0">a</text>
-<text x="407" y="850" fill="#d7dae0">n</text>
-<text x="416" y="850" fill="#d7dae0">g</text>
-<text x="425" y="850" fill="#d7dae0">e</text>
-<text x="452" y="850" fill="#d7dae0">E</text>
-<text x="461" y="850" fill="#d7dae0">n</text>
-<text x="470" y="850" fill="#d7dae0">t</text>
-<text x="479" y="850" fill="#d7dae0">e</text>
-<text x="488" y="850" fill="#d7dae0">r</text>
-<text x="497" y="850" fill="#d7dae0">:</text>
-<text x="515" y="850" fill="#d7dae0">e</text>
-<text x="524" y="850" fill="#d7dae0">d</text>
-<text x="533" y="850" fill="#d7dae0">i</text>
-<text x="542" y="850" fill="#d7dae0">t</text>
-<text x="569" y="850" fill="#d7dae0">P</text>
-<text x="578" y="850" fill="#d7dae0">g</text>
-<text x="587" y="850" fill="#d7dae0">U</text>
-<text x="596" y="850" fill="#d7dae0">p</text>
-<text x="605" y="850" fill="#d7dae0">/</text>
-<text x="614" y="850" fill="#d7dae0">P</text>
-<text x="623" y="850" fill="#d7dae0">g</text>
-<text x="632" y="850" fill="#d7dae0">D</text>
-<text x="641" y="850" fill="#d7dae0">n</text>
-<text x="650" y="850" fill="#d7dae0">:</text>
-<text x="668" y="850" fill="#d7dae0">s</text>
-<text x="677" y="850" fill="#d7dae0">c</text>
-<text x="686" y="850" fill="#d7dae0">r</text>
-<text x="695" y="850" fill="#d7dae0">o</text>
-<text x="704" y="850" fill="#d7dae0">l</text>
-<text x="713" y="850" fill="#d7dae0">l</text>
-<text x="20" y="868" fill="#d7dae0" font-weight="bold">[</text>
-<text x="29" y="868" fill="#d7dae0" font-weight="bold">A</text>
-<text x="47" y="868" fill="#d7dae0" font-weight="bold">A</text>
-<text x="56" y="868" fill="#d7dae0" font-weight="bold">p</text>
-<text x="65" y="868" fill="#d7dae0" font-weight="bold">p</text>
-<text x="74" y="868" fill="#d7dae0" font-weight="bold">l</text>
-<text x="83" y="868" fill="#d7dae0" font-weight="bold">y</text>
-<text x="92" y="868" fill="#d7dae0" font-weight="bold">]</text>
-<text x="119" y="868" fill="#d7dae0" font-weight="bold">[</text>
-<text x="128" y="868" fill="#d7dae0" font-weight="bold">U</text>
-<text x="146" y="868" fill="#d7dae0" font-weight="bold">R</text>
-<text x="155" y="868" fill="#d7dae0" font-weight="bold">e</text>
-<text x="164" y="868" fill="#d7dae0" font-weight="bold">l</text>
-<text x="173" y="868" fill="#d7dae0" font-weight="bold">o</text>
-<text x="182" y="868" fill="#d7dae0" font-weight="bold">a</text>
-<text x="191" y="868" fill="#d7dae0" font-weight="bold">d</text>
-<text x="200" y="868" fill="#d7dae0" font-weight="bold">]</text>
-<text x="227" y="868" fill="#d7dae0" font-weight="bold">[</text>
-<text x="236" y="868" fill="#d7dae0" font-weight="bold">D</text>
-<text x="254" y="868" fill="#d7dae0" font-weight="bold">D</text>
-<text x="263" y="868" fill="#d7dae0" font-weight="bold">e</text>
-<text x="272" y="868" fill="#d7dae0" font-weight="bold">f</text>
-<text x="281" y="868" fill="#d7dae0" font-weight="bold">a</text>
-<text x="290" y="868" fill="#d7dae0" font-weight="bold">u</text>
-<text x="299" y="868" fill="#d7dae0" font-weight="bold">l</text>
-<text x="308" y="868" fill="#d7dae0" font-weight="bold">t</text>
-<text x="317" y="868" fill="#d7dae0" font-weight="bold">s</text>
-<text x="326" y="868" fill="#d7dae0" font-weight="bold">]</text>
-<text x="353" y="868" fill="#d7dae0" font-weight="bold">[</text>
-<text x="362" y="868" fill="#d7dae0" font-weight="bold">Q</text>
-<text x="380" y="868" fill="#d7dae0" font-weight="bold">C</text>
-<text x="389" y="868" fill="#d7dae0" font-weight="bold">l</text>
-<text x="398" y="868" fill="#d7dae0" font-weight="bold">o</text>
-<text x="407" y="868" fill="#d7dae0" font-weight="bold">s</text>
-<text x="416" y="868" fill="#d7dae0" font-weight="bold">e</text>
-<text x="425" y="868" fill="#d7dae0" font-weight="bold">]</text>
+<text x="110" y="418" fill="#d7dae0">e</text>
+<text x="128" y="418" fill="#d7dae0">h</text>
+<text x="137" y="418" fill="#d7dae0">u</text>
+<text x="146" y="418" fill="#d7dae0">e</text>
+<text x="281" y="418" fill="#d7dae0">R</text>
+<text x="290" y="418" fill="#d7dae0">a</text>
+<text x="299" y="418" fill="#d7dae0">n</text>
+<text x="308" y="418" fill="#d7dae0">d</text>
+<text x="317" y="418" fill="#d7dae0">o</text>
+<text x="326" y="418" fill="#d7dae0">m</text>
+<text x="38" y="436" fill="#d7dae0">N</text>
+<text x="47" y="436" fill="#d7dae0">e</text>
+<text x="56" y="436" fill="#d7dae0">w</text>
+<text x="65" y="436" fill="#d7dae0">-</text>
+<text x="74" y="436" fill="#d7dae0">s</text>
+<text x="83" y="436" fill="#d7dae0">p</text>
+<text x="92" y="436" fill="#d7dae0">a</text>
+<text x="101" y="436" fill="#d7dae0">c</text>
+<text x="110" y="436" fill="#d7dae0">e</text>
+<text x="128" y="436" fill="#d7dae0">s</text>
+<text x="137" y="436" fill="#d7dae0">h</text>
+<text x="146" y="436" fill="#d7dae0">a</text>
+<text x="155" y="436" fill="#d7dae0">d</text>
+<text x="164" y="436" fill="#d7dae0">e</text>
+<text x="281" y="436" fill="#d7dae0">M</text>
+<text x="290" y="436" fill="#d7dae0">e</text>
+<text x="299" y="436" fill="#d7dae0">d</text>
+<text x="308" y="436" fill="#d7dae0">i</text>
+<text x="317" y="436" fill="#d7dae0">u</text>
+<text x="326" y="436" fill="#d7dae0">m</text>
+<text x="20" y="472" fill="#d7dae0" font-weight="bold">T</text>
+<text x="29" y="472" fill="#d7dae0" font-weight="bold">E</text>
+<text x="38" y="472" fill="#d7dae0" font-weight="bold">X</text>
+<text x="47" y="472" fill="#d7dae0" font-weight="bold">T</text>
+<text x="38" y="490" fill="#d7dae0">N</text>
+<text x="47" y="490" fill="#d7dae0">a</text>
+<text x="56" y="490" fill="#d7dae0">m</text>
+<text x="65" y="490" fill="#d7dae0">e</text>
+<text x="74" y="490" fill="#d7dae0">s</text>
+<text x="92" y="490" fill="#d7dae0">w</text>
+<text x="101" y="490" fill="#d7dae0">h</text>
+<text x="110" y="490" fill="#d7dae0">e</text>
+<text x="119" y="490" fill="#d7dae0">n</text>
+<text x="137" y="490" fill="#d7dae0">c</text>
+<text x="146" y="490" fill="#d7dae0">o</text>
+<text x="155" y="490" fill="#d7dae0">l</text>
+<text x="164" y="490" fill="#d7dae0">o</text>
+<text x="173" y="490" fill="#d7dae0">r</text>
+<text x="182" y="490" fill="#d7dae0">s</text>
+<text x="200" y="490" fill="#d7dae0">a</text>
+<text x="209" y="490" fill="#d7dae0">r</text>
+<text x="218" y="490" fill="#d7dae0">e</text>
+<text x="236" y="490" fill="#d7dae0">o</text>
+<text x="245" y="490" fill="#d7dae0">f</text>
+<text x="254" y="490" fill="#d7dae0">f</text>
+<text x="281" y="490" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="490" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="490" fill="#d7dae0">F</text>
+<text x="317" y="490" fill="#d7dae0">o</text>
+<text x="326" y="490" fill="#d7dae0">l</text>
+<text x="335" y="490" fill="#d7dae0">l</text>
+<text x="344" y="490" fill="#d7dae0">o</text>
+<text x="353" y="490" fill="#d7dae0">w</text>
+<text x="371" y="490" fill="#d7dae0">t</text>
+<text x="380" y="490" fill="#d7dae0">h</text>
+<text x="389" y="490" fill="#d7dae0">e</text>
+<text x="398" y="490" fill="#d7dae0">m</text>
+<text x="407" y="490" fill="#d7dae0">e</text>
+<text x="38" y="508" fill="#d7dae0">A</text>
+<text x="47" y="508" fill="#d7dae0">g</text>
+<text x="56" y="508" fill="#d7dae0">e</text>
+<text x="65" y="508" fill="#d7dae0">n</text>
+<text x="74" y="508" fill="#d7dae0">t</text>
+<text x="92" y="508" fill="#d7dae0">d</text>
+<text x="101" y="508" fill="#d7dae0">e</text>
+<text x="110" y="508" fill="#d7dae0">t</text>
+<text x="119" y="508" fill="#d7dae0">a</text>
+<text x="128" y="508" fill="#d7dae0">i</text>
+<text x="137" y="508" fill="#d7dae0">l</text>
+<text x="146" y="508" fill="#d7dae0">s</text>
+<text x="281" y="508" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="508" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="508" fill="#d7dae0">F</text>
+<text x="317" y="508" fill="#d7dae0">o</text>
+<text x="326" y="508" fill="#d7dae0">l</text>
+<text x="335" y="508" fill="#d7dae0">l</text>
+<text x="344" y="508" fill="#d7dae0">o</text>
+<text x="353" y="508" fill="#d7dae0">w</text>
+<text x="371" y="508" fill="#d7dae0">t</text>
+<text x="380" y="508" fill="#d7dae0">h</text>
+<text x="389" y="508" fill="#d7dae0">e</text>
+<text x="398" y="508" fill="#d7dae0">m</text>
+<text x="407" y="508" fill="#d7dae0">e</text>
+<text x="38" y="526" fill="#d7dae0">T</text>
+<text x="47" y="526" fill="#d7dae0">a</text>
+<text x="56" y="526" fill="#d7dae0">b</text>
+<text x="74" y="526" fill="#d7dae0">n</text>
+<text x="83" y="526" fill="#d7dae0">a</text>
+<text x="92" y="526" fill="#d7dae0">m</text>
+<text x="101" y="526" fill="#d7dae0">e</text>
+<text x="281" y="526" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="526" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="526" fill="#d7dae0">F</text>
+<text x="317" y="526" fill="#d7dae0">o</text>
+<text x="326" y="526" fill="#d7dae0">l</text>
+<text x="335" y="526" fill="#d7dae0">l</text>
+<text x="344" y="526" fill="#d7dae0">o</text>
+<text x="353" y="526" fill="#d7dae0">w</text>
+<text x="371" y="526" fill="#d7dae0">t</text>
+<text x="380" y="526" fill="#d7dae0">h</text>
+<text x="389" y="526" fill="#d7dae0">e</text>
+<text x="398" y="526" fill="#d7dae0">m</text>
+<text x="407" y="526" fill="#d7dae0">e</text>
+<text x="38" y="544" fill="#d7dae0">M</text>
+<text x="47" y="544" fill="#d7dae0">a</text>
+<text x="56" y="544" fill="#d7dae0">c</text>
+<text x="65" y="544" fill="#d7dae0">h</text>
+<text x="74" y="544" fill="#d7dae0">i</text>
+<text x="83" y="544" fill="#d7dae0">n</text>
+<text x="92" y="544" fill="#d7dae0">e</text>
+<text x="110" y="544" fill="#d7dae0">l</text>
+<text x="119" y="544" fill="#d7dae0">a</text>
+<text x="128" y="544" fill="#d7dae0">b</text>
+<text x="137" y="544" fill="#d7dae0">e</text>
+<text x="146" y="544" fill="#d7dae0">l</text>
+<text x="281" y="544" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="544" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="544" fill="#d7dae0">S</text>
+<text x="317" y="544" fill="#d7dae0">a</text>
+<text x="326" y="544" fill="#d7dae0">m</text>
+<text x="335" y="544" fill="#d7dae0">e</text>
+<text x="353" y="544" fill="#d7dae0">a</text>
+<text x="362" y="544" fill="#d7dae0">s</text>
+<text x="380" y="544" fill="#d7dae0">a</text>
+<text x="389" y="544" fill="#d7dae0">g</text>
+<text x="398" y="544" fill="#d7dae0">e</text>
+<text x="407" y="544" fill="#d7dae0">n</text>
+<text x="416" y="544" fill="#d7dae0">t</text>
+<text x="434" y="544" fill="#d7dae0">d</text>
+<text x="443" y="544" fill="#d7dae0">e</text>
+<text x="452" y="544" fill="#d7dae0">t</text>
+<text x="461" y="544" fill="#d7dae0">a</text>
+<text x="470" y="544" fill="#d7dae0">i</text>
+<text x="479" y="544" fill="#d7dae0">l</text>
+<text x="488" y="544" fill="#d7dae0">s</text>
+<text x="38" y="562" fill="#d7dae0">B</text>
+<text x="47" y="562" fill="#d7dae0">r</text>
+<text x="56" y="562" fill="#d7dae0">a</text>
+<text x="65" y="562" fill="#d7dae0">n</text>
+<text x="74" y="562" fill="#d7dae0">c</text>
+<text x="83" y="562" fill="#d7dae0">h</text>
+<text x="281" y="562" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="562" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="562" fill="#d7dae0">F</text>
+<text x="317" y="562" fill="#d7dae0">o</text>
+<text x="326" y="562" fill="#d7dae0">l</text>
+<text x="335" y="562" fill="#d7dae0">l</text>
+<text x="344" y="562" fill="#d7dae0">o</text>
+<text x="353" y="562" fill="#d7dae0">w</text>
+<text x="371" y="562" fill="#d7dae0">t</text>
+<text x="380" y="562" fill="#d7dae0">h</text>
+<text x="389" y="562" fill="#d7dae0">e</text>
+<text x="398" y="562" fill="#d7dae0">m</text>
+<text x="407" y="562" fill="#d7dae0">e</text>
+<text x="20" y="598" fill="#d7dae0" font-weight="bold">C</text>
+<text x="29" y="598" fill="#d7dae0" font-weight="bold">o</text>
+<text x="38" y="598" fill="#d7dae0" font-weight="bold">l</text>
+<text x="47" y="598" fill="#d7dae0" font-weight="bold">o</text>
+<text x="56" y="598" fill="#d7dae0" font-weight="bold">r</text>
+<text x="74" y="598" fill="#d7dae0" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">—</text>
+<text x="92" y="598" fill="#d7dae0" font-weight="bold">c</text>
+<text x="101" y="598" fill="#d7dae0" font-weight="bold">h</text>
+<text x="110" y="598" fill="#d7dae0" font-weight="bold">o</text>
+<text x="119" y="598" fill="#d7dae0" font-weight="bold">o</text>
+<text x="128" y="598" fill="#d7dae0" font-weight="bold">s</text>
+<text x="137" y="598" fill="#d7dae0" font-weight="bold">e</text>
+<text x="155" y="598" fill="#d7dae0" font-weight="bold">a</text>
+<text x="173" y="598" fill="#d7dae0" font-weight="bold">s</text>
+<text x="182" y="598" fill="#d7dae0" font-weight="bold">w</text>
+<text x="191" y="598" fill="#d7dae0" font-weight="bold">a</text>
+<text x="200" y="598" fill="#d7dae0" font-weight="bold">t</text>
+<text x="209" y="598" fill="#d7dae0" font-weight="bold">c</text>
+<text x="218" y="598" fill="#d7dae0" font-weight="bold">h</text>
+<text x="20" y="616" fill="#d7dae0">A</text>
+<text x="29" y="616" fill="#d7dae0">r</text>
+<text x="38" y="616" fill="#d7dae0">r</text>
+<text x="47" y="616" fill="#d7dae0">o</text>
+<text x="56" y="616" fill="#d7dae0">w</text>
+<text x="65" y="616" fill="#d7dae0">s</text>
+<text x="74" y="616" fill="#d7dae0">:</text>
+<text x="92" y="616" fill="#d7dae0">c</text>
+<text x="101" y="616" fill="#d7dae0">h</text>
+<text x="110" y="616" fill="#d7dae0">o</text>
+<text x="119" y="616" fill="#d7dae0">o</text>
+<text x="128" y="616" fill="#d7dae0">s</text>
+<text x="137" y="616" fill="#d7dae0">e</text>
+<text x="173" y="616" fill="#d7dae0">E</text>
+<text x="182" y="616" fill="#d7dae0">n</text>
+<text x="191" y="616" fill="#d7dae0">t</text>
+<text x="200" y="616" fill="#d7dae0">e</text>
+<text x="209" y="616" fill="#d7dae0">r</text>
+<text x="227" y="616" fill="#d7dae0">/</text>
+<text x="245" y="616" fill="#d7dae0">E</text>
+<text x="254" y="616" fill="#d7dae0">s</text>
+<text x="263" y="616" fill="#d7dae0">c</text>
+<text x="272" y="616" fill="#d7dae0">:</text>
+<text x="290" y="616" fill="#d7dae0">b</text>
+<text x="299" y="616" fill="#d7dae0">a</text>
+<text x="308" y="616" fill="#d7dae0">c</text>
+<text x="317" y="616" fill="#d7dae0">k</text>
+<text x="335" y="616" fill="#d7dae0">t</text>
+<text x="344" y="616" fill="#d7dae0">o</text>
+<text x="362" y="616" fill="#d7dae0">f</text>
+<text x="371" y="616" fill="#d7dae0">i</text>
+<text x="380" y="616" fill="#d7dae0">e</text>
+<text x="389" y="616" fill="#d7dae0">l</text>
+<text x="398" y="616" fill="#d7dae0">d</text>
+<text x="407" y="616" fill="#d7dae0">s</text>
+<text x="29" y="652" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="38" y="652" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="47" y="652" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="56" y="652" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="74" y="652" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="83" y="652" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="92" y="652" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="101" y="652" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="119" y="652" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="128" y="652" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="137" y="652" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="146" y="652" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="191" y="652" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="200" y="652" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="209" y="652" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="218" y="652" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="236" y="652" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="245" y="652" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="254" y="652" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="263" y="652" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="281" y="652" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="652" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="299" y="652" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="652" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="353" y="652" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="362" y="652" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="371" y="652" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="380" y="652" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="398" y="652" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="407" y="652" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="416" y="652" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="425" y="652" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="443" y="652" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="452" y="652" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="461" y="652" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="470" y="652" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="29" y="670" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="38" y="670" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="47" y="670" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="56" y="670" fill="#d78787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="74" y="670" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="83" y="670" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="92" y="670" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="101" y="670" fill="#ff8787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="119" y="670" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="128" y="670" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="137" y="670" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="146" y="670" fill="#ffafaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="191" y="670" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="200" y="670" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="209" y="670" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="218" y="670" fill="#d7af5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="236" y="670" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="245" y="670" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="254" y="670" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="263" y="670" fill="#ffaf5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="281" y="670" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="670" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="299" y="670" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="670" fill="#ffd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="353" y="670" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="362" y="670" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="371" y="670" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="380" y="670" fill="#d7d75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="398" y="670" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="407" y="670" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="416" y="670" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="425" y="670" fill="#ffff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="443" y="670" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="452" y="670" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="461" y="670" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="470" y="670" fill="#ffffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="29" y="706" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="38" y="706" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="47" y="706" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="56" y="706" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="74" y="706" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="83" y="706" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="92" y="706" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="101" y="706" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="119" y="706" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="128" y="706" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="137" y="706" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="146" y="706" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="191" y="706" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="200" y="706" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="209" y="706" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="218" y="706" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="236" y="706" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="245" y="706" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="254" y="706" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="263" y="706" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="281" y="706" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="706" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="299" y="706" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="706" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="353" y="706" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="362" y="706" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="371" y="706" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="380" y="706" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="398" y="706" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="407" y="706" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="416" y="706" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="425" y="706" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="443" y="706" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="452" y="706" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="461" y="706" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="470" y="706" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="29" y="724" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="38" y="724" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="47" y="724" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="56" y="724" fill="#afd75f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="74" y="724" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="83" y="724" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="92" y="724" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="101" y="724" fill="#afff5f" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="119" y="724" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="128" y="724" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="137" y="724" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="146" y="724" fill="#d7ffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="191" y="724" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="200" y="724" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="209" y="724" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="218" y="724" fill="#5fd787" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="236" y="724" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="245" y="724" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="254" y="724" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="263" y="724" fill="#5fff87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="281" y="724" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="724" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="299" y="724" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="724" fill="#afffaf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="353" y="724" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="362" y="724" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="371" y="724" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="380" y="724" fill="#5fd7af" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="398" y="724" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="407" y="724" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="416" y="724" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="425" y="724" fill="#5fffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="443" y="724" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="452" y="724" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="461" y="724" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="470" y="724" fill="#afffd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="29" y="760" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="38" y="760" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="47" y="760" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="56" y="760" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="74" y="760" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="83" y="760" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="92" y="760" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="101" y="760" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="119" y="760" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="128" y="760" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="137" y="760" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="146" y="760" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="191" y="760" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="200" y="760" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="209" y="760" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="218" y="760" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="236" y="760" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="245" y="760" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="254" y="760" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="263" y="760" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="281" y="760" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="760" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="299" y="760" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="760" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="353" y="760" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="362" y="760" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="371" y="760" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="380" y="760" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="398" y="760" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="407" y="760" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="416" y="760" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="425" y="760" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="443" y="760" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="452" y="760" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="461" y="760" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="470" y="760" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="29" y="778" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="38" y="778" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="47" y="778" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="56" y="778" fill="#5fafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="74" y="778" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="83" y="778" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="92" y="778" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="101" y="778" fill="#5fd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="119" y="778" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="128" y="778" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="137" y="778" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="146" y="778" fill="#afffff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="191" y="778" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="200" y="778" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="209" y="778" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="218" y="778" fill="#5f87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="227" y="778" fill="#d7dae0" font-weight="bold">&gt;</text>
+<text x="236" y="778" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="245" y="778" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="254" y="778" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="263" y="778" fill="#5fafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="272" y="778" fill="#d7dae0" font-weight="bold">&lt;</text>
+<text x="281" y="778" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="778" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="299" y="778" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="778" fill="#afd7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="353" y="778" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="362" y="778" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="371" y="778" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="380" y="778" fill="#8787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="398" y="778" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="407" y="778" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="416" y="778" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="425" y="778" fill="#afafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="443" y="778" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="452" y="778" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="461" y="778" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="470" y="778" fill="#d7d7ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="29" y="814" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="38" y="814" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="47" y="814" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="56" y="814" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="74" y="814" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="83" y="814" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="92" y="814" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="101" y="814" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="119" y="814" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="128" y="814" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="137" y="814" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="146" y="814" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="191" y="814" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="200" y="814" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="209" y="814" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="218" y="814" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="236" y="814" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="245" y="814" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="254" y="814" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="263" y="814" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="281" y="814" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="814" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="299" y="814" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="814" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="353" y="814" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="362" y="814" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="371" y="814" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="380" y="814" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="398" y="814" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="407" y="814" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="416" y="814" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="425" y="814" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="443" y="814" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="452" y="814" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="461" y="814" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="470" y="814" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="29" y="832" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="38" y="832" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="47" y="832" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="56" y="832" fill="#af87d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="74" y="832" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="83" y="832" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="92" y="832" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="101" y="832" fill="#d787ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="119" y="832" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="128" y="832" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="137" y="832" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="146" y="832" fill="#d7afff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="191" y="832" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="200" y="832" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="209" y="832" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="218" y="832" fill="#d787d7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="236" y="832" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="245" y="832" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="254" y="832" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="263" y="832" fill="#ff87ff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="281" y="832" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="290" y="832" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="299" y="832" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="308" y="832" fill="#ffafff" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="353" y="832" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="362" y="832" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="371" y="832" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="380" y="832" fill="#d75f87" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="398" y="832" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="407" y="832" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="416" y="832" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="425" y="832" fill="#ff5faf" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="443" y="832" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="452" y="832" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="461" y="832" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="470" y="832" fill="#ffafd7" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">█</text>
+<text x="20" y="868" fill="#d7dae0" font-weight="bold">B</text>
+<text x="29" y="868" fill="#d7dae0" font-weight="bold">l</text>
+<text x="38" y="868" fill="#d7dae0" font-weight="bold">u</text>
+<text x="47" y="868" fill="#d7dae0" font-weight="bold">e</text>
+<text x="65" y="868" fill="#d7dae0" font-weight="bold" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="83" y="868" fill="#d7dae0" font-weight="bold">M</text>
+<text x="92" y="868" fill="#d7dae0" font-weight="bold">e</text>
+<text x="101" y="868" fill="#d7dae0" font-weight="bold">d</text>
+<text x="110" y="868" fill="#d7dae0" font-weight="bold">i</text>
+<text x="119" y="868" fill="#d7dae0" font-weight="bold">u</text>
+<text x="128" y="868" fill="#d7dae0" font-weight="bold">m</text>
+<text x="20" y="886" fill="#d7dae0">S</text>
+<text x="29" y="886" fill="#d7dae0">a</text>
+<text x="38" y="886" fill="#d7dae0">m</text>
+<text x="47" y="886" fill="#d7dae0">p</text>
+<text x="56" y="886" fill="#d7dae0">l</text>
+<text x="65" y="886" fill="#d7dae0">e</text>
+<text x="83" y="886" fill="#d7dae0">o</text>
+<text x="92" y="886" fill="#d7dae0">n</text>
+<text x="101" y="886" fill="#d7dae0">l</text>
+<text x="110" y="886" fill="#d7dae0">y</text>
+<text x="119" y="886" fill="#d7dae0">;</text>
+<text x="137" y="886" fill="#d7dae0">n</text>
+<text x="146" y="886" fill="#d7dae0">o</text>
+<text x="164" y="886" fill="#d7dae0">r</text>
+<text x="173" y="886" fill="#d7dae0">e</text>
+<text x="182" y="886" fill="#d7dae0">a</text>
+<text x="191" y="886" fill="#d7dae0">l</text>
+<text x="209" y="886" fill="#d7dae0">s</text>
+<text x="218" y="886" fill="#d7dae0">p</text>
+<text x="227" y="886" fill="#d7dae0">a</text>
+<text x="236" y="886" fill="#d7dae0">c</text>
+<text x="245" y="886" fill="#d7dae0">e</text>
+<text x="263" y="886" fill="#d7dae0">i</text>
+<text x="272" y="886" fill="#d7dae0">s</text>
+<text x="290" y="886" fill="#d7dae0">c</text>
+<text x="299" y="886" fill="#d7dae0">h</text>
+<text x="308" y="886" fill="#d7dae0">a</text>
+<text x="317" y="886" fill="#d7dae0">n</text>
+<text x="326" y="886" fill="#d7dae0">g</text>
+<text x="335" y="886" fill="#d7dae0">e</text>
+<text x="344" y="886" fill="#d7dae0">d</text>
+<text x="353" y="886" fill="#d7dae0">.</text>
+<text x="20" y="940" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">←</text>
+<text x="29" y="940" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">→</text>
+<text x="47" y="940" fill="#d7dae0">c</text>
+<text x="56" y="940" fill="#d7dae0">h</text>
+<text x="65" y="940" fill="#d7dae0">a</text>
+<text x="74" y="940" fill="#d7dae0">n</text>
+<text x="83" y="940" fill="#d7dae0">g</text>
+<text x="92" y="940" fill="#d7dae0">e</text>
+<text x="110" y="940" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="128" y="940" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">↵</text>
+<text x="146" y="940" fill="#d7dae0">e</text>
+<text x="155" y="940" fill="#d7dae0">d</text>
+<text x="164" y="940" fill="#d7dae0">i</text>
+<text x="173" y="940" fill="#d7dae0">t</text>
+<text x="191" y="940" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="209" y="940" fill="#d7dae0">T</text>
+<text x="218" y="940" fill="#d7dae0">a</text>
+<text x="227" y="940" fill="#d7dae0">b</text>
+<text x="245" y="940" fill="#d7dae0">p</text>
+<text x="254" y="940" fill="#d7dae0">a</text>
+<text x="263" y="940" fill="#d7dae0">g</text>
+<text x="272" y="940" fill="#d7dae0">e</text>
+<text x="290" y="940" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="308" y="940" fill="#d7dae0" font-weight="bold">A</text>
+<text x="326" y="940" fill="#d7dae0" font-weight="bold">a</text>
+<text x="335" y="940" fill="#d7dae0" font-weight="bold">p</text>
+<text x="344" y="940" fill="#d7dae0" font-weight="bold">p</text>
+<text x="353" y="940" fill="#d7dae0" font-weight="bold">l</text>
+<text x="362" y="940" fill="#d7dae0" font-weight="bold">y</text>
+<text x="380" y="940" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="398" y="940" fill="#d7dae0" font-weight="bold">U</text>
+<text x="416" y="940" fill="#d7dae0" font-weight="bold">u</text>
+<text x="425" y="940" fill="#d7dae0" font-weight="bold">n</text>
+<text x="434" y="940" fill="#d7dae0" font-weight="bold">d</text>
+<text x="443" y="940" fill="#d7dae0" font-weight="bold">o</text>
+<text x="461" y="940" fill="#d7dae0" font-weight="bold">a</text>
+<text x="470" y="940" fill="#d7dae0" font-weight="bold">l</text>
+<text x="479" y="940" fill="#d7dae0" font-weight="bold">l</text>
+<text x="497" y="940" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="515" y="940" fill="#d7dae0" font-weight="bold">D</text>
+<text x="533" y="940" fill="#d7dae0" font-weight="bold">d</text>
+<text x="542" y="940" fill="#d7dae0" font-weight="bold">e</text>
+<text x="551" y="940" fill="#d7dae0" font-weight="bold">f</text>
+<text x="560" y="940" fill="#d7dae0" font-weight="bold">a</text>
+<text x="569" y="940" fill="#d7dae0" font-weight="bold">u</text>
+<text x="578" y="940" fill="#d7dae0" font-weight="bold">l</text>
+<text x="587" y="940" fill="#d7dae0" font-weight="bold">t</text>
+<text x="596" y="940" fill="#d7dae0" font-weight="bold">s</text>
+<text x="614" y="940" fill="#d7dae0" font-family="DejaVu Sans,Noto Sans Symbols 2,monospace">·</text>
+<text x="632" y="940" fill="#d7dae0" font-weight="bold">Q</text>
+<text x="650" y="940" fill="#d7dae0" font-weight="bold">c</text>
+<text x="659" y="940" fill="#d7dae0" font-weight="bold">l</text>
+<text x="668" y="940" fill="#d7dae0" font-weight="bold">o</text>
+<text x="677" y="940" fill="#d7dae0" font-weight="bold">s</text>
+<text x="686" y="940" fill="#d7dae0" font-weight="bold">e</text>
 </g></svg>

@@ -4,6 +4,40 @@ All notable changes to this project are listed here.
 
 ## Unreleased
 
+### Settings panel
+
+- Regrouped into six pages: Spaces, Agents, Tabs, Colors, Motion & symbols and
+  Shortcuts (keys 1–6). Colors, Agents and Motion & symbols have small
+  headings.
+- Related switches are now single choices: **Space row shows** (symbol and
+  name, name only, symbol only), **Git icon** (None or one of eleven),
+  **Context** (used %, remaining %, off) and **Spaces without Git** (shorter
+  row, blank line, explain why). They save the same keys as before, so
+  existing settings files keep working.
+- Plain-language values everywhere, such as **After space name**, **Not set**
+  and **Compact / Spaced**, and a **Row spacing** control on both list pages.
+- **Collect agent details** comes first on the Agents page, with a status line
+  from the worker, for example "Reading details for 5 of 6 agents · 1 needs
+  Herdr's codex integration".
+- **Agent names** shows all five labels in one row and edits them in turn.
+- **Symbol set** applies Circles, Dots or Plain ASCII to all five state
+  symbols, and each symbol is shown beside a sample name in the space's color.
+- Shorter animation names, so every gallery label fits on one line.
+- The swatch name, such as "Teal · Medium", appears under the color palette.
+- The title line shows **Saved** or the number of unsaved changes; transient
+  messages share one status line, and one clickable key-hint line replaces
+  the separate hints and buttons.
+- Help appears under the selected field rather than at the bottom of the pane.
+- **Reload** is now **Undo all** (still **U**, still asking first).
+- The previews stack the Agents list under the Spaces list, like the sidebar,
+  and are hidden on the Shortcuts page.
+
+### Shortcuts
+
+- New optional **Pin tab name** shortcut for the `pin-tab` action, saved as
+  `shortcut_pin_tab` and not set by default. A `pin-tab` binding you wrote by
+  hand is left alone.
+
 ## 0.1.0 - 2026-10-04
 
 First public release.

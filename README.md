@@ -7,7 +7,7 @@ choose how working agents animate, and keep model, reasoning effort and context
 details in view. An interactive settings panel previews every change before you
 apply it.
 
-![Native Herdr sidebar with fictional spaces and sample agent details](assets/sidebar.svg)
+![A Herdr window with Herdr Sidebar Customizer: eight colored spaces with Git branches and ahead/behind counts, an agents list showing each agent's model, effort and context use, and a coding-agent session in the main pane. All projects are fictional.](assets/showcase.png)
 
 - **36 color swatches**, shared by each space and its agents.
 - **Seven working animations**, adjustable speed, and a motion-off switch.

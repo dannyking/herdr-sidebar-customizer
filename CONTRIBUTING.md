@@ -69,14 +69,17 @@ By contributing, you agree that your contributions are licensed under the
 
 ## README captures
 
-The README images come from the real curses UI through `tools/capture.py`. To
-regenerate them, install `pyte` in a separate virtual environment and run that
-script. Add `--gif`, with `cairosvg` and `Pillow` installed, for the animation.
-`tools/capture_sidebar.py` captures the native sidebar using its own temporary
-Herdr server and synthetic agent reports. The plugin and its tests do not need
-these packages.
+The README images come from real rendering, never mock-ups, and use only
+fictional data. The plugin and its tests do not need any of these packages;
+install them in a separate virtual environment.
 
-`tools/capture_sidebar.py` needs updating before it can refresh
-`assets/sidebar.svg`. The worker now marks only agents whose details row it
-fills, and the capture's synthetic agents have no session the worker can read,
-so they also show Herdr's native `agent · state` text.
+- **Settings panel** (`assets/animations*.svg`, `assets/colours.svg`): run
+  `tools/capture.py` with `pyte`. Add `--gif`, with `cairosvg` and `Pillow`, for
+  the animation.
+- **Showcase** (`assets/showcase.png`): run `tools/showcase.py` with `pyte`,
+  `cairosvg`, `Pillow` and `fonttools`, and `herdr` on `PATH`. It starts its own
+  isolated Herdr server and client under `/tmp/hsc-shot-*`, with temporary Git
+  repositories and invented agents, lets the real worker draw the sidebar, and
+  renders the client to PNG. It downloads JetBrains Mono Nerd Font (pinned
+  release) unless `--font-dir` points at it, and needs Linux with fontconfig.
+  `--all` also writes an SVG and a sidebar-only crop.
